@@ -27,7 +27,7 @@ All fonts were sourced from <a href="https://fonts.googleapis.com/css2?family=Fr
 
 
 <p>Dark mode logo</p>
-<img idth="280" height="200" src="images/unicorn-darkmode.png">
+<img idth="280" height="200" src="images/darkmode-logo.png">
 
 <p>Favicon</p>
 <img width="180" height="180" src="images/favicon.ico">
