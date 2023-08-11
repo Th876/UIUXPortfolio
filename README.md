@@ -1,6 +1,6 @@
 # UI/UX Portfolio
 <p align="center">
-  <img width="960" src="./mockup.png">
+  <img width="1200" src="./mockup.png">
 </p>
 
 <p>
@@ -21,13 +21,13 @@ All fonts were sourced from <a href="https://fonts.googleapis.com/css2?family=Fr
 <img width="960" src="images/fonts.png">
 
 <h4>Logo and Favicon</h4>
-<img width="460" height="660" src="images/unicorn-lightmode.png">
+<img width="280" height="200" src="images/unicorn-lightmode.png">
 <p>Light mode logo</p>
 
-<img width="960" src="images/unicorn-darkmode.png">
+<img idth="280" height="200" src="images/unicorn-darkmode.png">
 <p>Dark mode logo</p>
 
-<img width="960" src="images/favicon.ico">
+<img width="180" height="180" src="images/favicon.ico">
 <p>Favicon</p>
 
 <h3>Tools and Resources</h3>
