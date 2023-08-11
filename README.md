@@ -5,7 +5,7 @@
 
 <p>
 This website is my professional UI/UX portfolio, which I designed and developed in my GIT 418 course at <a href="https://www.asu.edu/">Arizona State University</a> for my final project. The wireframe for this project was created via Figma, and was coded using HTML, CSS, JavaScript, jQuery, and AJAX. The purpose of this portfolio is to showcase my projects in UI/UX design, graphic design, and front-end development. </p>
-<p>This is the <a href="https://th876.github.io/UIUXPortfolio/">live link</a>.</p>
+<p>This is the <a href="https://uiux-portfolio-th876.vercel.app/">live link</a>.</p>
 <hr></hr>
 <h3>Process</h3>
 
