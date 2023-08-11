@@ -70,11 +70,9 @@ All fonts were sourced from <a href="https://fonts.googleapis.com/css2?family=Fr
 <h3>Future Enhancements</h3>
 <p>In the future, I would like to:</p>
 <ul>
-<li>Multiple HTML files: Since my design is somewhat limited to the confinements of this project, I would remove the slideshow and use a grid layout to display my projects. I would also include a ‘View’ button so that users can navigate to my projects’ case studies. </li>
-<li>User authentication so that the event planner’s 
-information is secure </li>
-<li>A live chat feature in which the event planner can 
-communicate directly with clients.</li>
+<li>More than One HTML file: Since my design is somewhat limited to the confinements of this project, I would remove the slideshow and use a grid layout to display my projects. I would also include a ‘View’ button so that users can navigate to my projects’ case studies. </li>
+<li>Progress Bar: Given that my portfolio will include my own work and the content will extend the length of my portfolio, I would like to incorporate a progress bar as a form of navigation aid to enhance user experience.</li>
+<li>Mobile-friendly: Developing a mobile version of my portfolio would be beneficial as it would demonstrate that I am capable of utilizing responsive design techniques.</li>
 </ul>
 
 <hr></hr>
