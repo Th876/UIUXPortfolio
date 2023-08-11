@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tahaylia Higgins">
+    <meta name="description" content="Welcome to my UI/UX portfolio. It showcases my skills in UI/UX case studies, graphic and product design, as well as frontend web development. This portfolio is built using HTML, CSS, JavaScript and jQuery.">
+    <meta name="keywords" content="UI/UX, user interface design, user experience, user research, portfolio, case studies, graphic design, product design, websites, web application development, frontend development, HTML, CSS JavaScript, jQuery.">
+    <title>Tahaylia's UI/UX Portfolio</title>
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <!--jQuery Slick Slideshow plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--jQuery Slick Slideshow plugin stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--jQuery stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer"> <!-- JS -->
+    <script async src="script.js"></script>
+</head>
+
+<body>
+    <!--Navbar w/logo: Home, Projects, About, Contacts & dark mode button-->
+    <header>
+        <nav>
+            <!--Desktop nav menu-->
+            <div class="logo"> <img src="images/unicorn-lightmode.png" alt="Tahaylia Higgins UI/UX portfolio unicorn logo" class="unicorn" id="logo-switch"> </div>
+            <div class="menu-tabs">
+                <ul>
+                    <li><a href="#hero" class="nav-text">home</a></li>
+                    <li><a href="#projects" class="nav-text">projects</a></li>
+                    <li><a href="#about" class="nav-text">about</a></li>
+                    <li><a href="#contact" class="nav-text">contact</a></li>
+                </ul>
+                <!--Web Storage (Dark Mode)-->
+                <!-- Set button's initial data mode to light and text to dark mode --> <button id="dark-mode-btn" class="dark-mode-toggle" data-mode="light">dark mode</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2 class="hidden">Hero Section</h2>
+            <!--Background video--> <video autoplay loop muted class="background-video">
+                <!--Rainbow Blurred Background Stock Videos by Vecteezy-->
+                <source src="video/color-swirl.mp4" type="video/mp4"> Your browser does not support the video
+            </video>
+            <section id="greeting-layout">
+                <h3 id="greeting-switch">Hi</h3>
+                <h3 id="developer-name">I'm Tahaylia</h3>
+                <div class="underline"></div> <!-- Empty paragraph to prevent surrounding elements from shifting when greetings switch-->
+                <p class="fixed-height"></p>
+            </section>
+            <!--jQuery Widget/Plugin (tooltip)-->
+            <p class="developer-info">a detailed-oriented junior<span title="UI/UX Unicorn is a rare individual who is highly proficient in creating visually appealing user interface, graphics, and intuitive user experiences. This person also excels in front-end development. Job roles: UI/UX Designer, Graphic Designer, Frontend Developer." class="unicorn-definition italics" id="tooltip">UI/UX Unicorn</span><br>who empathetically designs &amp; develops<br>for the human experience &excl; </p> <a href="#projects"> <img src="images/blk-down-arrow.png" alt="an arrow pointing down" id="arrow-switch"> </a>
+        </section>
+        <!--Project section. jQuery Slideshow Plugin-->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="multiple-items">
+                <figure>
+                    <figcaption>Mobile App Design<a href="" class="project-btn">View</a></figcaption>
+                    <p>#MobileAppDesign</p> <img src="images/coming-soon.png" alt="Mobile app design for a fictitious train app">
+                    <p class="attribution">Image by<a href="https://www.freepik.com/free-vector/coming-soon-red-sign_762224.htm#query=coming%20soon%20post&position=16&from_view=search&track=ais" target="_blank" class="attribution">Freepik</a></p>
+                </figure>
+                <figure>
+                    <figcaption>Website Redesign<a href="" class="project-btn">View</a></figcaption>
+                    <p>#MobileApp #UXResearch #Prototyping</p><img src="images/coming-soon.png" alt="Redesign project for the mobile app Gas Guru: Cheap Gas Prices">
+                    <p class="attribution">Image by<a href="https://www.freepik.com/free-vector/coming-soon-red-sign_762224.htm#query=coming%20soon%20post&position=16&from_view=search&track=ais" target="_blank" class="attribution">Freepik</a></p>
+                </figure>
+                <figure>
+                    <figcaption>Logo Design<a href="#" class="project-btn">View</a></figcaption>
+                    <p>#LogoDesign</p><img src="images/coming-soon.png" alt="Logo design and brand identity project for a fictional company called _____________________">
+                    <p class="attribution">Image by<a href="https://www.freepik.com/free-vector/coming-soon-red-sign_762224.htm#query=coming%20soon%20post&position=16&from_view=search&track=ais" target="_blank" class="attribution">Freepik</a></p>
+                </figure>
+                <figure>
+                    <figcaption>Email Template <a href="" class="project-btn">View</a></figcaption>
+                    <p>#EmailTemplate</p> <img src="images/coming-soon.png" alt="Email template for the company __________">
+                    <p class="attribution">Image by<a href="https://www.freepik.com/free-vector/coming-soon-red-sign_762224.htm#query=coming%20soon%20post&position=16&from_view=search&track=ais" target="_blank" 
+                    class="attribution">Freepik</a></p>
+                </figure>
+            </div>
+        </section>
+        <!--About section-->
+        <section id="about">
+            <h2>The Rise of the UI/UX Unicorn</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>Hi! I&apos;m Tahaylia Higgins, a Jamaican-American junior UI/UX designer with a background in Software Engineering (Front-End) and Foreign Languages. I am highly passionate about functional design because it cultivates a seamless and intuitive experience, building a bridge to loyal users!</p>
+                    <p class="space"> &mdash;Curious, the reader interrupted, asking,<span class="italics candy">&ldquo;Tell me, dear wanderer&comma; how did you find your path from the realm of linguistics to that of code?&rdquo;</span> </p>
+                    <p class="space">My journey into the wondrous world of technology unfolded graduating from the University of Illinois at Chicago, where I earned a bachelor's and master's degree in Spanish and German, respectively. While seeking employment, I yearned to quench my creative thirst and found solace in video editing through Adobe Premiere Pro, photo editing, and logo design with Adobe Photoshop. </p>
+                </div>
+                <div class="grid-item">
+                    <p> In these moments of exploration, a cherished memory resurfaced—the joy of personalizing my former travel blog with snippets of HTML code, revealing the path that lay ahead. I subsequently chose to fully immerse myself in the fascinating realm of scripting/programming languages. My quest began with self-study, followed by enrolling at Arizona State University &lpar;ASU&rpar; to seek deeper knowledge. Additionally, during a hiatus from ASU, I attended a software engineering training program at Per Scholas to enhance my skills. </p>
+                    <p class="space">At Per Scholas, my creative passions flourished, igniting a desire to explore UI/UX design. Upon returning to ASU, I eagerly crafted captivating projects and nurtured my UI/UX portfolio, giving rise to the<span class="italics highlight">UI/UX Unicorn</span>, that is, an individual with a magical blend of UI/UX design, Graphic design, and<a href="https://th876.github.io/SWEPortfolio/index.html" target="_blank" class="frontend-portfolio">Frontend development</a>skills. </p>
+                </div>
+                <div class="grid-item"> <img src="images/LinkedIn-Pic.png" alt="LinkedIn profile picture of Tahaylia Higgins" class="linkedIn-pic">
+                    <!--AJAX/API toggle to display stickers with fun facts about me when clicked--> <img src="images/fun-facts-lightmode.png" alt="neon purple and pink rotating circle button" id="fun-facts-lightmode">
+                    <!--Container for stickers-->
+                    <div id="sticker-container"></div>
+                </div>
+            </div>
+        </section>
+        <!--Contact section-->
+        <section id="contact">
+            <h2>Let&apos;s Talk...</h2>
+            <p class="jobs">UI/UX<span>•</span>Graphic Design<span>•</span>Front-End Development</p> <img src="images/chat-speech-bubble.gif" alt="Flashing speech bubbles gif that changes to the colors lavender and pink" class="speech-bubbles"> <a href="document/Tahaylia-Higgins-UIUX-Designer-Resume.pdf" target="_blank" class="resume">Resume</a> <a href="mailto:tayhiggins14@gmail.com" target="_blank" class="email">Email</a> <a href="https://www.linkedin.com/in/tahayliahiggins/" target="_blank" class="linkedIn">LinkedIn</a> <a href="https://github.com/Th876" target="_blank" class="github">GitHub</a>
+        </section>
+        <!--Back to top button--> <button id="back-to-top">▲</button>
+    </main>
+    <footer> <small>Copyright &copy;2023, Developed &amp; Designed by Tahaylia Higgins. All Rights Reserved. </small> </footer>
+</body>
+</html>
