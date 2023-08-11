@@ -21,14 +21,16 @@ All fonts were sourced from <a href="https://fonts.googleapis.com/css2?family=Fr
 <img width="960" src="images/fonts.png">
 
 <h4>Logo and Favicon</h4>
-<img width="280" height="200" src="images/unicorn-lightmode.png">
+
 <p>Light mode logo</p>
+<img width="280" height="200" src="images/unicorn-lightmode.png">
 
-<img idth="280" height="200" src="images/unicorn-darkmode.png">
+
 <p>Dark mode logo</p>
+<img idth="280" height="200" src="images/unicorn-darkmode.png">
 
-<img width="180" height="180" src="images/favicon.ico">
 <p>Favicon</p>
+<img width="180" height="180" src="images/favicon.ico">
 
 <h3>Tools and Resources</h3>
 <ul>
