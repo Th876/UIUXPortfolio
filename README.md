@@ -10,7 +10,7 @@ This website is my professional UI/UX portfolio, which I designed and developed 
 <h3>Process</h3>
 
 <h4>Wireframe</h4>
-<img width="960" src="./wireframe.png">
+<img width="500" src="./wireframe.png">
 <h4>Custom Color Theme</h4>
 <img width="960" src="images/color-scheme1.png">
 <img width="960" src="images/color-scheme2.png">
