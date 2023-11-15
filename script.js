@@ -150,15 +150,7 @@ const greet = () => {
 }
 // Set greetings to display every (one) second
 setInterval(greet, 1000);
-// TEMPORARY: Set all 'view' links to navigate nowhere
-let projectLinks = document.querySelectorAll(".project-btn");
-//Add event listener and set prevent default for view links
-projectLinks.forEach(link => {
-    link.addEventListener("click", function(e){
-        e.preventDefault();   
-        console.log("Default behavior prevented!");
-    });
-})
+
 
 
 

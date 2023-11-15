@@ -14,6 +14,8 @@
      --magenta: #dc86cb;
      --lavender: #948CB2;
      --barbie: #FE5392;
+     --navy: #184A7C; 
+     --tangerine: #FF7D01;
     /* Light mode color*/
      background-color: var(--milk);
 }
@@ -220,7 +222,7 @@
 }
 /* Tooltip */
  .unicorn-definition {
-     border-bottom: 7px dotted aquamarine;
+     border-bottom: 7px dotted var(--aquamarine);
      cursor: help;
 }
  #arrow-switch {
@@ -324,7 +326,7 @@
  .frontend-portfolio {
      color: var(--magenta);
 }
- .linkedIn-pic {
+ .my-pic {
      width: 325px;
      border-radius: 5px;
      margin-top: 13px;
@@ -389,7 +391,7 @@
 }
 /* Set contact links for dark mode */
  .dark-mode-theme #contact a {
-     color: white;
+     color: var(--snow);
 }
  #back-to-top {
      display: none;
@@ -399,7 +401,7 @@
      font-size: 1rem;
      letter-spacing: 1px;
      bottom: 80px;
-     right: 20px;
+     right: 40px;
      padding: 8px 15px;
      border: none;
      border-radius: 5px;
@@ -423,4 +425,299 @@
      background: rgba(255, 255, 255, 0.3);
      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
      backdrop-filter: blur(5px);
+}
+
+/* Cake Wrecks UX Case Study */
+
+/* Hero */
+.hero-cakewrecks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 80px 40px 120px 40px;
+    border-radius: 0 0 5px 5px ;
+    border-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-left h1{
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+.text-left h2{
+    font-size: 75px;
+    color: var(--navy);
+    text-transform: uppercase;
+}
+
+.dark-mode-theme .text-left h2 {
+    color: var(--snow);
+}
+.text-right {
+    margin-top: 90px;
+}
+
+.col-4 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.col-4 ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.col-4 ul li {
+    margin-left: -8px;
+}
+/* Overview */
+#overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 80px 40px 120px 40px;
+    border-radius: 0 0 5px 5px ;
+    border-top: 0;
+    /* top left, top right, bottom right, bottom left */
+    border-radius: 5px 5px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+#overview .text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#overview .text-left h3 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: var(--navy);
+}
+
+.dark-mode-theme #overview .text-left h3 {
+    color: var(--snow);
+}
+
+/* Over view */
+#overview .text-right {
+    margin-top: 90px;
+}
+
+.margin-bottom {
+    margin-top: 50px;
+}
+
+.video-container {
+    position: relative;
+}
+.video {
+    width: 490px;
+    position: absolute;
+    top: 18px;
+    left: 75px;
+}
+.video-container p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Problem of Statement */
+
+.dark-mode-theme #problem .text-left h3 {
+    color: var(--snow);
+}
+#problem .text-right {
+    margin-top: -0px;
+}
+
+.user {
+    margin-bottom: 80px;
+}
+#problem h4 {
+    margin-bottom: 20px;
+}
+
+.post-test {
+    margin-top: 30px;
+}
+
+
+/* User Research Observation Test */
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    width: 450px;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.regular-text {
+    font-weight: normal;
+}
+
+.grid-item ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    /* Indent */
+    padding-left: 70px; 
+    margin-top: 10px;
+}
+
+/* Heuristic Evaluation */
+#heuristics {
+    display: grid;
+        border-radius: 0 0 0px 0px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 0px;
+        border-bottom: none;
+}
+
+#heuristics h3 {
+    color: var(--navy);
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.dark-mode-theme #heuristics h3 {
+    color: var(--snow);
+}
+div.blue.grid-item {
+    margin: auto;
+}
+
+.heuristic , .user-persona {
+    width: 990px;
+}
+
+/* Color & Typography */
+
+.solution-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.solution-container p {
+    margin-bottom: 30px;
+}
+
+.column {
+    /* Each column takes up equal space */
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+}
+
+.solution-text {
+    margin-top: 170px;
+}
+
+img.left-sizing {
+    width: 590px;
+} 
+
+/* Navbar Solution */
+.margin-top {
+    margin-top: 30px;
+}
+
+/* Archive Solution  */
+q {
+    font-style: italic;
+}
+
+.archive {
+    width: 300px;
+}
+
+/* About page Solution */
+
+.cake-team {
+    margin-top: -270px;
+}
+
+.spacing {
+    margin-bottom: 40px;
+}
+
+/* User Flow */
+.user-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(3, auto);
+    padding: 20px;
+}
+
+.user-flow-item {
+    margin: 20px auto;
+}
+
+.user-flow-item h4 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.user-flow-img {
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border: 3px solid var(--tangerine); 
+    border-radius: 50%;
+}
+
+.solution-contact {
+    padding-bottom: 140px;
+}
+
+/* Final Design */
+#final {
+    border-radius: 0 0 0px 0px;
+    padding-bottom: 90px;
+    margin-bottom: -20px;
+}
+
+#final h3 {
+    color: var(--navy);
+    font-size: 35px;
+    margin-top: 90px;
+}
+
+#final img {
+    width: 98%;
+    margin-top: 70px;
+}
+
+.dark-mode-theme #final h3 {
+    color: var(--snow);
 }
