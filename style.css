@@ -9,6 +9,7 @@
      --midnight: #1F203E;
      --aquamarine: #7FFFD4;
      --cottoncandy: #FB6EB5;
+     --mulberry: #DD87CB;
      --pink: #ffc0cb;
      --highlight: #A0FFF0;
      --magenta: #dc86cb;
@@ -253,14 +254,33 @@
      margin-left: 30px;
      line-height: 1.5;
 }
+.thumbnail {
+    background-color: var(--mulberry);
+    width: 522px;
+    height: 524px;
+}
+figure {
+    position: relative;
+}
+figure p {
+    margin-bottom: 20px;
+}
+figure .absolute {
+    position: absolute;
+    top: 200px;
+    width: 500px;
+}
+
+/* Cake WreckshHomepage thumbnail on laptop */
+.home-shot {
+    position: absolute;
+    z-index: 1;
+    top: 212px; 
+    left: 60px;
+    width: 400px;
+}
  .attribution {
      color: var(--gray);
-}
- .multiple-items img {
-     position: relative;
-     margin: 0 auto;
-     width: 90%;
-     padding: 10px 0px;
 }
 .project-btn {
     text-decoration: 4px underline var(--aquamarine);
@@ -531,7 +551,7 @@
     left: 75px;
 }
 .video-container p {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     margin-top: 10px;
 }
