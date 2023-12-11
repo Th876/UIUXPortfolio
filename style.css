@@ -246,6 +246,39 @@ p, ul, li {
          top: 530px;
     }
 }
+/* Table of Content */
+#sticky-tab {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: var(--lavender);
+    color: var(--milk);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#sticky-tab a {
+    display: block;
+    color: var(--milk);
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#sticky-tab a:hover {
+    color: var(--aquamarine);
+    cursor: pointer !important;
+}
+
+/* .tab {
+    padding: 20px;
+    margin: 40px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
 /* Projects section */
  #projects h2 {
      padding: 30px 0px 50px 0px;
