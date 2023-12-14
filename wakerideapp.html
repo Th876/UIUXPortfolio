@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tahaylia Higgins">
+    <meta name="description" content="Welcome to my UX Case Study on a fictitious mobile train app called Wake Ride. It showcases my research and ui design to help prevent train passengers from missing their stop. I built this portfolio using HTML, CSS, JavaScript and jQuery.">
+    <meta name="keywords" content="UI/UX, user interface design, user experience, user research, portfolio, ux case studies, train app, User personas, user flow, mobile application ux case study">
+    <title>WakeRide Mobile App UX Case Study</title>
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="wakeride-style.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- JS -->
+    <script async src="script.js"></script>
+</head>
+
+<body>
+    <!--Navbar w/logo: Home, Projects, About, Contacts & dark mode button-->
+    <header>
+        <nav>
+            <!--Desktop nav menu-->
+            <div class="logo"> <img src="images/unicorn-lightmode.png" alt="Tahaylia Higgins UI/UX portfolio unicorn logo" class="unicorn" id="logo-switch"> </div>
+            <div class="menu-tabs">
+                <ul>
+                    <li><a href="./index.html" class="nav-text">home</a></li>
+                    <li><a href="./index.html#projects" class="nav-text">projects</a></li>
+                    <li><a href="./index.html#about" class="nav-text">about</a></li>
+                    <li><a href="./index.html#contact" class="nav-text">contact</a></li>
+                </ul>
+                <!--Web Storage (Dark Mode)-->
+                <!-- Set button's initial data mode to light and text to dark mode --> <button id="dark-mode-btn" class="dark-mode-toggle" data-mode="light">dark mode</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Table of Content-->
+        <div id="sticky-tab">
+            <a href="#overview">Design Challenge</a>
+            <a href="#problem">Problem</a>
+            <a href="#user-research">User Research</a>
+            <a href="#heuristics">Heuristics</a>
+            <a href="#user-personas">User Personas</a>
+            <a href="#solution">Solution</a>
+            <a href="#user-flow">User Flow</a>
+            <a href="#final">Final</a>
+        </div>
+        <section class="hero-wakeride">
+                <div class="text-left">
+                    <h1>Case Study</h1>
+                    <h2>WakeRide</h2>
+                </div>
+                <div class="text-right">
+                    <p>WakeRide Mobile App is a self-initiated UX project I sourced from<a href="https://www.uxchallenge.co/">uxchallenge.co</a>to enhance my UI/UX skills. Its focus is to enhance the transportation experience for train passengers.</p>
+                    <div class="col-4 margin-bottom">
+                        <div><h3>role</h3>
+                        <ul>
+                            <li>UX Research </li>
+                            <li>UI Design </li>
+                        </ul></div>
+
+                        <div><h3>team</h3>
+                        <ul>
+                            <li>Self-Directed</li>
+                        </ul></div>
+
+                        <div><h3>duration</h3>
+                        <ul>
+                            <li>Summer-Fall 2023</li>
+                            <li>(11 weeks)</li>
+                        </ul></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="custom-container">
+                 <!-- Design Challenge-->
+                <div class="row">
+                    <div class="column">
+                        <h3 class="heading">Design challenge</h3>
+                        <p>Wake up, this is your stop. Have you ever tried to take a short nap on the train only to wake up and find yourself at the end of the line? How can you help passengers wake up just before the train arrives at their station?</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/wakeride/iso-1.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="iso1">
+                    </div>
+                </div>
+                 <!-- Problem -->
+                <div class="row">
+                    <div class="column">
+                        <h3 class="heading">Problem</h3>
+                        <p>Many passengers experience the inconvenience of falling asleep during their train journey and waking up at the end of the line, far from their intended destination. This not only wastes their time but also creates anxiety and stress. The challenge was to design an app that uses technology to wake passengers up at the right time, ensuring a smooth and stress-free journey.</p>    
+                    </div>
+                    <div class="column">
+                        <img src="./images/wakeride/iso-2.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="iso2">
+                    </div>
+                </div>
+                <div class="row single-column center">
+                    <div class="column">
+                        <h3 class="heading left">Market Analysis</h3>
+                        <img src="./images/wakeride/Market Analysis.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="table">    
+                    </div>
+                </div>
+               <!-- User Research Insights -->
+                <div class="row">
+                    <div class="column">
+                        <h3 class="heading">User Research Insights</h3>
+                        <p class="line-height-research">•<strong>Common Problem:</strong> Passengers frequently miss stations due to sleep-related issues.</p>
+                        <p class="line-height-research">•<strong>Preferred Wake-up Method:</strong> Most passengers indicated a preference for a smartphone app that alerts them before reaching their station.</p>
+                        <p class="line-height-research">•<strong>Anxiety Reduction:</strong> Passengers seek a solution to reduce stress and enhance relaxation during their journey.</p> 
+                        <p class="line-height-research">•<strong>Desire for Background Functionality:</strong> Users expressed the need for an app that operates in the background, ensuring the alarm sounds even while they're engaged with music or movies on their phone.</p>
+                        <p class="line-height-research">•<strong>GPS Alarm Clock Functionality:</strong> The alarm is location-based rather than time-based, addressing concerns about potential delays due to traffic or other factors at specific stops.
+                        </p>               
+                    </div>
+                    <div class="column position">
+                        <img src="./images/wakeride/wakeride-notification.gif" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="notification"> 
+                        <p class="center">Background functionality feature</p>
+                    </div>
+                </div>
+                <!-- User Personas -->
+                <div class="row">
+                    <div class="column">
+                        <h3 class="heading">User Personas</h3>
+                        <img src="./images/wakeride/User_Persona_Corporate_Cathy.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="personas">  
+                    </div>
+                    <div class="column">
+                        <h3 class="heading hidden-text">User Personas</h3>
+                        <img src="./images/wakeride/User_Persona_Student_Sarah.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="personas">
+                    </div>
+                </div>
+                <div class="row single-column center">
+                    <div class="column">
+                        <img src="./images/wakeride/User_Persona_Commuter_Chris.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="personas">    
+                    </div>
+                </div>
+
+
+            </section>
+            
+            
+
+            
+
+            
+        <!--Back to top button--> <button id="back-to-top">▲</button>
+    </main>
+    <footer> <small>Copyright &copy;2023, Developed &amp; Designed by Tahaylia Higgins. All Rights Reserved. </small> </footer>
+</body>
+</html>
