@@ -41,14 +41,17 @@
     <main>
         <!--Table of Content-->
         <div id="sticky-tab">
-            <a href="#overview">Design Challenge</a>
+            <a href="#design">Design Challenge</a>
             <a href="#problem">Problem</a>
-            <a href="#user-research">User Research</a>
-            <a href="#heuristics">Heuristics</a>
-            <a href="#user-personas">User Personas</a>
+            <a href="#market">Market Analysis</a>
+            <a href="#user-research">User Research Insights</a>
+            <a href="#personas">User Personas</a>
             <a href="#solution">Solution</a>
             <a href="#user-flow">User Flow</a>
-            <a href="#final">Final</a>
+            <a href="#lo-fi">Low Fidelity Wireframe</a>
+            <a href="#style-guide">Style Guide</a>
+            <a href="#hi-fi">High Fidelity Wireframe</a>
+            <a href="#interactive">Interactive Prototype</a>
         </div>
         <section class="hero-wakeride">
                 <div class="text-left">
@@ -78,7 +81,7 @@
                 </div>
             </section>
 
-            <section class="custom-container">
+            <section class="container" id="design">
                  <!-- Design Challenge-->
                 <div class="row">
                     <div class="column">
@@ -90,7 +93,7 @@
                     </div>
                 </div>
                  <!-- Problem -->
-                <div class="row">
+                <div class="row" id="problem">
                     <div class="column">
                         <h3 class="heading">Problem</h3>
                         <p>Many passengers experience the inconvenience of falling asleep during their train journey and waking up at the end of the line, far from their intended destination. This not only wastes their time but also creates anxiety and stress. The challenge was to design an app that uses technology to wake passengers up at the right time, ensuring a smooth and stress-free journey.</p>    
@@ -100,14 +103,14 @@
                     </div>
                 </div>
                 <div class="row single-column center">
-                    <div class="column">
+                    <div class="column" id="market">
                         <h3 class="heading left">Market Analysis</h3>
                         <img src="./images/wakeride/Market Analysis.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="table">    
                     </div>
                 </div>
                <!-- User Research Insights -->
                 <div class="row">
-                    <div class="column">
+                    <div class="column" id="user-research">
                         <h3 class="heading">User Research Insights</h3>
                         <p class="line-height-research">•<strong>Common Problem:</strong> Passengers frequently miss stations due to sleep-related issues.</p>
                         <p class="line-height-research">•<strong>Preferred Wake-up Method:</strong> Most passengers indicated a preference for a smartphone app that alerts them before reaching their station.</p>
@@ -123,7 +126,7 @@
                 </div>
                 <!-- User Personas -->
                 <div class="row">
-                    <div class="column">
+                    <div class="column" id="personas">
                         <h3 class="heading">User Personas</h3>
                         <img src="./images/wakeride/User_Persona_Corporate_Cathy.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="personas">  
                     </div>
@@ -137,7 +140,72 @@
                         <img src="./images/wakeride/User_Persona_Commuter_Chris.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="personas">    
                     </div>
                 </div>
+                <!-- Solution -->
+                <div class="row">
+                    <div class="column" id="solution">
+                        <h3 class="heading">Solution</h3>
+                        <p class="line-height-research">•<strong>Station Tracking:</strong>The app tracks the train's location in real time. 
+                        </p>
+                        <p class="line-height-research">•<strong>Customizable Alerts:</strong>Users can set their alert preferences, such as how many minutes before their station they want to be notified.</p>          
+                    </div>
+                    <div class="column position">
+                        <p class="line-height-research mtop">•<strong>Wake-Up Methods:</strong>The app offers two types of wake-up methods: vibration and sound from their phone's library.</p> 
+                        <p class="line-height-research">•<strong>Opt-In features, WakeBuddy:</strong>Allow friends to track the user’s journey in real-time and ensure they've gotten off at the right stop. Users also have full control over how long they share their location.</p>   
+                    </div>
+                </div>
+                <!--Flow diagram -->
+                <div class="row">
+                    <div class="column padding-bottom" id="solution">
+                        <h3 class="heading">User Flow</h3>
+                        <img src="./images/wakeride/WakeRide_User Flow_Diagram.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="flow">      
+                    </div>
+                    <div class="column position padding-bottom">
+                        <h3 class="heading">Login Options</h3>
+                        <img src="./images/wakeride/login.gif" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="logins">
+                    </div>
+                </div>
+                <!-- <div class="row single-column center" id="user-flow">
+                    <div class="column">
+                        <h3 class="heading user-flow">User Flow</h3>
+                        <img src="./images/wakeride/WakeRide_User Flow_Diagram.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="flow">    
+                    </div>
+                </div> -->
+                <!-- Lo-Fi Wireframe -->
+                <div class="row single-column center" id="lo-fi">
+                    <div class="column">
+                        <h3 class="heading lo-fi-wireframe">Low-Fidelity Wireframe</h3>
+                        <img src="./images/wakeride/lo-fi-wireframe.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="low-fi">    
+                    </div>
+                </div>
+                 <!-- Style Guide -->
+                 <div class="row single-column center" id="style-guide">
+                    <div class="column">
+                        <h3 class="heading style-guide">Style Guide</h3>
+                        <img src="./images/wakeride/style-guide.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="low-fi">    
+                    </div>
+                </div>
+                 <!-- Hi-Fi Wireframe -->
+                 <div class="row single-column center" id="hi-fi">
+                    <div class="column">
+                        <h3 class="heading lo-fi-wireframe">High-Fidelity Wireframe</h3>
+                        <img src="./images/wakeride/high-fidelity.png" alt="Mockup of laptop that is displaying a video of the old Cake Wrecks website design" class="low-fi">    
+                    </div>
+                </div>
 
+                <!-- Interactive Prototype -->
+                 <div class="row single-column center" id="interactive">
+                    <div class="column black">
+                        <h3 class="heading lo-fi-wireframe">Interactive Prototype</h3>
+                        <p class="interactive-p">This provides a walkthrough of the app. Alternatively, you can explore the<a href="https://www.figma.com/proto/7ih2OJgSn2G753cby4UUNJ/WakeBuddy-Hi-Fi-Wireframe?page-id=0%3A1&type=design&node-id=134-12156&viewport=671%2C-244%2C0.21&t=8GUZ530kb4fIClLF-1&scaling=scale-down&starting-point-node-id=134%3A11913&mode=design" target="_blank">live prototype</a></p>
+                        <video autoplay loop muted playsinline class="tour">
+                            <source src="images/wakeride/wakeride-tour.mp4" type="video/mp4">
+                            
+                            Your browser does not support the video tag.
+                        </video>
+
+                      
+                    </div>
+                </div>
 
             </section>
             
