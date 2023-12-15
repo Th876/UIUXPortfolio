@@ -229,7 +229,7 @@ p, ul, li {
     z-index: 3;
     position: fixed;
     top: 190px;
-    /* right: 120px; */
+    left: -10px;
     font-family: "Lato";
     padding: 0.75rem;
     font-size: 0.85rem;
@@ -247,7 +247,7 @@ p, ul, li {
     display: none;
     position: fixed;
     top: 650px;
-    left: 10px;
+    left: -10px;
     transform: translateY(-80%);
     background-color: var(--lavender);
     padding: 10px;
