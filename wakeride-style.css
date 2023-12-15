@@ -400,7 +400,7 @@ p, ul, li {
 }
 
 .app-features {
-    margin-top: 65px;
+    margin-top: 100px;
 }
 
 /* User personas */
@@ -448,6 +448,10 @@ p, ul, li {
     height: 812px;
 }
 
+.dsgn-title {
+    margin-bottom: -40px;
+}
+
 .lo-fi-wireframe {
     /* margin-left: -705px; */
 }
@@ -458,11 +462,9 @@ p, ul, li {
 }
 
 .lo-fi-title {
-    padding-bottom: 50px;
+    margin-top: 115px;
+    padding-bottom: 30px;
 }
-/* .style-guide {
-    margin-right: 925px;
-} */
 
 .hi-fi {
     max-width: 100%;
@@ -473,12 +475,13 @@ p, ul, li {
 }
 
 .style-guide-margin {
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 .style {
     max-width: 100%;
-    column-span: span 2;
+    margin-top: -100px;
+    background-color: var(--milk);
 }
 
 .real-time-mtop {
