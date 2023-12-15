@@ -18,6 +18,7 @@
      --navy: #184A7C; 
      --tangerine: #FF7D01;
      --peach: #fae2e2;
+     --deep-purple: #301934;
     /* Light mode color*/
      background-color: var(--milk);
 }
@@ -270,7 +271,7 @@ p, ul, li {
 }
 
 #sticky-tab a:hover {
-    color: var(--aquamarine);
+    color: var(--deep-purple);
     cursor: pointer !important;
 }
 
