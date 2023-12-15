@@ -239,8 +239,7 @@ p, ul, li {
     transition: box-shadow 0.3s ease-in-out;
     background-color: var(--amethyst);
     color: var(--milk);
-    /* padding: 10px 30px;
-    background-color: var(--amethyst); */
+    cursor: pointer !important;
 }
 
 #sticky-tab {
