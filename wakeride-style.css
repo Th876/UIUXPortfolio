@@ -163,7 +163,7 @@ p, ul, li {
 /* Table of Content */
 #sticky-tab {
     position: fixed;
-    top: 70%;
+    top: 0%;
     left: 10px;
     transform: translateY(-50%);
     /* background-color: var(--lavender); */
@@ -327,6 +327,8 @@ p, ul, li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .single-column {
@@ -342,7 +344,7 @@ p, ul, li {
 
 .heading {
     font-size: 40px;
-    margin-bottom: 25px;
+    padding-bottom: 55px;
     color: var(--navy);
 }
 
@@ -354,9 +356,9 @@ p, ul, li {
 }
 
 .iso1 {
-    width: 670px;
-    margin-right: -39px;
-    margin-top: -60px;
+    width: 680px;
+    margin-right: -79px;
+    margin-top: -110px;
 } 
 
 .iso2 {
@@ -385,6 +387,13 @@ p, ul, li {
     margin-left: -818px;
 }
 
+.caption {
+    text-align: center;
+    position: absolute;
+    top: 880px;
+    left: 140px;
+}
+
 /* User Research */
 .hidden-text {
     visibility: hidden;
@@ -398,8 +407,12 @@ p, ul, li {
 
 .personas {
     width: 500px;
+    margin: 0 auto;
 }
 
+.chris {
+    margin-top: -60px;
+}
 .line-height-research {
     margin-bottom: 30px;
 }
@@ -414,6 +427,7 @@ p, ul, li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* margin: 0 auto; */
 }
 .center {
     text-align: center;
