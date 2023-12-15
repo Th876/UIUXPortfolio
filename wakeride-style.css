@@ -19,6 +19,7 @@
      --tangerine: #FF7D01;
      --peach: #fae2e2;
      --black: #000000;
+     --amethyst: #C490CE;
     /* Light mode color*/
      background-color: var(--milk);
 }
@@ -458,7 +459,7 @@ p, ul, li {
 }
 
 .style-guide-margin {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .style {
@@ -466,11 +467,21 @@ p, ul, li {
     column-span: span 2;
 }
 
+.real-time-mtop {
+    padding-top: 60px;
+}
+a.link {
+    color: var(--amethyst);
+    font-weight: 800;
+}
+
+.video-text {
+    padding-bottom: 40px;
+}
 .tour {
-    /* width: 320px;
-    height: 540px; */
-    width: 375px;
     height: 812px;
     background-color: var(--black);
     width: 1000px;
+    padding: 40px 0px 40px 0px;
 }
+
