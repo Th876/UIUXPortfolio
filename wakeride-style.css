@@ -340,9 +340,16 @@ p, ul, li {
 }
 
 .heading {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 25px;
     color: var(--navy);
+}
+
+.sub-heading {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: var(--noir);
 }
 
 .iso1 {
@@ -372,6 +379,7 @@ p, ul, li {
 .center {
     place-items: center;
 }
+
 .left {
     margin-left: -818px;
 }
@@ -381,9 +389,10 @@ p, ul, li {
     visibility: hidden;
 }
 
-.mtop {
-    margin-top: 60px;
+.app-features {
+    margin-top: 65px;
 }
+
 /* User personas */
 
 .personas {
@@ -393,6 +402,7 @@ p, ul, li {
 .line-height-research {
     margin-bottom: 30px;
 }
+
 .position {
     position: relative;
 }
@@ -409,11 +419,12 @@ p, ul, li {
 }
 
 .flow {
+    /* width: 300px; */
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
     margin-top: 30px;
 }
 
@@ -422,19 +433,37 @@ p, ul, li {
     height: 812px;
 }
 
-.padding-bottom {
-    padding-bottom: 200px;
-}
 .lo-fi-wireframe {
-    margin-left: -705px;
+    /* margin-left: -705px; */
 }
 
-.low-fi {
-    width: 1100px;
+.lo-fi {
+    width: 500px;
+    /* margin-top: 30px; */
 }
 
-.style-guide {
+.lo-fi-title {
+    padding-bottom: 50px;
+}
+/* .style-guide {
     margin-right: 925px;
+} */
+
+.hi-fi {
+    max-width: 100%;
+}
+
+.hi-fi h4 {
+    text-align: left;
+}
+
+.style-guide-margin {
+    margin-top: 150px;
+}
+
+.style {
+    max-width: 100%;
+    column-span: span 2;
 }
 
 .tour {
