@@ -18,6 +18,7 @@
      --navy: #184A7C; 
      --tangerine: #FF7D01;
      --peach: #fae2e2;
+     --amethyst: #C490CE;
      --deep-purple: #301934;
     /* Light mode color*/
      background-color: var(--milk);
@@ -249,6 +250,23 @@ p, ul, li {
     }
 }
 /* Table of Content */
+#revealButton {
+    z-index: 3;
+    position: fixed;
+    top: 190px;
+    left: -10px;
+    font-family: "Lato";
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    margin-top: -5px;
+    border-radius: 5px;
+    border: 2px solid var(--snow);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: var(--amethyst);
+    color: var(--milk);
+    cursor: pointer !important;
+}
+
 #sticky-tab {
     position: fixed;
     top: 50%;
@@ -275,12 +293,6 @@ p, ul, li {
     cursor: pointer !important;
 }
 
-/* .tab {
-    padding: 20px;
-    margin: 40px 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
 /* Projects section */
  #projects h2 {
      padding: 30px 0px 50px 0px;
@@ -484,8 +496,6 @@ figure .absolute {
      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
      backdrop-filter: blur(5px);
 }
-
-/* Cake Wrecks UX Case Study */
 
 /* Hero */
 .hero-cakewrecks {
@@ -778,8 +788,4 @@ q {
 
 .dark-mode-theme #final h3 {
     color: var(--snow);
-}
-/* WakeRide */
-.capitalize {
-    text-transform: capitalize;
 }

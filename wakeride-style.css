@@ -160,70 +160,6 @@ p, ul, li {
      border-left: 1px solid rgba(255, 255, 255, 0.5);
      backdrop-filter: blur(5px);
 }
- 
-/* Table of Content */
-/* #sticky-tab {
-    position: fixed;
-    top: 70%;
-    left: -10px;
-    transform: translateY(-50%);
-    background-color: var(--lavender);
-    padding: 10px;
-    z-index: 2; */
-    /* border: solid 1px #000; */
-    /* box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    color: var(--milk);
-    
-    border-radius: 5px;
-    z-index: 1000; */
-/* } */
-
-/* #sticky-tab a {
-    display: block;
-    color: var(--milk);
-    text-decoration: none;
-    margin-bottom: 10px;
-    padding: 5px;
-    transition: background-color 0.3s ease;
-}
-
-#sticky-tab a:hover {
-    color: var(--deep-purple);
-    cursor: pointer !important;
-} */
-
-/* #sticky-tab { */
-    /* position: fixed; */
-    /* Fits different on deployed site from local host */
-    /* top: 850px;
-    left: 10px;
-    transform: translateY(-50%);
-    background-color: var(--lavender);
-    color: var(--milk);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1000;
-    width: 100px;
-} */
-
-/* #sticky-tab a {
-    display: block;
-    color: var(--milk);
-    text-decoration: none;
-    margin-bottom: 10px;
-    padding: 5px;
-    transition: background-color 0.3s ease;
-}
-
-#sticky-tab a:hover {
-    color: var(--deep-purple);
-    cursor: pointer !important;
-} */
 
 #revealButton {
     z-index: 3;
@@ -301,8 +237,6 @@ p, ul, li {
      backdrop-filter: blur(5px);
 }
 
-/* Wake Ride UX Case Study */
-
 /* Hero */
 .hero-wakeride {
     display: grid;
@@ -332,9 +266,6 @@ p, ul, li {
 
 .dark-mode-theme .text-left h2 {
     color: var(--snow);
-}
-.text-right {
-    margin-top: 90px;
 }
 
 .col-4 {
@@ -411,7 +342,6 @@ p, ul, li {
 }
 
 .column {
-    /* background-color: #ddd; */
     padding: 20px;
 }
 
@@ -500,14 +430,12 @@ p, ul, li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* margin: 0 auto; */
 }
 .center {
     text-align: center;
 }
 
 .flow {
-    /* width: 300px; */
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -524,14 +452,8 @@ p, ul, li {
 .dsgn-title {
     margin-bottom: -40px;
 }
-
-.lo-fi-wireframe {
-    /* margin-left: -705px; */
-}
-
 .lo-fi {
     width: 500px;
-    /* margin-top: 30px; */
 }
 
 .lo-fi-title {
