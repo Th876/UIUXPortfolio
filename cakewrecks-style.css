@@ -269,8 +269,8 @@ p, ul, li {
 
 #sticky-tab {
     position: fixed;
-    top: 50%;
-    left: 10px;
+    top: 75%;
+    left: -10px;
     transform: translateY(-50%);
     background-color: var(--lavender);
     color: var(--milk);
