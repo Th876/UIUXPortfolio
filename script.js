@@ -70,14 +70,14 @@ $(function() {
         }, "slow");
     })
 });
-// jQuery Slideshow plugin
-$(function() {
-    $('.multiple-items').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2
-    });
-});
+// // jQuery Slideshow plugin
+// $(function() {
+//     $('.multiple-items').slick({
+//         infinite: true,
+//         slidesToShow: 2,
+//         slidesToScroll: 2
+//     });
+// });
 // Set dark mode button, body and logo
 const darkModeBtn = document.getElementById("dark-mode-btn");
 const logoSwitch = document.getElementById("logo-switch");
