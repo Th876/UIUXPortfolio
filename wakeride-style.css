@@ -145,6 +145,10 @@ p, ul, li {
      color: var(--snow);
      margin-right: 30px;
 }
+
+.dark-mode-theme .heading, .dark-mode-theme .sub-heading{
+    color: var(--snow);
+}
 /* Main section */
  main, footer {
      cursor: default;
