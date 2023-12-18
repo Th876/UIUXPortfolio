@@ -549,6 +549,7 @@ figure .absolute {
 .col-4 ul li {
     margin-left: -8px;
 }
+
 /* Overview */
 #overview {
     display: grid;
@@ -576,6 +577,21 @@ figure .absolute {
     color: var(--navy);
 }
 
+/* Constraints list */
+.no-col ul {
+        display: inline-block;
+    }
+    
+.no-col ul li {
+        list-style-type: disc;
+        margin-left: 60px;
+    }
+
+.constraints-heading {
+    font-weight: bold;
+    margin-top: 17px;
+    }
+
 .dark-mode-theme #overview .text-left h3 {
     color: var(--snow);
 }
@@ -587,6 +603,10 @@ figure .absolute {
 
 .margin-bottom {
     margin-top: 50px;
+}
+
+.lower {
+    padding-top: 20px;
 }
 
 .video-container {
