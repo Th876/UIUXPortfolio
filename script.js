@@ -94,7 +94,7 @@ const enableDarkMode = () => {
     // Set dark mode logo
     darkModeBtn.classList.remove("dark-mode-toggle");
     // Set button text to light mode when in dark mode
-    darkModeBtn.innerText = "Light Mode";
+    darkModeBtn.innerText = "light mode";
     // Switch logo to dark mode logo
     logoSwitch.src = "images/unicorn-darkmode.png";
     //Switch black down arrow to white down arrow
@@ -115,7 +115,7 @@ const disableDarkMode = () => {
     // Set button margin for lightmode toggle
     darkModeBtn.style.marginRight = "30px";
     // Set button text to light mode when in dark mode
-    darkModeBtn.innerText = "Dark Mode";
+    darkModeBtn.innerText = "dark mode";
     // Switch logo to light mode logo
     logoSwitch.src = "images/unicorn-lightmode.png";
     //Switch white down arrow to black down arrow

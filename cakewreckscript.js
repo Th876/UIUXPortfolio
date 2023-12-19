@@ -30,10 +30,10 @@ document.getElementById('revealButtonCakeWrecks').addEventListener('click', func
 // Set dark mode button, body and logo
 const darkModeBtn = document.getElementById("dark-mode-btn");
 const logoSwitch = document.getElementById("logo-switch");
-const arrowSwitch = document.getElementById("arrow-switch");
+// const arrowSwitch = document.getElementById("arrow-switch");
 //Select :root to apply dark feature
 const darkFeature = document.querySelector(":root");
-const wheelSwitch = document.getElementById("fun-facts-lightmode");
+// const wheelSwitch = document.getElementById("fun-facts-lightmode");
 let darkMode = localStorage.getItem("dark-mode");
 //Function for dark mode
 const enableDarkMode = () => {
@@ -41,11 +41,11 @@ const enableDarkMode = () => {
     // Set dark mode logo
     darkModeBtn.classList.remove("dark-mode-toggle");
     // Set button text to light mode when in dark mode
-    darkModeBtn.innerText = "Light Mode";
+    darkModeBtn.innerText = "light mode";
     // Switch logo to dark mode logo
     logoSwitch.src = "images/unicorn-darkmode.png";
     //Switch black down arrow to white down arrow
-    arrowSwitch.src = "images/white-down-arrow.png";
+    // arrowSwitch.src = "images/white-down-arrow.png";
     //Change highlighted text color
     const highlight = document.querySelector(".highlight");
     highlight.style.backgroundColor = "var(--cottoncandy)";
@@ -62,11 +62,11 @@ const disableDarkMode = () => {
     // Set button margin for lightmode toggle
     darkModeBtn.style.marginRight = "30px";
     // Set button text to light mode when in dark mode
-    darkModeBtn.innerText = "Dark Mode";
+    darkModeBtn.innerText = "dark mode";
     // Switch logo to light mode logo
     logoSwitch.src = "images/unicorn-lightmode.png";
     //Switch white down arrow to black down arrow
-    arrowSwitch.src = "images/blk-down-arrow.png";
+    // arrowSwitch.src = "images/blk-down-arrow.png";
     //Change highlighted text color
     const highlight = document.querySelector(".highlight");
     highlight.style.backgroundColor = "var(--highlight)";
