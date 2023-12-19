@@ -165,7 +165,7 @@ p, ul, li {
      backdrop-filter: blur(5px);
 }
 
-#revealButton {
+#revealButtonWakeRide {
     z-index: 3;
     position: fixed;
     top: 190px;
@@ -207,7 +207,7 @@ p, ul, li {
     cursor: pointer !important;
 }
   
- #back-to-top {
+ #back-to-top-wr {
      display: none;
      position: fixed;
      z-index: 1;
@@ -223,7 +223,7 @@ p, ul, li {
      color: var(--snow);
      cursor: pointer;
 }
- #back-to-top:hover {
+ #back-to-top-wr:hover {
      opacity: 0.8;
 }
 /* Footer */
