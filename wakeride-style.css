@@ -460,11 +460,13 @@ p, ul, li {
 }
 .lo-fi {
     width: 500px;
+    margin-left: 50px;
 }
 
 .lo-fi-title {
     margin-top: 115px;
     padding-bottom: 30px;
+    margin-left: 50px;
 }
 
 .hi-fi {
