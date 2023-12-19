@@ -250,7 +250,7 @@ p, ul, li {
     }
 }
 /* Table of Content */
-#revealButton {
+#revealButtonCakeWrecks {
     z-index: 3;
     position: fixed;
     top: 190px;
@@ -267,7 +267,7 @@ p, ul, li {
     cursor: pointer !important;
 }
 
-#sticky-tab {
+#sticky-tab-cake {
     position: fixed;
     top: 60%;
     left: -10px;
@@ -279,7 +279,7 @@ p, ul, li {
     z-index: 1000;
 }
 
-#sticky-tab a {
+#sticky-tab-cake a {
     display: block;
     color: var(--milk);
     text-decoration: none;
@@ -288,7 +288,7 @@ p, ul, li {
     transition: background-color 0.3s ease;
 }
 
-#sticky-tab a:hover {
+#sticky-tab-cake a:hover {
     color: var(--deep-purple);
     cursor: pointer !important;
 }

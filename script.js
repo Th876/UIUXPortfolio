@@ -1,6 +1,7 @@
 "use strict";
 // jQuery code
 // Set tooltip to slide down, track and customize appearance
+
 $(function() {
     $("#tooltip").tooltip({
         show: {
@@ -157,4 +158,7 @@ document.getElementById('revealButton').addEventListener('click', function() {
     stickyTab.style.display = (stickyTab.style.display === 'none' || stickyTab.style.display === '') ? 'block' : 'none';
   });
   
+
+
+
 
