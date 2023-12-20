@@ -35,8 +35,11 @@ const logoSwitch = document.getElementById("logo-switch");
 const darkFeature = document.querySelector(":root");
 // const wheelSwitch = document.getElementById("fun-facts-lightmode");
 let darkMode = localStorage.getItem("dark-mode");
+
 //Function for dark mode
 const enableDarkMode = () => {
+  // Debugging
+  console.log("Enabling dark mode...");
     darkFeature.classList.add("dark-mode-theme");
     // Set dark mode logo
     darkModeBtn.classList.remove("dark-mode-toggle");
@@ -44,19 +47,14 @@ const enableDarkMode = () => {
     darkModeBtn.innerText = "light mode";
     // Switch logo to dark mode logo
     logoSwitch.src = "images/unicorn-darkmode.png";
-    //Switch black down arrow to white down arrow
-    // arrowSwitch.src = "images/white-down-arrow.png";
-    //Change highlighted text color
-    const highlight = document.querySelector(".highlight");
-    highlight.style.backgroundColor = "var(--cottoncandy)";
-    // Change fun facts wheel to dark mode view
-    wheelSwitch.src = "images/fun-facts-darkmode.png";
     // Change data-mode attribute to dark
     darkModeBtn.dataset.mode = "dark";
     localStorage.setItem("dark-mode", "enabled");
 }
 //Function for light mode
 const disableDarkMode = () => {
+  // Debugging
+  console.log("Disabling dark mode...");
     darkFeature.classList.remove("dark-mode-theme");
     darkModeBtn.classList.remove("dark-mode-toggle");
     // Set button margin for lightmode toggle
@@ -65,16 +63,11 @@ const disableDarkMode = () => {
     darkModeBtn.innerText = "dark mode";
     // Switch logo to light mode logo
     logoSwitch.src = "images/unicorn-lightmode.png";
-    //Switch white down arrow to black down arrow
-    // arrowSwitch.src = "images/blk-down-arrow.png";
-    //Change highlighted text color
-    const highlight = document.querySelector(".highlight");
-    highlight.style.backgroundColor = "var(--highlight)";
-    // Change fun facts wheel to light mode view
-    wheelSwitch.src = "images/fun-facts-lightmode.png";
     // Change data-mode attribute to dark
     darkModeBtn.dataset.mode = "light";
     localStorage.setItem("dark-mode", "disabled");
+    console.log("Initial dark mode state:", darkMode);
+
 }
 // Set dark mode when page loads
 if (darkMode === "enabled") {
