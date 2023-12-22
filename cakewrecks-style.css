@@ -5,6 +5,7 @@
      --noir: #2d2d2d;
      --snow: #ffffff;
      --milk: #F3EEEE;
+     --link: #20389D;
      --gray: #a3a3a3;
      --midnight: #1F203E;
      --aquamarine: #7FFFD4;
@@ -675,6 +676,16 @@ figure .absolute {
     text-align: center;
     margin-top: 10px;
 }
+
+/* Original website link */
+.dark-mode-theme .website-link {
+    color: var(--snow);
+}
+
+.website-link {
+    color: var(--link);
+}
+
 
 /* Problem of Statement */
 
