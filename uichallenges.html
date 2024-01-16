@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tahaylia Higgins">
+    <meta name="description" content="Welcome! This is a space where I dive into mini design projects to sharpen my UI/UX skills.">
+    <meta name="keywords" content="UI/UX, user interface design, user experience, ui challenges, 100 days of ui challenges, ux portfolio, mobile app design, website design, embedded devices design">
+    <title>100 Days of UI Challenges</title>
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="uichallenges-style.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+   <!-- JS -->
+    <script async src="uichallenges.js"></script>
+</head>
+
+<body>
+    <!--Navbar w/logo: Home, Projects, About, Contacts & dark mode button-->
+    <header>
+        <nav>
+            <!--Desktop nav menu-->
+            <div class="logo"> <img src="images/unicorn-lightmode.png" alt="Tahaylia Higgins UI/UX portfolio unicorn logo" class="unicorn" id="logo-switch"> </div>
+            <div class="menu-tabs">
+                <ul>
+                    <li><a href="./index.html" class="nav-text">home</a></li>
+                    <li><a href="./index.html#projects" class="nav-text">projects</a></li>
+                    <li><a href="./index.html#about" class="nav-text">about</a></li>
+                    <li><a href="./index.html#contact" class="nav-text">contact</a></li>
+                </ul>
+                <!--Web Storage (Dark Mode)-->
+                <!-- Set button's initial data mode to light and text to dark mode --> <button id="dark-mode-btn" class="dark-mode-toggle" data-mode="light">dark mode</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Table of Content-->
+        <button id="revealButtonUIChallenges">Quick Links</button>
+        <div id="sticky-tab">
+            <a href="#signup">Sign-Up Page</a>
+            <!-- <a href="#problem">Problem</a>
+            <a href="#market">Competitive Analysis</a>
+            <a href="#user-research">User Research Insights</a>
+            <a href="#personas">User Personas</a>
+            <a href="#solution-app">Solution: App Features</a>
+            <a href="#solution-design">Solution: Design</a>
+            <a href="#user-flow">User Flow</a>
+            <a href="#lo-fi">Low Fidelity Wireframe</a>
+            <a href="#style-guide">Style Guide</a>
+            <a href="#hi-fi">High Fidelity Wireframe</a>
+            <a href="#interactive">Interactive Prototype</a> -->
+        </div>
+        <section class="hero-wakeride">
+                <div class="text-heading">
+                    <h1>100 Days</h1>
+                    <h2>UI Challenges</h2>
+                </div>
+                <div class="text-right">
+                    <p class="line-height-research">Welcome! This is a space where I dive into mini design projects sourced from<a href="https://www.dailyui.co/" class="link" target="_blank">dailyui.co</a>to sharpen my UI/UX skills. What makes these challenges unique is my end to end involvement—I not only design but also code!</p> 
+                    <p>I will take you through my entire design process, i.e, ideation, wireframes, interactive prototypes, and code!  Join me on this awesome journey, where each challenge propels me towards mastering the art of UI/UX design.
+                    </p>
+                    
+            </section>
+
+            <section class="container" id="signup">
+                 <!-- Prompt #001-->
+                <div class="row">
+                    <div class="column">
+                        <h3 class="heading">1. Sign-up</h3>
+                        <p class="line-height-research">"Create a sign up page, modal, form, or app screen related to signing up for something. It could be for a volunteer event, contest registration, a giveaway, or anything you can image," Daily UI</p>
+                        <p class="line-height-research">I created a signup page for Green Collective (GC), a fictitious organization that is hosting a volunteer event called 'ECOnnect'. The organization's goal is to raise awareness for sustainable energy practices.</p>
+
+                        <p>Design Toolkit: Figma & React.js</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/UIChallenges/sign-up/mock-up.png" alt="Images of Green Collective sign up pages on laptop and mobile screens." class="mockup">
+                    </div>
+                </div>
+                 <!-- Problem -->
+                <div class="row" id="problem">
+                    <div class="column">
+                        <h4 class="sub-heading">Design choices</h4>
+                     
+                        <p class="line-height-research">•<strong>Responsive Design:</strong> I designed for both mobile and desktop to ensure there is usability and consistency regardless of the device used for signup.</p>
+
+                        <p class="line-height-research">•<strong>Company Logo:</strong> I ensured that the company’s logo was present on the signup page to establish brand identity and foster trust among users.</p>
+                        
+                        <p class="line-height-research">•<strong>Simple Short Form:</strong> Since a long, sign-up form can be time-consuming, create more opportunities for confusion, and overall dissuade users from signing up, I decided to create a simple form so users are able to quickly and comfortably sign up.</p>
+                        
+                        <p class="line-height-research">•<strong>Input Field (Focus):</strong> This indicates to users which field is currently active and ready for their input. This also helps to prevent confusion and error entries.</p>
+                        
+                        <p class="line-height-research">•<strong>Password Eye Icon:</strong> Masking the user’s password by default enhances trust in the website, and offering the option to toggle between show and hide provides users with greater autonomy.</p>
+                        
+                        <p class="line-height-research">•<strong>Instant Validation:</strong> Providing users with instant feedback validation in the input fields as they enter information provides guidance for accurate data entry.</p>
+                        
+                        <p class="line-height-research">•<strong>Button:</strong> I designed the button to be inactive on page load so that users are aware that each text field must be accurately filled so that the ‘register’ button can be active.</p>
+                        
+                        <p class="line-height-research">•<strong>Sign In vs Sign Up:</strong> I opted for the word ‘register’, instead of sign in or sign up since the words are so similar and can easily confuse users.</p>
+                        
+                        <p class="line-height-research">•<strong>Login Option on Sign Up Form:</strong> Adding a login button on the sign-up page provides a direct and convenient way for already registered users to access their accounts, enhancing user satisfaction.</p>
+                        
+                        <p class="line-height-research">•<strong>Single Sign-On (SSO) Technology:</strong> Allowing users to sign up using an alternative account provides an even faster sign up process as users do not need an additional password. I decided to use Google as it is among the most popular social sign-on sites.</p>
+                        
+                        <p class="line-height-research">•<strong>Checkbox - Join Green Collective (GC) Community:</strong> By incorporating a checkbox in the registration form, I prioritize transparency and user autonomy while also offering the company an opportunity to convert potential new members. This approach ensures a balanced design that aligns with both company goals and user-centered principles.</p>
+                        
+                        <p class="line-height-research">•<strong>Animation:</strong> The light bulb animation, which allows users to directly turn the switch on or off, was designed to not only capture users' attention but also to symbolize that everyone can actively contribute to a more sustainable way of living; and choosing to participate in this voluntary event is a step towards transforming and improving our world.</p>     
+                        
+                        <p class="line-height-research">•<strong>Email Verification Page:</strong> After users click the sign up button, I wanted to communicate to them that the company values data security. It was, therefore, important that I create an email verification page that notifies users about a verification link that is sent to their emails to ensure they provided an accurate email address and prevent erroneous registrations. Also, a resend email link option is included for user convenience, since delivery issues could arise.</p>  
+                    </div>
+                    <div class="column">
+                        <img src="./images/UIChallenges/sign-up/desktop-photos.png" alt="Desktop wireframes for Green Collective Sign up page." class="wireframes">
+
+
+                        <img src="./images/UIChallenges/sign-up/mobile-photos.png" alt="Mobile wireframes for Green Collective Sign up page" class="wireframes mobile-margin-btm">
+
+                         <img src="./images/UIChallenges/sign-up/graphics.png" alt="Desktop wireframes for Green Collective Sign up page." class="wireframe">
+                        
+                         
+                    </div>
+                </div>
+
+               <!-- Challenges -->
+                <div class="row" id="user-research">
+                    <div class="column">
+                        <h4 class="sub-heading">Challenges</h4>
+                        <p class="line-height-research">A notable challenge for me was finding the balance between simplicity and informativeness. However, having read articles that provided detailed information on creating a user-friendly sign-up form, it became clearer to me that a concise form was important for quick user engagement. I, therefore, made sure that only the necessary input fields were included.</p>
+                        <p>Additionally, the password eye icon and validation were more challenging than I had anticipated. While I wrote a rough draft of my plan, being in the midst of creating the components made me realize that some input fields required more variations and interactions to properly implement my design concept. For example, I wanted users to have the option to see the error they made, while having a guide that could help them input valid data. I also needed the guide to be visible only when needed. I realized this required 8 variations, careful selection of interactions and timing. 
+                        </p>           
+                    </div>
+                    <div class="column position">
+                       
+                    </div>
+                </div>
+                <!-- Lessons Learned -->
+                <div class="row" id="user-research">
+                    <div class="column">
+                        <h4 class="sub-heading">Lessons Learned</h4>
+                        <p class="line-height-research">One of the features I was eager to use was the boolean variable feature. However, I was ‘knee-deep’ in my design process when I realized that the free version of Figma would not allow me to use it. While this initially seemed like a setback, I was determined to find alternate ways to achieve my goal.</p>
+                        <p class="line-height-research">I realized that this limitation could work in my favor, and started to think about boolean variables through the ‘lens’ of JavaScript (JS). My ‘property value=on’ in Figma would be the ‘true’ value in JS, and my ‘property value=off’ would be the ‘false’ value in JS. Now, if the user were to click the ‘on’ switch, the lightbulb's state would be true and, therefore, turned ‘on’—this would also apply to turning it off.</p>
+                        <p>Also, since I wanted the switch to be more cohesive with the sign-up page's design, I initialized the bulb's state to 'true' by making the off switch/off bulb a variant of the on switch/on bulb. This setback showed me that if you’re determined enough, there is always a workaround, and often, a creative design solution waiting to be discovered. 
+                        </p>           
+                    </div>
+                    <div class="column position">
+                        <img src="./images/wakeride/wakeride-notification.gif" alt="Interactive design of a mobile phone watching a YouTube video that pauses automatically upon receiving a notification about the user's trip tracking from the WakeRide mobile app" class="notification"> 
+                        <p class="caption">Background functionality feature</p>
+                    </div>
+                </div>
+               <!-- Future improvements -->
+                <div class="row" id="personas">
+                    <div class="column">
+                        <h4 class="sub-heading">Future improvements</h4>
+                        <p> I aim to create dedicated pages for each of the three single sign-on (SSO) technologies. This strategic enhancement will cater to users' preferences and ensure a smoother and more personalized sign-up process.
+                        </p>    
+                    </div>
+                </div>
+                <div class="row single-column center">
+                    <div class="column">
+                        <img src="./images/wakeride/User_Persona_Commuter_Chris.png" alt="Image of a user persona for the WakeRide mobile train app UX case study" class="personas chris">    
+                    </div>
+                </div>
+                <!-- Solution: App Features -->
+                <div class="row" id="solution-app">
+                    <div class="column">
+                        <h3 class="heading">Desktop Final Design</h3>
+                        <p class="line-height-research">•<strong>Station Tracking:</strong>The app tracks the train's location in real time. 
+                        </p>
+                        <p class="line-height-research">•<strong>Customizable Alerts:</strong>Users can set their alert preferences, such as how many minutes before their station they want to be notified.</p>          
+                    </div>
+                    <div class="column position">
+                        <p class="line-height-research app-features">•<strong>Wake-Up Methods:</strong>The app offers two types of wake-up methods: vibration and sound from their phone's library.</p> 
+                        <p class="line-height-research">•<strong>Opt-In features, WakeBuddy:</strong>Allow friends to track the user’s journey in real-time and ensure they've gotten off at the right stop. Users also have full control over how long they share their location.</p>   
+                    </div>
+                </div>
+                <!--Solution: Design -->
+                <div class="row">
+                    <div class="column" id="user-flow">
+                        <h3 class="heading dsgn-title" id="solution-design">Solution: Design</h3> 
+                        <h4 class="sub-heading">User Flow</h4>
+                        <img src="./images/wakeride/WakeRide_User_Flow_Diagram.png" alt="Image of user flow diagram for WakeRide mobile train app" class="flow">      
+                    </div>
+                    <div class="column" id="lo-fi">
+                        <h4 class="sub-heading lo-fi-title">Low-Fidelity Wireframe</h4>
+                        <img src="./images/wakeride/lo-fi-wireframe.png" alt="Image of low-fidelity wireframe for WakeRide mobile train app" class="lo-fi"> 
+                    </div>
+                </div>
+
+                <!--Style Guide Information-->
+                <div class="row">
+                    <div class="column padding-bottom" id="style-guide">
+                        <h4 class="sub-heading">Style Guide</h4>
+                        <p class="line-height-research">•<strong>Background color:</strong>I chose a balanced combination of neutral tones for the background (#F0F0F3 and #EEEEEE) allowing for clarity and readability. Headings (#455B74) and body text (#242E33 with 85% opacity) were used to provide a touch of sophistication.
+                        </p>
+                        <p class="line-height-research">•<strong>Accent color:</strong>I used #11D6FB, a light shade of blue, since blue tones generally convey a sense of calmness, trustworthiness, and reliability. These qualities align well with the goal of ensuring an stress-free journey, making users feel secure and at ease while using the app.</p>  
+                    </div>
+                    <div class="column position">
+                        <p class="line-height-research style-guide-margin">•<strong>Additional accent colors:</strong>A gradient color designed with #B962EC (medium-purple), #C490CE (Amethyst), and #F68DAB (pink) were strategically integrated to add vibrancy and foster a visually engaging experience.
+                        </p>
+                        <p class="line-height-research">•<strong>Neumorphism Style:</strong>My choice of UI design style is neumorphism because it delivers a tactile and intuitive experience. Also, the soft shadows and subtle highlights not only add a sense of realism and responsiveness but also enhance user engagement.</p>  
+                    </div>
+                </div>
+                <!-- Style Guide Photo -->
+                 <div class="row single-column center">
+                    <div class="column">
+                        <img src="./images/wakeride/style-guide.png" alt="Image of style guide for sign up page" class="style">    
+                    </div>
+                </div>
+                 <!-- Hi-Fi Wireframe -->
+                 <div class="row single-column" id="hi-fi">
+                    <div class="column">
+                        <h4 class="sub-heading-hifi">High-Fidelity Wireframe (light/dark mode)</h4>
+                        <img src="./images/wakeride/high-fidelity.png" alt="High-fidelity wireframe of WakeRide mobile train app" class="hi-fi">    
+                        <p class="center">For screens with dark mode feature, the right half depicts dark mode 
+                        </p>
+                    </div>
+                </div>
+
+                 <!-- Additional Solution: Design  -->
+                 <div class="row">
+                    <div class="column">
+                        <!-- <h4 class="sub-heading">User Research Insights</h4> -->
+                        <p class="line-height-research">•<strong>Onboarding:</strong> The onboarding process elucidates WakeRide's purpose and core features—Set Reminder, WakeBuddy, Track Your Journey—guiding users seamlessly through the app's functionality.</p>
+
+                        <p class="line-height-research">•<strong>Diverse Login Options:</strong> The three login methods—passwordless (fingerprint), social media and regular login were chosen for inclusivity and user preferences. The default 'remember me' setting optimizes user convenience, streamlining the login process.</p>
+
+                        <p class="line-height-research">•<strong>Error Pages and Friendly Communication:</strong>Introducing informative error pages, like the "503 Service Unavailable," communicates transparency and reliability to users during occasional glitches, ensuring they stay informed and patient. Equally important is displaying error messages in a positive tone to minimize user frustration during unexpected situations, and assure them that the issues are being addressed.</p> 
+
+                        <p class="line-height-research">•<strong>Bottom Navigation:</strong>Employing a bottom navigation approach enhances accessibility, allowing users to navigate seamlessly with one hand, optimizing the mobile experience.</p>
+
+                        <p class="line-height-research">•<strong>'More' Button on Trip Tracking Screen:</strong>The ‘more' button on the Trip Tracking screen was designed as a two-step process for a layer of caution to prevent accidental interactions, like canceling or pausing journeys. 
+                        </p> 
+
+                        <p class="line-height-research">•<strong>Dark Mode:</strong>Incorporating dark mode because it enhances user accessibility by reducing eye strain and improving readability. It also aligns with current design trends, catering to diverse user preferences for a more inclusive and adaptable user interface. 
+                        </p> 
+                    </div>
+                    <div class="column position">
+                        <img src="./images/wakeride/login.gif" alt="GIF image of login options available for WakeRide mobile train app" class="logins">
+
+
+                        <p class="line-height-research real-time-mtop">•<strong>Real-time Tracker:</strong>Prototyping a real-time tracker visually maps the user's journey, and addresses the core problem statement by allowing fatigued users, prone to missing stops, to actively witness their progress. This, along with the location-based alarm, provides constant reassurance, addressing the core problem statement by significantly reducing the likelihood of oversleeping.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <!-- Interactive Prototype -->
+                 <div class="row single-column" id="interactive">
+                    <div class="column black">
+                        <h3 class="heading lo-fi-wireframe">Interactive Prototype</h3>
+                        <p class="video-text">This video tour displays the interactivity I implemented<br> into my high-fidelity wireframe. Alternatively, you can<br>explore the<a href="https://www.figma.com/proto/7ih2OJgSn2G753cby4UUNJ/WakeBuddy-Hi-Fi-Wireframe?page-id=0%3A1&type=design&node-id=134-12156&viewport=671%2C-244%2C0.21&t=8GUZ530kb4fIClLF-1&scaling=scale-down&starting-point-node-id=134%3A11913&mode=design" target="_blank" class="link">live prototype</a><strong><br>Note:</strong>The video presentation is intentionally sped up<br>for time efficiency.</p>
+                
+                        <video autoplay loop muted playsinline class="tour center">
+                            <source src="video/wakeride-vid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+        <!--Back to top button--> <button id="back-to-top-wr">▲</button>
+    </main>
+    <footer> <small>Copyright &copy;2023, Developed &amp; Designed by Tahaylia Higgins. All Rights Reserved. </small> </footer>
+</body>
+</html>

@@ -1,0 +1,544 @@
+/*Import Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/*Custom colors*/
+ :root {
+     --noir: #2d2d2d;
+     --snow: #ffffff;
+     --milk: #F3EEEE;
+     --gray: #a3a3a3;
+     --midnight: #1F203E;
+     --aquamarine: #7FFFD4;
+     --cottoncandy: #FB6EB5;
+     --mulberry: #DD87CB;
+     --pink: #ffc0cb;
+     --highlight: #A0FFF0;
+     --magenta: #dc86cb;
+     --lavender: #948CB2;
+     --barbie: #FE5392;
+     --deep-green: #1F6154; 
+     --tangerine: #FF7D01;
+     --peach: #fae2e2;
+     --black: #000000;
+     --amethyst: #C490CE;
+     --deep-purple: #301934;
+    /* Light mode color*/
+     background-color: var(--milk);
+}
+ * {
+     margin: 0px 10px;
+}
+ html, body {
+     max-width: 1280px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
+     font-size: 1.125rem;
+     font-family: "Lato";
+}
+p, ul, li {
+    line-height: 2;
+}
+/* Navigation*/
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 10px;
+    /* Glassmorphism */
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     background: rgba(255, 255, 255, 0.2);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(5px);
+}
+ .unicorn {
+     margin: 0px 0px -6px 0px;
+     width: 100px;
+     margin-left: 50px;
+}
+ .menu-tabs {
+     display: flex;
+     justify-content: flex-end;
+     font-family: "Lato";
+     font-weight: 300;
+}
+ .menu-tabs a {
+     text-decoration: none;
+     position: relative;
+}
+ ul {
+     display: flex;
+     margin-right: 210px;
+     list-style: none;
+     gap: 20px;
+     margin: 0;
+     padding: 0;
+}
+ ul li {
+     margin: 0;
+     padding: 0;
+}
+ ul a {
+     text-decoration: none;
+     color: var(--noir);
+}
+/* Set underline */
+ .menu-tabs a::after {
+     content: "";
+     position: absolute;
+     width: 0;
+     height: 3px;
+     bottom: -9px;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: var(--barbie);
+     transition: 0.3s;
+}
+ .menu-tabs a:hover::after{
+     width: 100%;
+}
+ .dark-mode-theme .menu-tabs a::after {
+     background-color: var(--highlight);
+}
+/* Dark mode | Light mode button */
+ #dark-mode-btn {
+     font-family: "Lato";
+     padding: 0.35rem;
+     font-size: 0.85rem;
+     margin-top: -5px;
+     border-radius: 5px;
+     border: 2px solid var(--snow);
+     transition: box-shadow 0.3s ease-in-out;
+}
+/* Dark mode | Light mode button on hover*/
+ #dark-mode-btn:hover {
+     cursor: pointer;
+     opacity: 0.8;
+     box-shadow: 0 0 5px var(--barbie), 0 0 5px var(--barbie);
+}
+ .dark-mode-theme #dark-mode-btn:hover {
+     box-shadow: 0 0 5px var(--highlight), 0 0 5px var(--highlight);
+}
+/* Initial button margin for page load */
+ .dark-mode-toggle {
+     margin-right: 30px;
+}
+/* Length of dark mode theme */
+ #dark-feature {
+     width: 100%;
+     height: 100%;
+}
+/* Set body and text color for dark mode */
+ .dark-mode-theme {
+     background-color: var(--midnight);
+     color: var(--snow);
+}
+/* Set navbar text for dark mode */
+ .dark-mode-theme .nav-text {
+     color: var(--snow);
+}
+/* Set dark mode button color and margin for dark mode */
+ .dark-mode-theme #dark-mode-btn {
+     background-color: var(--midnight);
+     color: var(--snow);
+     margin-right: 30px;
+}
+
+.dark-mode-theme .heading, .dark-mode-theme .sub-heading,.dark-mode-theme .sub-heading-hifi{
+    color: var(--snow);
+}
+/* Main section */
+ main, footer {
+     cursor: default;
+}
+ section {
+     margin-bottom: 20px;
+     padding: 40px;
+    /* Glassmorphism */
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 5px;
+     background: rgba(255, 255, 255, 0.1);
+     border-top: 1px solid rgba(255, 255, 255, 0.5);
+     border-left: 1px solid rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(5px);
+}
+
+#revealButtonUIChallenges {
+    z-index: 3;
+    position: fixed;
+    top: 190px;
+    left: -10px;
+    font-family: "Lato";
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    margin-top: -5px;
+    border-radius: 5px;
+    border: 2px solid var(--snow);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: var(--amethyst);
+    color: var(--milk);
+    cursor: pointer !important;
+}
+
+#sticky-tab {
+    display: none;
+    position: fixed;
+    top: 650px;
+    left: -10px;
+    transform: translateY(-80%);
+    background-color: var(--lavender);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 3;
+    width: 245px;
+  }
+  
+  #sticky-tab a {
+    display: block;
+    text-decoration: none;
+    color: var(--milk);
+    margin-bottom: 10px;
+  }
+
+  #sticky-tab a:hover {
+    color: var(--deep-purple);
+    cursor: pointer !important;
+}
+  
+ #back-to-top-wr {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     font-family: "Francois One";
+     font-size: 1rem;
+     letter-spacing: 1px;
+     bottom: 80px;
+     right: 40px;
+     padding: 8px 15px;
+     border: none;
+     border-radius: 5px;
+     background-color: var(--barbie);
+     color: var(--snow);
+     cursor: pointer;
+}
+ #back-to-top-wr:hover {
+     opacity: 0.8;
+}
+/* Footer */
+ footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 20px;
+     margin-right: 20px;
+     padding: 15px 0px;
+    /* Glassmorphism */
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     background: rgba(255, 255, 255, 0.3);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(5px);
+}
+
+/* Hero */
+.hero-wakeride {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 80px 40px 120px 40px;
+    border-radius: 0 0 5px 5px ;
+    border-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-heading {
+    margin-top: 90px;
+}
+.text-heading h1{
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.text-heading h2 {
+    font-size: 58px;
+    color: var(--deep-green);
+}
+
+.text-left h1{
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+.text-left h2{
+    font-size: 75px;
+    color: var(--deep-green);
+}
+
+.dark-mode-theme .text-left h2 {
+    color: var(--snow);
+}
+
+.col-4 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    display: flex;
+    width: 700px;
+}
+
+.col-4 ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.col-4 ul li {
+    margin-left: -8px;
+}
+/* Overview */
+#overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 80px 40px 120px 40px;
+    border-radius: 0 0 5px 5px ;
+    border-top: 0;
+    /* top left, top right, bottom right, bottom left */
+    border-radius: 5px 5px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+#overview .text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#overview .text-left h3 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: var(--deep-green);
+}
+
+.dark-mode-theme #overview .text-left h3 {
+    color: var(--snow);
+}
+/* WakeRide text in hero */
+.capitalize {
+    text-transform: capitalize;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.single-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.column {
+    padding: 20px;
+}
+
+.heading {
+    font-size: 40px;
+    padding-bottom: 55px;
+    color: var(--deep-green);
+}
+
+.sub-heading {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: var(--noir);
+}
+
+.sub-heading-hifi {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: var(--noir);
+    margin-left: 30px;
+}
+
+
+.mockup{
+    width: 700px;
+    margin-right: -79px;
+    margin-top: -50px;
+} 
+
+.wireframes {
+    margin-top: 130px;
+    width: 560px;
+    /* max-width: 100%; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-gif {
+    margin-top: 130px;
+    width: 560px;
+    /* max-width: 100%; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-margin-btm {
+    margin-bottom: 50px;
+}
+.table {
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.center {
+    place-items: center;
+}
+
+.left {
+    margin-left: -650px;
+}
+
+.caption {
+    text-align: center;
+    position: absolute;
+    top: 880px;
+    left: 140px;
+}
+
+/* User Research */
+.hidden-text {
+    visibility: hidden;
+}
+
+.app-features {
+    margin-top: 100px;
+}
+
+/* User personas */
+
+.personas {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.chris {
+    margin-top: -60px;
+}
+.line-height-research {
+    margin-bottom: 30px;
+}
+
+.position {
+    position: relative;
+}
+
+.notification {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center {
+    text-align: center;
+}
+
+.flow {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+    background-color: var(--snow);
+    padding: 50px 25px 50px 15px;
+}
+
+.logins {
+    width: 375px;
+    height: 812px;
+}
+
+.dsgn-title {
+    margin-bottom: -40px;
+}
+.lo-fi {
+    width: 500px;
+    margin-left: 50px;
+}
+
+/* .lo-fi-title {
+    margin-top: 115px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+} */
+
+.hi-fi {
+    max-width: 100%;
+}
+
+.hi-fi h4 {
+    text-align: left;
+}
+
+.style-guide-margin {
+    margin-top: 110px;
+}
+
+.style {
+    max-width: 100%;
+    margin-top: -100px;
+    background-color: var(--milk);
+}
+
+.real-time-mtop {
+    padding-top: 60px;
+}
+a.link {
+    color: var(--amethyst);
+    font-weight: 800;
+}
+
+.video-text {
+    padding-bottom: 40px;
+}
+.tour {
+    height: 812px;
+    background-color: var(--black);
+    width: 1000px;
+    padding: 40px 0px 40px 0px;
+}
+
