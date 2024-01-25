@@ -341,7 +341,22 @@ figure p {
     border-bottom-right-radius: 70px;
     border-top-left-radius: 40px;
     border-top-right-radius: 70px;
+}
 
+.splash-screen-phone {
+    position: absolute;
+    width: 215px;
+    height: auto;
+    z-index: 1;
+    top: 35px;
+    left: 156px;
+    /* Crop image */
+    clip: rect(10px, 400px, 440px, 0);
+    /* Round corners */
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 70px;  
 }
 
 .ui-challenges{
