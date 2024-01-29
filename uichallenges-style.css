@@ -166,7 +166,7 @@ p, ul, li {
      backdrop-filter: blur(5px);
 }
 
-#revealButtonUIChallenges {
+/* #revealButtonUIChallenges {
     z-index: 3;
     position: fixed;
     top: 190px;
@@ -181,9 +181,9 @@ p, ul, li {
     background-color: var(--amethyst);
     color: var(--milk);
     cursor: pointer !important;
-}
+} */
 
-#sticky-tab-uichallenge {
+/* #sticky-tab-uichallenge {
     display: none;
     position: fixed;
     top: 300px;
@@ -202,12 +202,12 @@ p, ul, li {
     text-decoration: none;
     color: var(--milk);
     margin-bottom: 10px;
-  }
+  } */
 
-  #sticky-tab-uichallenge a:hover {
+  /* #sticky-tab-uichallenge a:hover {
     color: var(--deep-purple);
     cursor: pointer !important;
-}
+} */
   
  #back-to-top-ui {
      display: none;

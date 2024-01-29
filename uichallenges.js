@@ -1,8 +1,8 @@
 // Quick links button
-document.getElementById('revealButtonUIChallenges').addEventListener('click', function() {
-    var stickyTab = document.getElementById('sticky-tab-uichallenge');
-    stickyTab.style.display = (stickyTab.style.display === 'none' || stickyTab.style.display === '') ? 'block' : 'none';
-  });
+// document.getElementById('revealButtonUIChallenges').addEventListener('click', function() {
+//     var stickyTab = document.getElementById('sticky-tab-uichallenge');
+//     stickyTab.style.display = (stickyTab.style.display === 'none' || stickyTab.style.display === '') ? 'block' : 'none';
+//   });
 
   // Back-to-top button
 $(function() {
