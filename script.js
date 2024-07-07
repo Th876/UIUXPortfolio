@@ -1,7 +1,6 @@
 "use strict";
-// jQuery code
+ // jQuery code
 // Set tooltip to slide down, track and customize appearance
-
 $(function() {
     $("#tooltip").tooltip({
         show: {
@@ -52,34 +51,13 @@ $(function() {
         displayStickers();
     });
 });
-// Back to top button
-$(function() {
-    $(window).scroll(function() {
-        // Set button to appear on body if scrolled passed 450px vertical
-        if ($(this).scrollTop() > 450) {
-            $("#back-to-top").fadeIn();
-        }
-        // If the body isn't scrolled to those pixels, don't make it appear
-        else {
-            $("#back-to-top").fadeOut();
-        }
-    });
-    //Add event listener to smooth scroll back to the top when user clicks the 'Top' button
-    $("#back-to-top").click(function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, "slow");
-    })
-});
-// jQuery Slideshow plugin
-$(document).ready(function () {
-    $('.multiple-items').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2
-    });
-});
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the current year to automatically update copyright year
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+ }) 
 
 // Set dark mode button, body and logo
 const darkModeBtn = document.getElementById("dark-mode-btn");
@@ -97,12 +75,9 @@ const enableDarkMode = () => {
     // Set button text to light mode when in dark mode
     darkModeBtn.innerText = "light mode";
     // Switch logo to dark mode logo
-    logoSwitch.src = "images/unicorn-darkmode.png";
+    logoSwitch.src = "images/logo-white.svg";
     //Switch black down arrow to white down arrow
     arrowSwitch.src = "images/white-down-arrow.png";
-    //Change highlighted text color
-    const highlight = document.querySelector(".highlight");
-    highlight.style.backgroundColor = "var(--cottoncandy)";
     // Change fun facts wheel to dark mode view
     wheelSwitch.src = "images/fun-facts-darkmode.png";
     // Change data-mode attribute to dark
@@ -118,12 +93,9 @@ const disableDarkMode = () => {
     // Set button text to light mode when in dark mode
     darkModeBtn.innerText = "dark mode";
     // Switch logo to light mode logo
-    logoSwitch.src = "images/unicorn-lightmode.png";
+    logoSwitch.src = "images/logo-black.svg";
     //Switch white down arrow to black down arrow
     arrowSwitch.src = "images/blk-down-arrow.png";
-    //Change highlighted text color
-    const highlight = document.querySelector(".highlight");
-    highlight.style.backgroundColor = "var(--highlight)";
     // Change fun facts wheel to light mode view
     wheelSwitch.src = "images/fun-facts-lightmode.png";
     // Change data-mode attribute to dark
@@ -139,6 +111,7 @@ darkModeBtn.addEventListener("click", (e) => {
     darkMode = localStorage.getItem("dark-mode");
     darkMode === "disabled" ? enableDarkMode() : disableDarkMode();
 });
+
 //Create words for greetings array in hero section
 const greetings = ["Hola", "Hallo", "Salut", "Olá", "مرحبًا", "नमस्ते", "Ciao", "你好", "Jambo", "Hej", "Cześć", "Molo", "שלום", "ሰላም", "Hi"];
 // Target element in html
