@@ -598,6 +598,9 @@ h3 {
    margin-left: 25px;
 }
   
+.cropped-video2 {
+    margin-left: -50px;
+}
 .before-after {
     width: 89%;
 }
@@ -647,11 +650,11 @@ strong {
 
 .margin-right-final {
     width: 650px;
-    margin-left: -10px;
+    margin-left: -55px;
 }
 .margin-right-bakery {
     width: 500px;
-    margin-left: 5px;
+    margin-left: -75px;
 }
 .mixed-top {
     margin-top: -90px;
@@ -717,7 +720,7 @@ strong {
 #back-to-top {
     position: fixed;
     bottom: 30px;
-    right: 20px;
+    right: 10px;
     display: none;
     background: none;
     border: none;
