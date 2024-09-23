@@ -404,6 +404,16 @@ h2 {
     overflow: hidden;
  }
  
+ /* Keyframes for animated wheel */
+ @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 /* Position sticker container away from fun facts button */
 #sticker-container img {
