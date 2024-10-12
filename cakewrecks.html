@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tahaylia Higgins">
+    <meta name="description" content="Explore my redesign of Cake Wrecks. My team and I conducted research and I ideated and designed solutions to improve navigation and visual appeal for Cake Wreck fans!" />
+
+    <meta name="keywords" content="UI/UX, user interface design, user experience, user research, portfolio, ux case studies, Cake Wrecks, website redesign, websites, web application redesign">
+         <!--favicon-->
+    <link rel="icon" href="images/logo-black.svg" type="image/x-icon">
+    <title>Cake Wrecks Redesign UX Case Study</title>
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="cakewrecks.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- JS -->
+    <script defer src="cakewrecks.js"></script>
+</head>
+
+<body>
+    <header class="banner">
+        <span class="image main"> <img src="images/6-step1.3.png"></span>
+        <div class="divider"></div>
+        <!-- Problem -->
+        <div class="md-mt">
+            <div class="grid-container">
+              <div class="text-content">
+                <h2>Sweet Struggles</h2>
+                <p>For over ten years, Cake Wrecks has delighted fans with hilarious baking fails from amateurs and pros alike. But as the blog aged, its <strong>outdated design</strong> and <strong>clunky navigation</strong> hindered the experience.</p>
+                <br>
+                <p>So, the question was: <strong>How might we transform</strong> Cake Wrecks' interface to <strong>enhance user experience </strong>and <strong>simplify navigation</strong>?</p>
+              </div>
+              <div class="image-content">
+                <img src="images/old-cw2-1.png" alt="Mockup of Old Cake Wrecks Design" class="old-cw-pgs">
+                <!-- <img src="images/old-screens.png" alt="Mockup of Old Cake Wrecks Design" class="old-cw-pgs"> -->
+              </div>
+            </div>
+            <!-- Solution -->
+            <div class="one-column lrg-mt">
+                <div class="text-content">
+                <h2>Whipping Up a Solution</h2>
+                <p>We began by <strong>pinpointing usability issues</strong> and <strong>gathering user feedback</strong>. From these insights, I set out to <strong>redesign the website </strong>from scratch. My goal? A <strong>modern interface</strong> with <strong>enhanced navigation</strong> that makes it <strong>easy for users to explore, share</strong> and <strong>inquire</strong> about cake fails on any device.</p>
+                </div>
+            </div>
+        </div>
+    <!-- Context -->
+        <div class="lrg-mt">
+            <div class="list-container">
+                <div class="image-content">
+                    <img src="images/diverse-people-giving-fist-bump.jpg" alt="Fist bump depicting teamwork" class="col-images">
+                </div>
+                <div class="text-content">
+                    <h2>Context</h2>
+                    <p>This was a collaborative project at Arizona State University. </p>
+                    <p class="mt"><strong>My team</strong> was tasked with:</p>
+                    <ul class="task-list">
+                        <li>Heuristic Evaluation</li>
+                        <li>Screener Survey</li>
+                        <li>User Personas</li>
+                        <li>User Journey Maps</li>
+                    </ul>
+                    <p class="mt"><strong>My tasks</strong> involved:</p>
+                    <ul class="task-list two-column">
+                        <li>Sitemaps</li>
+                        <li>Wireframes</li>
+                        <li>Mockups</li>
+                        <li>Prototypes</li>
+                        <li>Observation Tests</li>
+                        <li>A/B Testing</li>
+                        <li>Style Guide</li>
+                        <li>Final Re-design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="one-column lrg-mt">
+            <div class="text-content mb">
+            </div>
+        </div>
+    </header>
+    <!-- Nav scroll spy -->
+    <nav class="scrollspy-nav" id="scrollspyNav">
+        <ul>
+            <li><a href="#research" class="nav-link">Research</a></li>
+            <li><a href="#define" class="nav-link">Define</a></li>
+            <li><a href="#ideate" class="nav-link">Ideate</a></li>
+            <li><a href="#prototype" class="nav-link">Prototype</a></li>
+            <li><a href="#test" class="nav-link">Test</a></li>
+            <li><a href="#refine" class="nav-link">Refine</a></li>
+        </ul>
+        <div id="progress-bar"></div>
+    </nav>
+
+    <main>
+        <section class="one-column lrg-mt" id="research">
+            <div class="text-content">
+            <h2 class="all-margin">Slicing through the Wreck</h2>
+            <p class="all-margin">To understand <strong> user frustration</strong>, we conducted a<strong> heuristic evaluation </strong> on the old Cake Wrecks website. This exploration revealed how users found and interacted with blog posts and guided our individual efforts to <strong> redesign</strong> the <strong> user interface</strong> and <strong> address the issues</strong>.
+            </p>
+            </div>
+            <div class="mt">
+                <img src="images/old-site-heuristic1.png" class="col-images">
+            </div>
+            <!-- Screener survey -->
+            <div class="text-content lrg-mt">
+                <h2 class="all-margin">Sifting the Audience</h2>
+                <p class="all-margin">We kicked off our research with a <strong> screener survey</strong> to filter our <strong>target users</strong>, i.e., those who engaged with <strong>cake fails</strong> and <strong>baking communities</strong>, by asking questions about <strong>demographics, interests,</strong> and <strong>browsing habits</strong>.
+                </p>
+                <p class="mt all-margin">View<a href="https://docs.google.com/document/d/1vhostns6d-9vQYwCBGqT1b-C6a44Gx78v8yx6ObHyE4/edit#heading=h.ui6kfrsxdwgr" target="_blank" class="link">Screener Survey Questions</a>
+                </p>
+                </div>
+
+            <!-- Observation test -->
+            <div class="text-content lrg-mt">
+                <h2 class="mb all-margin">Wreck-ognizing Patterns Round 1 </h2>
+                <img src="images/cw-observation-round1.png" class="observation-icons mb" alt="Four images depicting details about the Cake Wrecks redesign project observation test. The first image is a clipboard icon: study type moderated, the second image is a location icon: United States, remote, the third image is a people icon of three persons: participants 6 participants, the fourth image is a clock icon: 30 minutes">
+                <div class="grid-container">
+                    <div class="text-content">
+                      <p>Based on insights from our <strong>20 screener survey respondents</strong>, we selected <strong>6 participants</strong> for a <strong>moderated observation test</strong> on the <strong>old Cake Wrecks website</strong>. This test involved <strong>real-time scenarios</strong> and <strong>tasks</strong>, revealing how users <strong>navigated</strong> the site, where they stumbled, and what made them smile (or frown).</p>
+                    </div>
+                    <div class="text-content">
+                        <p>Before jumping into the tasks, participants filled out a brief <strong>pre-test questionnaire</strong> to capture their initial expectations. After the test, a <strong>post-test questionnaire</strong> provided insight into their final thoughts.</p>
+                        <p class="mt">View<a href="https://docs.google.com/document/d/1pbJGCPvTI-bsFhK6hi_8OmvxWv77Z3QVR6fPspKz4eo/edit#heading=h.94sknz4i76wy" target="_blank" class="link">Observation Test Scenarios and Tasks</a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lrg-mt">
+                    <img src="images/Pain-Points-Chart.png" class="chart">
+                </div>
+        </section> 
+        
+        <div class="divider"></div>
+        <a href="/index.html">
+            <img src="images/blue-house.png" alt="Back to Home" id="backToHomeBtn">
+        </a>
+        <!-- DEFINE PHASE -->
+
+        <!-- User personas -->
+        <section id="define">
+            <div class="grid-container users">
+              <div class="text-content">
+                <h2>Meet The Users</h2>    
+            </div>
+        </section>
+        <div class="img-container">
+            <div class="column">
+                <img src="images/persona-1.png" alt="Persona 1">
+            </div>
+            <div class="column">
+                <img src="images/persona-2.png" alt="Persona 2">
+            </div>
+        </div>
+
+        <!-- User Journey Maps -->
+        <div class="one-column lrg-mt all-margin">
+            <div class="text-content">
+            <h2>Tracing the Crumbs</h2>
+            <p>We set out to understand Jane and Emily’s overall experiences by creating <strong>user journey maps</strong> where we explored their actions, feelings, and thoughts as they pursued their goals. This insight revealed <strong>pain points </strong> and highlighted <strong>opportunities</strong> for a more <strong>enjoyable user experience</strong>.
+            </p>
+            </div>
+            <div class="img-container">
+                <div class="column-user-journey">
+                    <img src="images/cw-user-journey1.png" alt="Persona 1">
+                </div>
+                <div class="column-user-journey">
+                    <img src="images/cw-user-journey2.png" alt="Persona 2">
+                </div>
+            </div>
+            <div class="text-content">
+                <p class="mt padding-b">View<a href="https://www.figma.com/proto/hS8j7ztnKVAxnoiaPKjwuJ/CakeWrecks-Re-Design?node-id=25-5165&node-type=CANVAS&t=M2Z97p8C7sxymX03-1&scaling=min-zoom&content-scaling=fixed&page-id=25%3A4969" target="_blank" class="link">larger user journey maps</a>
+                </p>
+            </div>
+        </div>
+            <div class="divider"></div>
+            <!-- Sitemap 1st Version -->
+        <section class="lrg-mt" id="ideate">
+                <div class="grid-container">
+                  <div>
+                    <h2 class="indent">Baking the Blueprint 1.0</h2>
+                    <p class="indent moveup-paragraph">After mapping the user journeys, I created a <strong>sitemap</strong> in Figjam to outline the website's <strong>core navigation</strong> and <strong>structure</strong>. I ensured it reflected our <strong>personas' goals</strong> for an <strong>intuitive navigation experience</strong>.</p>
+                <br>
+                    <p class="indent moveup-paragraph">View<a href="https://www.figma.com/proto/hS8j7ztnKVAxnoiaPKjwuJ/CakeWrecks-Re-Design?node-id=154-13793&node-type=CANVAS&t=6eDSwMhNXhSBhbUW-1&scaling=min-zoom&content-scaling=fixed&page-id=154%3A13792" target="_blank" class="link">larger sitemap</a>
+                </p> 
+                </div>     
+                 <!-- Sitemap image  -->
+                <div class="mt">
+                    <img src="images/1st-draft-sitemap.png" class="col-images">
+                </div>
+        </section>
+
+            <!-- Lo-fi Wireframes-->
+        <div class="lrg-mt">
+                <div class="grid-container">
+                    <!-- Lo-fi image  -->
+                    <div class="mt">
+                        <img src="images/lo-fi-desktop.png" class="col-images lo-fi indent" alt="Low-Fidelity wireframe for the first draft of Cake Wrecks redesigned website desktop view">
+                    </div>
+                    <div class="text-content lo-fi-text-right">
+                        <h2 class="indent">Base Layer: Lo-Fi Wireframes</h2>
+                        <p class="indent moveup-paragraph">Building on the <strong>core features</strong> identified during our group research, I focused on my initial design concept—<strong>low-fidelity wireframes</strong>.</p>
+                    </div>
+                </div>      
+        </div>
+
+            <!-- Lo-fi Screen Variations -->
+                      
+        <div class="lrg-mt3">
+                <div class="grid-container">
+                  <div class="text-content">
+                    <h2 class="indent">Filling Layer: Screen Variations</h2>
+                    <p class="indent moveup-paragraph">I also created wireframes for different <strong>screen sizes</strong> to ensure the site remained <strong>responsive</strong> and <strong>user-friendly</strong> on all devices.
+                    </p>
+                </div>     
+                 <!-- Lo-fi variation images  -->
+                <div>
+                    <img src="images/tablet-mobile-lo-fi.png" class="col-images lo-fi1">
+                </div>
+        </div>
+
+            <!-- Mid-fidelity wireframes -->
+            <div>
+                <div class="text-content md-mt">
+                    <h2 class="all-margin">Middle Layer: Mid-Fi Wireframes</h2>
+                    <p class="all-margin">Once the initial wireframes were set, I transitioned to <strong>mid-fidelity wireframes</strong> in Figma. This phase focused on refining the designs to ensure they captured the <strong>website's flow</strong> and <strong>functionality</strong> while meeting <strong>user needs</strong> and <strong>expectations</strong>.
+                    </p>
+                </div>
+                <div class="mt-more">
+                    <img src="images/mid-fi-annotations.png" class="col-images">
+                </div>
+                <div class="text-content">
+                    <p class="mt padding-b all-margin">View<a href="https://www.figma.com/proto/hS8j7ztnKVAxnoiaPKjwuJ/CakeWrecks-Re-Design?node-id=249-2048&node-type=canvas&t=5MR5euFm94FbaJp5-1&scaling=scale-down&content-scaling=fixed&page-id=249%3A2047" target="_blank" class="link">larger Mid-Fi Wireframes</a>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Mid-fi Wireframe variation image -->
+            <div class="lo-fi">
+                <div class="grid-container">
+                    <div class="text-content lo-fi-text-left">
+                        <h2 class="indent mb">Filling Layer: Screen Variations</h2>
+                        <p class="indent">I then created <strong>mid-fi wireframes</strong> for different <strong>screen sizes</strong> to <strong>optimize</strong> the site's <strong>responsiveness</strong>.</p>
+                        <br>
+                    </div>     
+                         
+                    <div class="mt">
+                        <img src="images/mid-fi-wireframe.png" class="col-images padding-b">
+                    </div>
+                </div>
+
+            <!-- PROTOTYPE PHASE -->
+            
+            <!-- Hi-Fi mockups-->
+            <div class="divider"></div>
+            <section class="text-content" id="prototype">
+                <h2 class="ml">Top Layer: High-Fi Mockup</h2>
+                <p class="ml">Now, this is where the design started to look like the final product. I refined the <strong>wireframes</strong> into a <strong>high-fidelity mockup</strong> by adding <strong>color</strong> and <strong>high-quality images</strong>. I also introduced an <strong>intuitive navigation</strong>, a <strong>carousel</strong>, and new features like <strong>login, sign-up options,</strong> a <strong>newsletter form</strong>, and an <strong>interactive map</strong>.
+                </p>
+            </section>
+            <div class="mt-more">
+                <img src="images/after.png" class="col-images">
+            </div>
+    
+            <div class="lrg-mt2">
+                <div class="grid-container">
+                    <div class="text-content lrg-mt3">
+                        <h2 class="indent">Frosting Layers: Screen Variations</h2>
+                        <p class=" indent moveup-paragraph">Since <strong>tablets</strong> have <strong>limited screen space</strong>, I opted for an <strong>embedded interactive map</strong> instead of a <strong>modal pop-up</strong> to enhance the user experience.</p>                        
+                </div>  
+                    <div class="mt">
+                        <img src="images/tablet-1stdraft-hi-fi.png" class="tablet-hi-fi" alt="High-Fidelity wireframe for the first draft of Cake Wrecks redesigned website tablet and mobile view">
+                    </div>  
+            </div>
+            <div>
+                <div class="grid-container">
+                    <div class="mt">
+                        <img src="images/mobile-1stdraft-hi-fi.png" class="phone-hi-fi" alt="High-Fidelity wireframe for the first draft of Cake Wrecks redesigned website tablet and mobile view">
+                    </div>  
+                    <div class="text-content lrg-mt">
+                        <p class="indent">For the <strong>mobile view</strong>, I chose a <strong>list format</strong> over the map so users can quickly scan through bakery options without the hassle of zooming and scrolling.</p>                        
+                </div>   
+            </div>
+
+            <!-- Hi-fi Prototype -->
+            <div class="mt lrg-mt padding-b">
+                <div class="grid-container">
+                    <div class="text-content">
+                        <h2 class="indent mt-more">Adding the Final Touch?</h2>
+                        <p class="indent moveup-paragraph">Then it was time to bring everything together into a <strong>high-fidelity prototype.</strong> View<a href="https://www.figma.com/proto/hS8j7ztnKVAxnoiaPKjwuJ/CakeWrecks-Re-Design?node-id=390-4773&node-type=CANVAS&t=VTqqTF9biGSAxTNN-1&scaling=scale-down&content-scaling=fixed&page-id=340%3A19076&starting-point-node-id=390%3A4773" target="_blank" class="link">High-Fi Prototype Desktop.</a></p>
+                        <p class="indent">This set the stage for a <strong>second usability study</strong> to see how users interacted with the redesigned website.
+                        </p>                  
+                    </div>  
+                    <div class="">
+                        <video width=640px height=360px autoplay muted loop class="cropped-video-1stdraft">
+                        <source src="video/CW-1stDraft-WebTour1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <small class="right-small">*Overlay extends to full screen in the actual prototype</small>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <!-- TEST PHASE -->
+
+            <!-- Observation Test: Round Two -->
+            <section class="text-content" id="test">
+                <h2 class="ml">Wreck-ognizing Patterns Round 2</h2>
+                <p class="ml">I conducted a <strong>second observation test</strong> with the <strong>same six participants</strong>. Results showed that while users generally <strong>loved</strong> the <strong>redesign</strong>, opinions on the <strong>new interactive map</strong> feature were <strong>mixed</strong>.
+                </p>
+            </section>
+            <!-- Participants feedback on observation test round 2 -->
+            <div class="lrg-mt">
+                <div class="text-content">
+                    <h3 class="ml-1">Participants’ Feedback on the Interactive Map</h3>
+                </div>
+                <div class="list-container">
+                    <div class="image-content">
+                        <video autoplay loop muted width="420" height="300">
+                            <source src="video/friends-convo.mp4"
+                            type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                    </div>
+                    <div class="mt-more unindent">
+                        <h4>Positive 👍🏼</h4>
+                        <ul class="list">
+                            <li>“The new map is <strong>fantastic!</strong> I love how it shows all the bakeries at once in such an interactive way. It’s so much easier to find what I’m looking for.”</li>
+                             <li>“The map really adds a <strong>fun element</strong> to finding bakeries. Loving this new feature.”</li>
+                            <li>“The map's a feature <strong>I didn’t know I needed!</strong> Searching doesn't feel so tedious anymore.”</li>
+                        </ul>
+                    </div>
+            </div>
+            <div>
+                <div class="list-container">
+                    <div class="mt-more mixed">
+                        <h4>Mixed 😐</h4>
+                        <ul class="list">
+                            <li>“The map is cool, but I still prefer <strong>a good old list</strong>. If the old design’s list was just a bit cleaner and more organized, it would be perfect.”</li>
+                            <li>“I like the map for browsing, but for quick access, <strong> a simpler list would be more my speed</strong>—especially if it were less cluttered.”</li>
+                            <li>“The map is appealing, but <strong>sometimes I just want a simple list.</strong> If the list view were more organized, I’d probably use that instead.”</li>
+                        </ul>
+                    </div>
+                    <div class="image-content">
+                        <video autoplay loop muted width="450" height="300">
+                            <source src="video/friend-confused.mp4"
+                            type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                    </div>
+                </div>
+            </div>
+            <div class="text-content mt-more padding-b">
+                <p class="ml">Some users enjoyed the map's <strong>dynamic card format</strong> for displaying bakeries, while others preferred a <strong>straightforward list</strong>. This feedback indicated that the map’s <strong>pop-up feature</strong> may not suit everyone, which highlights the <strong>need for improvement</strong> in how I present bakery information.
+                </p>
+                <p class="mt ml">View<a href="https://docs.google.com/document/d/1ebO3LwctbPRPcQyxca9I2oitUuj_pMWHFEDVrMojOJM/edit#heading=h.94sknz4i76wy" target="_blank" class="link">Second Observation Test w/ Post-Test Questionnaire </a></p>
+            </div>
+            <div class="divider"></div>
+            
+            <!-- REFINE PHASE -->
+            <section class="one-column" id="refine">
+    
+                <h2 class="ml">Refining the Recipe</h2>
+                
+                <div class="grid-container">
+                    <div class="text-content unindent">
+                        <p class="mt1 ml">To address the <strong>mixed feedback</strong>, I returned to the drawing board and created a more <strong>organized list</strong> for finding bakeries <strong>intuitively</strong> and <strong>efficiently</strong>.
+                        </p>
+                    </div>
+            
+                    <p>Next, I conducted <strong>A/B testing</strong> with <strong>six new participants from the screener survey pool</strong> who were interested in <strong>cake fails</strong>. Their task was to find a <strong>bakery</strong> in <strong>Atlanta, Georgia</strong>, and share their thoughts on the design.
+                    </p>
+                </div>
+                </div>
+                <div class="lrg-mt">
+                    <img src="images/a-b-testing.png" class="a-b-test">
+                </div>
+           
+        <div class="text-content mt-more padding-b">
+            <p class="ml">Interestingly, <strong>results</strong> showed an <strong>even split</strong> between the <strong>interactive map</strong> and the <strong>list</strong>. This insight led to <strong>my final redesign</strong><br>decision—a <strong>toggle feature</strong> that lets users <strong>switch between</strong> the <strong>embedded map view</strong> and the <strong>list view</strong>.
+            </p>
+            <p class="mt ml">Here's how each option of the toggle feature serves different user needs:</p>
+        </div>
+        <div class="move-up padding-b">
+            <div class="list-container">
+                <div class="image-content">
+                    <video width=640px height=360px autoplay muted loop class="cropped-video-bakery">
+                        <source src="video/toggle-bakery1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div class="text-content">
+                    
+                    <ul class="task-list mt">
+                        <li> <strong>Interactive Map View:</strong> A modern, engaging way for users to discover bakeries and enhance their browsing experience while addressing frustration with outdated features.</li>
+                        <li> <strong>List View:</strong> A structured, straightforward option for finding specific bakeries that caters to users who prefer a traditional, organized navigation approach.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <!-- Final Sitemap -->
+        <div class="lrg-mt">
+            <div class="grid-container">
+              <div class="text-content">
+                <h2 class="unindent mb indent">Baking the Blueprint 2.0</h2>
+                <p class="indent moveup-paragraph">I also redesigned the sitemap to fit the <strong>new changes</strong>!</p>
+            <br>
+                <p class="mt indent move-up-serve">View<a href="https://www.figma.com/proto/hS8j7ztnKVAxnoiaPKjwuJ/CakeWrecks-Re-Design?node-id=185-5606&node-type=CANVAS&t=GwLiw2OuwxkNi2To-1&scaling=scale-down&content-scaling=fixed&page-id=199%3A14143" target="_blank" class="link">larger final sitemap</a>
+            </p> 
+            </div>     
+            <div class="mt">
+                <img src="images/final-sitemap.png" class="col-images">
+            </div>
+        </div>
+
+        <div class="text-content">
+            <h2 class="ml">The Finishing Touches</h2>
+            <p class="ml">Since the <strong>bakeries page</strong> was the <strong>primary focus</strong> of my final <strong>design iterations</strong>, here's a look at how it evolved through each stage:
+            </p>
+        </div>
+        <div class="mt-more">
+            <img src="images/new-hi-fi-bakeries-mockups.png" class="col-images">
+        </div>
+         
+        <!-- Final Design Screen Size Variations -->
+
+        <div class="lrg-mt3">
+            <div class="grid-container">
+              <div class="text-content">
+                <h2 class="indent mb">Final Filling: Screen Variation</h2>
+                <p class="indent moveup-paragraph">I added the <strong>toggle feature</strong> on the <strong>tablet view</strong> to give users <strong>flexibility</strong> between options. However, I kept the <strong>phone view unchanged</strong> after the first observation test since, as mentioned earlier, <strong>less is more</strong> on smaller screens.
+                </p>
+            <br>
+            </div>     
+             <!-- Final Tablet Screen Design  -->
+            <div class="mt">
+                <img src="images/final-dsgn-tablet.png" class="tablet-final" alt="Final design for the High-Fidelity mockup bakery page tablet view">
+            </div>
+        </div>
+
+        <!-- Lo-fi Wireframes-->
+        <div class="lrg-mt padding-b">
+            <div class="grid-container">
+                <!-- Lo-fi image  -->
+                <div class="mt">
+                    <video width=640px height=360px autoplay muted loop class="cropped-video-final">
+                        <source src="video/final-dsgn.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div class="text-content lo-fi-text-right move-up-serve">
+                    <h2>Ready to Serve</h2>
+                    <p>With these adjustments in place, let's take a look at the <strong>final design</strong> of my <strong>high-fidelity prototype</strong>.</p>
+                    <p class="mt">View<a href="https://www.figma.com/proto/hS8j7ztnKVAxnoiaPKjwuJ/CakeWrecks-Re-Design?node-id=735-11144&node-type=CANVAS&t=pJoyxW3WawfjyTUT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=735%3A11144&show-proto-sidebar=1" target="_blank" class="link">Final Design Desktop</a>
+                    </p>
+                </div>
+            </div>      
+        </div>
+        <!--Accessibility-->
+        <div class="divider"></div>
+            <div class="text-content">
+                <h2 class="ml">Accessibility Considerations</h2>
+                <img src="images/accessibility-chart.png" class="accessibility-chart mt-more">
+            </div>
+        <!-- Style Guide -->
+        <div class="text-content lrg-mt3">
+            <div class="grid-container">
+              <div class="text-content lrg-mt3">
+                <h2 class="indent">The Ingredients</h2>
+                <p class="indent moveup-paragraph">Here's the <strong>style guide</strong> that brought everything together.</p>
+            <br>
+                <p class="indent moveup-paragraph">View<a href="https://uiux-portfolio-kappa.vercel.app/document/style-guide.pdf" target="_blank" class="link">full version of style guide</a>
+            </p> 
+            </div>     
+            <div class="mt">
+                <img src="images/style-guide.png" class="col-images">
+            </div>
+        </div>
+        <!-- Takeaways -->
+        <div class="text-content lrg-mt padding-b">
+            <h2 class="ml">Takeaways</h2>
+            <p class="ml">This <strong>redesign</strong> has transformed how users interact with the site, as they’ve reported it’s <strong>easier to navigate</strong> and <strong>more engaging</strong>. While the final design is <strong>more inclusive</strong> and <strong>efficient</strong>, it also <strong>paves the way for future growth</strong>—a <strong>win-win</strong> for everyone!
+            </p>
+
+            <p class="mt ml">This project has been a <strong>valuable</strong> learning experience. Here are some key takeaways:
+            </p>
+        <ul class="task-list two-column-takeaway mt ml">
+            <li><strong>The Power of Iterative Design:</strong> Running multiple observation and A/B tests showed me how refining designs based on user feedback enhances usability.</li>
+            <li><strong>Interpreting A/B Test Results:</strong> A/B testing can reveal complex user preferences. Combining elements from different versions is often more effective than choosing just one.
+            </li>
+            <li><strong>Importance of Accessibility:</strong> Accessibility goes beyond compliance. A floating accessibility icon with a hide option emphasizes the importance of creating an equitable experience for all users.
+            </li>
+            <li><strong>Designing for Simplicity:</strong> This redesign reinforced that simplicity is key. Finding the balance between functionality and ease of use creates a more enjoyable user experience.</li>
+        </ul>
+        </div>
+</main>
+
+<footer>
+    <div id="footer-content">
+       <div class="copyright">
+            <small>Copyright &copy;<span id="current-year"></span>Designed &amp; Developed by Tahaylia Higgins. All Rights Reserved. </small>
+        </div>
+        <div class="contact-icons">
+        <!-- Font Awesome Icons -->
+         <a href="https://www.linkedin.com/in/tahayliahiggins/" target="_blank"><i class="fab fa-linkedin"></i></a>
+         <a href="mailto:tayhiggins14@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="document/Tahaylia_Higgins_UX_Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+          </div>
+    </div>
+    </footer>
+</body>
+</html>

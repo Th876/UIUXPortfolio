@@ -12,7 +12,7 @@
 /*Custom colors*/
  :root {
      --snow: #ffffff;
-     --midnight: #2B2C30;
+     --midnight: #262626;
      --aquamarine: #7FFFD4;
      --cottoncandy: #FB6EB5;
      --highlight: #A0FFF0;
@@ -75,7 +75,7 @@ p, ul, li {
  .menu-tabs a {
      text-decoration: none;
      position: relative;
-     font-weight: 100;
+     font-weight: 200;
 }
  ul {
      display: flex;
@@ -91,6 +91,7 @@ p, ul, li {
      color: var(--midnight);
      /* Padding between menu links */
      padding: 5px;
+     font-weight: bold;
 }
 
 /* Set menu links underline */
@@ -107,55 +108,6 @@ p, ul, li {
 }
  .menu-tabs a:hover::after{
      width: 100%;
-}
-
-/* Dark mode settings */
- .dark-mode-theme .menu-tabs a::after {
-     background-color: var(--lavender);
-}
-/* Dark mode | Light mode button */
- #dark-mode-btn {
-    font-weight: 100;
-    font-family: "Montserrat", sans-serif;
-     padding: 0.35rem;
-     font-size: 0.85rem;
-     margin-top: -5px;
-     border-radius: 5px;
-     border: 2px solid var(--snow);
-     transition: box-shadow 0.3s ease-in-out;
-}
-/* Dark mode | Light mode button on hover*/
- #dark-mode-btn:hover {
-     cursor: pointer;
-     opacity: 0.8;
-     box-shadow: 0 0 5px var(--amethyst);
-}
- .dark-mode-theme #dark-mode-btn:hover {
-     box-shadow: 0 0 5px var(--amethyst);
-}
-/* Initial button margin for page load */
- .dark-mode-toggle {
-     margin-right: 30px;
-}
-/* Length of dark mode theme */
- #dark-feature {
-     width: 100%;
-     height: 100%;
-}
-/* Set body and text color for dark mode */
- .dark-mode-theme {
-     background-color: var(--midnight);
-     color: var(--snow);
-}
-/* Set navbar text for dark mode */
- .dark-mode-theme .nav-text {
-     color: var(--snow);
-}
-/* Set dark mode button color and margin for dark mode */
- .dark-mode-theme #dark-mode-btn {
-     background-color: var(--midnight);
-     color: var(--snow);
-     margin-right: 30px;
 }
 
 
@@ -388,6 +340,14 @@ h2 {
     margin-top: 20px;
 }
 
+.pink {
+    font-weight: bold;
+    color: var(--amethyst);
+}
+
+.mb {
+    margin-bottom: 50px;
+}
 .left p:last-child {
     color: var(--amethyst); 
     font-weight: 500;
@@ -397,7 +357,7 @@ h2 {
 #fun-facts-lightmode {
     width: 250px;
     position: absolute;
-    bottom: 20px;
+    bottom: 70px;
     right: 105px;
     animation: rotate 5s linear infinite;
     cursor: pointer;
@@ -440,25 +400,17 @@ footer {
 }
 
 #footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    text-align: center;
 }
 
 .contact-icons {
     display: flex;
     gap: 10px;
+    margin-left: -7px;
 }
 
 .contact-icons a {
     color: var(--midnight);
-    font-size: 1.5rem;
-}
-
-.dark-mode-theme .contact-icons a {
-    color: var(--snow);
     font-size: 1.5rem;
 }
 
