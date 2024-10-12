@@ -67,86 +67,20 @@ p, li {
     line-height: 2;
 }
 
-
-
-/* Dark mode settings */
- .dark-mode-theme .menu-tabs a::after {
-     background-color: var(--lavender);
-}
-/* Dark mode | Light mode button */
- #dark-mode-btn {
-    font-weight: 100;
-    font-family: "Montserrat", sans-serif;
-     padding: 0.35rem;
-     font-size: 0.85rem;
-     margin-top: -5px;
-     border-radius: 5px;
-     border: 2px solid var(--snow);
-     transition: box-shadow 0.3s ease-in-out;
-}
-/* Dark mode | Light mode button on hover*/
- #dark-mode-btn:hover {
-     cursor: pointer;
-     opacity: 0.8;
-     box-shadow: 0 0 5px var(--amethyst);
-}
- .dark-mode-theme #dark-mode-btn:hover {
-     box-shadow: 0 0 5px var(--amethyst);
-}
-/* Initial button margin for page load */
- .dark-mode-toggle {
-     margin-right: 30px;
-}
-/* Length of dark mode theme */
- #dark-feature {
-     width: 100%;
-     height: 100%;
-}
-/* Set body and text color for dark mode */
- .dark-mode-theme {
-     background-color: var(--midnight);
-     color: var(--snow);
-}
-/* Set navbar text for dark mode */
- .dark-mode-theme .nav-text {
-     color: var(--snow);
-}
-/* Set dark mode button color and margin for dark mode */
- .dark-mode-theme #dark-mode-btn {
-     background-color: var(--midnight);
-     color: var(--snow);
-     margin-right: 30px;
-}
-
-
 /* Main section */
 
 main {
-    box-shadow:  
-    4px 0 6px rgba(0, 0, 0, 0.1),  
-    -4px 0 6px rgba(0, 0, 0, 0.1); 
-    background: rgba(255, 255, 255, 0.1); 
-    /* Glassmorphism effect */
-    /* border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3); 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
-    backdrop-filter: blur(5px);
-        padding: 0 10px; 
-        box-sizing: border-box; */
+    box-sizing: border-box;
+    border-left: 1px solid rgba(210, 209, 209, 0.5); 
+    border-right: 1px solid rgba(210, 209, 209, 0.5);
 }
 
 .banner {
-    box-shadow:  
-    4px 0 6px rgba(0, 0, 0, 0.1),  
-    -4px 0 6px rgba(0, 0, 0, 0.1); 
-    background: rgba(255, 255, 255, 0.1); 
-    /* Glassmorphism effect */
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3); 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
-    backdrop-filter: blur(5px);
-        padding: 0 10px; 
-        box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(210, 209, 209, 0.5); 
+    border-right: 1px solid rgba(210, 209, 209, 0.5);
+    padding: 0 10px; 
+
 }
 /* Header image */
 .image.main {
@@ -576,14 +510,10 @@ h3 {
     width: 100%; 
     max-width: 1280px; 
     margin: 0 auto; 
-
-    box-sizing: border-box; 
-    box-shadow: 
-                4px 0 6px rgba(0, 0, 0, 0.1), 
-                -4px 0 6px rgba(0, 0, 0, 0.1); 
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    border-top: 1px solid rgba(210, 209, 209, 0.5);
+    border-left: 1px solid rgba(210, 209, 209, 0.5); 
+    border-right: 1px solid rgba(210, 209, 209, 0.5);
     padding: 20px 20px; 
 }
 
