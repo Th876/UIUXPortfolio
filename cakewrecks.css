@@ -230,7 +230,11 @@ h3 {
 .scrollspy-nav {
     display: flex;
     position: relative;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    /* border-top: 1px solid rgba(210, 209, 209, 0.5); */
+    border-left: 1px solid rgba(210, 209, 209, 0.5); 
+    border-right: 1px solid rgba(210, 209, 209, 0.5);
+    border-bottom: 1px solid rgba(210, 209, 209, 0.5);
     background-color: var(--neutral-100);
     padding: 10px 0;
     max-width: 1260px; 
@@ -266,7 +270,7 @@ h3 {
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
     /* Space between the circles */
-    margin: 0 35px;
+    margin: 0 30px;
 }
 
 .scrollspy-nav ul li a.active {
