@@ -1,36 +1,11 @@
 # UI/UX Portfolio
-<p align="center">
-  <img width="1200" src="./mockup.png">
-</p>
+
 
 <p>
-This website is my professional UI/UX portfolio, which I designed and developed in my GIT 418 course at <a href="https://www.asu.edu/">Arizona State University</a> for my final project. The wireframe for this project was created via Figma, and was coded using HTML, CSS, JavaScript, jQuery, and AJAX. The purpose of this portfolio is to showcase my projects in UI/UX design, graphic design, and front-end development. </p>
+This website is my professional UI/UX portfolio, which I designed and developed in my GIT 418 course at <a href="https://www.asu.edu/">Arizona State University</a> for my final project. The project was created using HTML, CSS, JavaScript, jQuery, and AJAX. The purpose of this portfolio is to showcase my projects in UI/UX design.</p>
 <p>This is the <a href="https://uiux-portfolio-th876.vercel.app/">live link</a>.</p>
 <hr></hr>
-<h3>Process</h3>
 
-<h4>Wireframe</h4>
-<img width="500" src="./wireframe.png">
-<h4>Custom Color Theme</h4>
-<img width="960" src="images/color-scheme1.png">
-<img width="960" src="images/color-scheme2.png">
-
-<h4>Fonts</h4>
-All fonts were sourced from <a href="https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap">Google fonts</a>
-
-<img width="960" src="images/fonts.png">
-
-<h4>Logo and Favicon</h4>
-
-<p>Light mode logo</p>
-<img width="280" height="200" src="images/unicorn-lightmode.png">
-
-
-<p>Dark mode logo</p>
-<img idth="280" height="200" src="images/darkmode-logo.png">
-
-<p>Favicon</p>
-<img width="180" height="180" src="images/favicon.ico">
 
 <h3>Tools and Resources</h3>
 <ul>
@@ -58,13 +33,13 @@ All fonts were sourced from <a href="https://fonts.googleapis.com/css2?family=Fr
 </ul>
 <hr></hr>
 <h3>Challenges</h3>
-<p>Since it was my first time using jQuery, I found it quite challenging to use its plugins and/or libraries. I particularly struggled with properly implementing the slideshow feature but quickly remembered to heavily rely on my developer tools for customization. 
+<p>Since it was my first time using jQuery, I found it quite challenging to use its plugins and/or libraries.
 </p>
 
 <hr></hr>
 
 <h3>Successes</h3>
-<p>Although this project came with its fair share of challenges, I enjoyed the research process, particularly researching popular UI trends that would not only create a great user experience but also reflect who I am as a designer/developer. Also, I enjoyed discovering <a href="https://webflow.com/blog/glassmorphism#:~:text=Web%20designers%20have%20come%20up,and%20dimensionality%20to%20the%20design.">glassmorphism</a> the most, and learning how to apply it to create an overall sleek design.</p>
+<p>Although this project came with its fair share of challenges, I enjoyed the research process, particularly researching popular UI trends that would not only create a great user experience but also reflect who I am as a designer/developer.</p>
 
 <hr></hr>
 <h3>Future Enhancements</h3>
