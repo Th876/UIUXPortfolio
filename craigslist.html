@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tahaylia Higgins">
+    <meta name="description" content="Explore Craigslist redesigned, an online marketplace developed to connect buyers and sellers in local communities. This project showcases my UI/UX design capabilities. Note: This is a self-initiated project." />
+
+    <meta name="keywords" content="UI/UX, user interface design, user experience, user research, portfolio, ux case studies, website redesign, website design, Craigslist">
+         <!--favicon-->
+    <link rel="icon" href="images/logo-black.svg" type="image/x-icon">
+    <title>Craigslist | A Smarter Sign-In UX Case Study</title>
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="craigslist.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- JS -->
+    <script defer src="craigslist.js"></script>
+</head>
+
+<body>
+    <header class="banner">
+        <img src="images/xpal-1.png" alt="XpensePal case study banner displaying details such as the name of the product, XpensePal, my role, and the duration of this self-initiated project, Spring 2024" class="banner-img">
+    
+        <!-- Problem -->
+        <div class="lrg-mt2">
+            <h2>The Good, the Bad, and the Balance</h2>
+            <p class="all-margin"><strong>Managing expenses</strong> can be tough, especially for <strong>Millennials (Gen Y)</strong> (born between 1981 and 1996) and <strong>Gen Z</strong> (born between 1997 and 2012). Most finance apps are either too <strong>complicated</strong> or <strong>lack key features</strong> which leave users <strong>overwhelmed</strong> and <strong>struggling</strong> to stay on top of their finances.
+            </p>
+        </div>
+
+        <div class="lrg-mt">
+            <h2>Meet XpensePal</h2>
+            <img src="images/meet-pal.png" loading="lazy" alt="Description of the image" class="single-image-float">
+            <p class="all-margin">A <strong>mobile app</strong> that <strong>simplifies financial management</strong> for <strong>Millennials</strong> and <strong>Gen Z</strong> while guiding them toward <strong>achieving their financial goals</strong>.</p>
+        </div>
+        </header>
+
+        <a href="/index.html">
+            <img src="images/green-house.png" alt="Back to Home button" id="backToHomeBtn">
+        </a>
+
+            <!-- Nav scroll spy -->
+    <nav class="spy-nav" id="spyNav">
+        <ul>
+            <li><a href="#empathize" class="nav-link">Empathize</a></li>
+            <li><a href="#define" class="nav-link">Define</a></li>
+            <li><a href="#ideate" class="nav-link">Ideate</a></li>
+            <li><a href="#prototype" class="nav-link">Prototype</a></li>
+            <li><a href="#test" class="nav-link">Test</a></li>
+            <li><a href="#refine" class="nav-link">Refine</a></li>
+        </ul>
+        <div id="progress-indicator"></div>
+    </nav>
+
+    <main>
+        <section class="lrg-mt" id="empathize">
+            <h2>Dollars and Dilemmas: What Do the Numbers Say?</h2>
+            <p class="all-margin">A 2023 study from TIAA Institute and GFLEC shows that <strong>Millennials</strong> and <strong>Gen Z</strong> are falling behind compared to older generations like Gen X, Boomers, and the Silent Generation.</p>
+
+            <!-- Carousel -->
+        <div id="container">
+            <input hidden type="radio" name="carousel-control" id="button_a" checked/>
+            <input hidden type="radio" name="carousel-control" id="button_b"/>
+            <input hidden type="radio" name="carousel-control" id="button_c"/>
+            <input hidden type="radio" name="carousel-control" id="button_d"/>            
+        
+            <div id="carousel">
+                <div class="p-wrapper">
+                    <div class="panel_a">
+                        <img src="images/fig1.png" loading="lazy" alt="Figure 1" />
+                    </div>
+        
+                    <div class="panel_b">
+                        <img src="images/fig2.png" loading="lazy" alt="Figure 2" />
+                    </div>
+        
+                    <div class="panel_c">
+                        <img src="images/fig3.png" loading="lazy" alt="Figure 3" />
+                    </div>
+        
+                    <div class="panel_d">
+                        <img src="images/fig4.png" loading="lazy" alt="Figure 4" />
+                    </div>
+                </div> <!-- // .p-wrapper -->
+            </div> <!-- // #carousel -->            
+        
+            <div id="navigation">
+                <label for="button_a" class="label_a"> <span>Retirement Savings</span> </label>
+                <label for="button_b" class="label_b"> <span>Knowledge</span> </label>
+                <label for="button_c" class="label_c"> <span>Financial Health</span> </label>
+                <label for="button_d" class="label_d"> <span>Financial Literacy</span> </label>
+            </div> <!-- // #navigation -->               
+        </section> <!-- // #container -->
+        
+        <div>
+            <p class="all-margin"><strong>40% of Gen Z struggles</strong> to make ends meet, with <strong>28% unable to handle a $2,000 emergency</strong>, and over half <strong>lacking one month’s savings</strong>; meanwhile, <strong>36% of Millennials face financial difficulties</strong>, driven by <strong>debt</strong>, and <strong>26-27% of both generations</strong> are cutting retirement savings due to <strong>inflation</strong>, with <strong>30% of Millennials</strong> and <strong>37% of Gen Z</strong> scoring low on <strong>financial literacy tests</strong>.</p>
+        </div>
+
+         <!-- Competitor Analysis -->
+         <div class="lrg-mt">
+            <h2>A Peek at the Competition</h2>
+            <p class="all-margin">I analyzed <strong>similar apps</strong> which revealed <strong>gaps in the market</strong>, as well as <strong>opportunities</strong> where XpensePal can <strong>offer something truly unique</strong> and <strong>valuable</strong>.</p>
+            <img src="images/competitive-analysis.png" loading="lazy" alt="Description of the image" class="comp-analysis mt-more">
+         </div>
+        
+         <!-- Screener Survey & User Interviews -->
+         <div class="lrg-mt">
+            <h2>What Users Really, Really Want</h2>
+            <p class="all-margin">I sent out <strong>30 screener surveys</strong> to identify <strong>Gen Z and Millennials with mobile phones who actively use personal finance apps</strong>. </p>
+            <p class="all-margin">From these, I conducted <strong>8 user interviews via Zoom</strong> to <strong>explore</strong> their <strong>needs</strong> and <strong>challenges</strong> in depth. </p>
+            <p class="mt all-margin">View<a href="https://docs.google.com/document/d/1Qh68LsJ3oFLz8AXeWkcec85_WSNrrOHiJ1XLodf00jY/edit#heading=h.mra5d5cglj2l" target="_blank" class="link">User Interview Questions</a>
+            </p>
+            <div class="research-info mt-more all-margin">
+        <!-- User Interview demographics & research goals -->
+            <!-- Left Column: Demographics -->
+            <div class="demographics">
+                    <h3>Demographics</h3>
+                    <ul>
+                        <li><strong>Ages:</strong> 22-40</li>
+                        <li><strong>Gender:</strong> 
+                            <ul>
+                                <li>4 females</li>
+                                <li>4 males</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+                <!-- Right Column: Research Goals -->
+                <div class="research-goals">
+                    <h3>Research Goals</h3>
+                    <ul>
+                        <li>I want to understand the <strong>primary goals</strong> of Gen Z and Millennials when <strong>using personal finance apps</strong>.</li>
+                        <li>I want to identify <strong>common pain points</strong> users face when <strong>managing their finances</strong>.</li>
+                        <li>I want to understand what <strong> features</strong> users <strong>need to improve</strong> their <strong>financial situation</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Insert 5 Charts in grid style -->
+            <div>   
+                <h3 class="mt-more1 padding-b">User Interviews Insights</h3>
+            </div>
+            <div class="interview-charts-grid">
+                <div class="chart-item">
+                    <img src="images/chart1.png" loading="lazy" alt="User Interview Chart 1">
+                </div>
+                <div class="chart-item">
+                    <img src="images/chart2.png" loading="lazy" alt="User Interview Chart 2">
+                </div>
+                <div class="chart-item">
+                    <img src="images/chart3.png" loading="lazy" alt="User Interview Chart 3">
+                </div>
+                <div class="chart-item middle">
+                    <img src="images/chart4.png" loading="lazy" alt="User Interview Chart 4">
+                </div>
+                <div class="chart-item middle">
+                    <img src="images/chart5.png" loading="lazy" alt="User Interview Chart 5">
+                </div>
+            </div>
+
+            <!-- List for user interview insights -->
+            <ul class="user-insights-list lrg-mt all-margin">
+                <li>Users need <strong>less manual</strong> input and smarter tools to <strong>automatically categorize expenses</strong>.</li>
+                <li>Many users struggle with <strong>financial literacy</strong> and would benefit from <strong>interactive tutorials or videos</strong> to guide them.</li>
+                <li>Gen Z and Millennials prefer <strong>easy-to-use interfaces</strong>.</li>
+                <li>Users need <strong>flexible tools</strong> to manage fluctuating finances.</li>
+                <li>Users need an app that offers both <strong>daily budgeting</strong> and <strong>long-term tracking</strong>.</li>
+            </ul>
+    <div class="divider"></div>
+        <section class="lrg-mt" id="define">
+            <h2>Inside the User’s Mind</h2>
+            <p class="all-margin">To dig deeper into these insights, I created an <strong>aggregated empathy map</strong> that <strong>captures what users say, think, do</strong> and <strong>feel</strong> about their personal finances.
+            </p>
+            <div class="mt-more">
+                <img src="images/empathy-map.png" loading="lazy" alt="Description of the image" class="single-image ">
+            </div>
+            <!-- Insights from empathy map -->
+            <div class="mt-more all-margin">
+                <h3 class="mt-more">Key Insights</h3>
+            <ul class="user-insights-list mt all-margin">
+                <li><strong>Users need easy-to-use interfaces</strong> with <strong>automation tools</strong> because they find <strong>manual entry frustrating</strong></li>
+                <li>For <strong>effective financial management</strong>, they seek solutions that handle both <strong>daily budgeting</strong> and <strong>long-term tracking</strong>, along with <strong>educational content</strong> to guide them.
+                </li>
+            </ul>
+            </div>
+            <!-- User Persona -->
+             <div class="lrg-mt">
+            <h2>Persona Spotlight</h2>
+            </div>
+            <!-- Carousel -->
+            <div id="userPersonaCarouselContainer" class="moveup-personas">
+                <input hidden type="radio" name="userPersonaControl" id="button_Bridget" checked/>
+                <input hidden type="radio" name="userPersonaControl" id="button_Freddie"/>
+                <input hidden type="radio" name="userPersonaControl" id="button_Michael"/>            
+
+        <div id="userPersonaCarousel">
+        <div class="userPersonaWrapper">
+            <div class="userPersona_Bridget">
+                <img src="images/Budget-Focused-Bridget.png" loading="lazy" alt="Budget Focused Bridget" />
+            </div>
+
+            <div class="userPersona_Freddie">
+                <img src="images/Financially-Struggling-Freddie.png" loading="lazy" alt="Financially Struggling Freddie" />
+            </div>
+
+            <div class="userPersona_Michael">
+                <img src="images/Long-Term Saver-Michael.png" loading="lazy" alt="Long Term Saver Michael" />
+            </div>
+        </div> <!-- // .userPersonaWrapper -->
+    </div> <!-- // #userPersonaCarousel -->
+
+    <div id="userPersonaNavigation">
+        <label class="label_Bridget" for="button_Bridget">Bridget</label>
+        <label class="label_Freddie" for="button_Freddie">Freddie</label>
+        <label class="label_Michael" for="button_Michael">Michael</label>
+    </div> <!-- // #userPersonaNavigation -->
+</div> <!-- // #userPersonaCarouselContainer -->
+</section>
+<div class="divider"></div>
+
+<!-- Storyboard -->
+<section class="lrg-mt" id="ideate">
+    <div>
+        <h2>A Tale of Money Moves</h2>
+        <p class="all-margin mb">Considering the challenges users face with managing their finances, I created <strong>high-level storyboards</strong> to <strong>visualize how XpensePal fits into their daily routines</strong> and <strong>transforms</strong> those <strong>moments of stress into feelings of control</strong> and <strong>relief</strong>.
+        </p>
+    </div>
+<div id="image-gallery">
+    <div class="row">
+        <div class="column">
+            <img src="images/storyboard-1.png" loading="lazy" alt="Storyboard 1" class="gallery-img" />
+        </div>
+        <div class="column">
+            <img src="images/storyboard-2.png" loading="lazy" alt="Storyboard 2" class="gallery-img" />
+        </div>
+    </div>
+    <div class="row-span">
+        <img src="images/storyboard-3.png" loading="lazy" alt="Storyboard 3" class="gallery-img" />
+    </div>
+</div>
+<!-- Card sorting -->
+<div>
+    <h2 class="mt-more">Sorting It Out</h2>
+    <p class="all-margin padding-b">Next, I conducted an <strong>open card sorting</strong> exercise with <strong>five participants</strong> using <strong>FigJam</strong>. This <strong>remote</strong>, <strong>unmoderated</strong> session revealed how users naturally group features. I also included an <strong>'unknown' pile</strong> for participants to use if they weren’t sure where to place a card.
+    </p>
+    <div>
+        <img src="images/card-sorting.png" loading="lazy" alt="Card sorting done by five participants for XpensePal" class="card-sorting" />
+    </div>
+    <div id="card-sorting-insights">
+        <div class="column-card-sorting">
+            <p>Participants <strong>consistently organized cards</strong> into <strong>broad categories</strong> like Account & Security, Financial Management, and Support & Help. Some commonly paired features included Secure Registration & Authentication with Profile Management, and Flexible Budget with Set Budget.</p>
+        </div>
+        <div class="column-card-sorting">
+            <p><strong>Surprisingly</strong>, <strong>no cards</strong> were placed in the <strong>'unknown' pile</strong>, suggesting that participants found all features relatively clear. The results also highlighted a <strong>preference</strong> for separating <strong>Customization & Settings</strong> from the app’s core <strong>Financial Management</strong> functions.</p>
+        </div>
+    </div>
+</div>
+<div class="lrg-mt">
+    <h2 class="mt-more">Flow into Action</h2>
+    <p class="all-margin">Based on what I learned from the card sorting, I designed a <strong>user flow</strong> (also via FigJam) that makes it <strong>easy for users</strong> to move from <strong>account creation</strong> or <strong>log-in</strong> to accessing all the <strong>key features</strong>.
+    </p>
+    <div class="mt-more mb">
+        <img src="images/1stdraft_userflow.png" alt="First draft user flow for XpensePal" class="single-image"/>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- Paper Sketch -->
+<div class="mt">
+    <h2 class="mt-more">Sketch for Success</h2>
+    <p class="all-margin padding-b">I began with <strong>quick paper sketches</strong> to rapidly <strong>brainstorm</strong> and explore <strong>various layouts</strong> and <strong>interactions</strong>. After exploring different options, I settled on this design to ensure that <strong>key screens</strong>, like the dashboard, savings, budgeting, debt, and FinTips, were <strong>intuitive</strong> and aligned with <strong>user needs</strong> from the start.
+    </p>
+    <div>
+        <img src="images/paper-sketch1.png" loading="lazy" alt="Paper sketch of XpensePal dashboard, transaction, savings, budget, and debt screens" class="single-image-sketch" />
+    </div>
+ </div>
+</section>
+
+<section class="lrg-mt" id="prototype">
+   <div class="lrg-mt">
+    <h2>Laying the Foundation</h2>
+    <p class="all-margin">Now it was time to <strong>lay the groundwork</strong> by designing the <strong>low-fidelity wireframes</strong> in Figma. These wireframes show how users will <strong>navigate</strong> through the app, from the splash screen to the dashboard, settings, and other key areas.</p>
+    <p class="all-margin mt padding-b"><strong>Note:</strong> Only one onboarding screen is shown for demonstration purposes, although there are four in total. I've also included one confirmation screen to prevent redundancy.</p>
+   </div>
+    <div>
+        <img src="images/Lo-fi-wireframe-1.png" loading="lazy" alt="Low-fidelity wireframe of XpensePal" class="single-image-sketch" />
+    </div>
+
+    <!-- Mid-Fi Wireframe -->
+    <div class="lrg-mt"> 
+        <h2>Kicking It Up a Notch</h2>
+        <p class="all-margin">I then transitioned to <strong>mid-fidelity wireframes</strong> to focus on refining XpensePal's <strong>layout, typography,</strong> and <strong>spacing.</strong></p>
+        <p class="all-margin mt padding-b"><strong>Note:</strong> All screens except the sidebar have a bottom navigation. For demonstration, I've only included it on the dashboard to focus on key UI elements on other screens.</p>
+    </div>
+    <div>
+        <img src="images/Mid-Fi-Wireframe1.png" loading="lazy" alt="Mid-fidelity wireframe of XpensePal" class="single-image-sketch" />
+    </div>
+
+    <div class="lrg-mt"> 
+        <h2>Coloring the Details</h2>
+        <p class="all-margin padding-b">I transformed my mid-fidelity wireframes into <strong>high-fidelity mockups</strong> to <strong>capture the app's branding</strong> and <strong>functionality</strong> and present a <strong>more realistic user experience</strong>. This iteration serves as the basis for my heuristic evaluation.</p>
+    </div>
+    <div>
+        <img src="images/Hi-fi-mockup1.png" loading="lazy" alt="High-fidelity wireframe of XpensePal" class="single-image-sketch" />
+    </div>
+    <!-- Hi-fi Prototype -->
+    <div class="lrg-mt"> 
+        <h2>XpensePal in Motion 1.0</h2>
+        <p class="all-margin padding-b">Once I polished the high-fidelity mockup, I transformed them into <strong>interactive screens</strong> to reflect XpensePal’s look and feel. This tied everything together—visual design, typography, and user flow, ready for testing and refinement. This iteration serves as the basis for my heuristic evaluation.</p>
+    </div>
+    <div class="video-container">
+        <video width=840px height=460px autoplay muted loop class="cropped-video-1stdraft">
+        <source src="video/1stdraft-prototype.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="center mb">
+        <p>View<a href="https://www.figma.com/proto/3Hl1I3kddslSwYClUudgNI/XpensePal?node-id=1259-4315&node-type=canvas&t=foa8a46zus8yHmtt-1&scaling=scale-down&content-scaling=fixed&page-id=337%3A1365&starting-point-node-id=1259%3A4315" target="_blank" class="link">High-Fidelity Prototype</a></p>
+    </div>
+</section>
+<div class="divider"></div>
+<section class="lrg-mt" id="test">
+    <div>
+        <h2>The Check-up</h2>
+        <p class="all-margin padding-b">Here’s a quick breakdown of my <strong>heuristic evaluation</strong> based on <strong>Nielsen and Molich’s 10 Steps to Improve Usability, Utility, and Desirability</strong>:
+        </p>
+    </div>
+    <div>
+        <img src="images/heuristic_eval_annotations.png" loading="lazy" alt="High-fidelity wireframe of XpensePal" class="single-image-sketch" />
+    </div>
+
+        <!-- Task Analysis -->
+    <div class="mt-more all-margin">
+            <h2 class="mt-more">Testing the Waters</h2>
+            <p class="all-margin">Drawing from the <strong>same five participants</strong> involved in the card sorting, I had them <strong>complete three tasks</strong>:</p>
+            <ul class="user-insights-list mt all-margin">
+                <li>Setting up a savings goal</li>
+                <li>Paying off a debt</li>
+                <li>Updating a budget</li>
+        </ul>
+    </div>
+
+    <div>
+        <p class="all-margin padding-b">I used the <strong>think-aloud method</strong>, combined with <strong>screen-sharing tools like Zoom</strong>, to observe their process.</p>
+    </div>
+    <div>
+        <img src="images/task_analysis.png" loading="lazy" alt="Image of XpensePal’s Task Analysis results" class="single-image-sketch" />
+    </div>
+    <div>
+        <p class="all-margin mt-more">Overall, participants easily navigated the savings and budgeting tasks which <strong>highlights the app’s intuitive flow</strong>. However, the <strong>simple congratulatory screen</strong> for paying off debt left some feeling underwhelmed, as they expressed <strong>wanting more recognition for their achievement.</strong> 
+        </p>
+
+        <p class="all-margin mt mb">This highlighted a key pain point—<strong>users crave a more rewarding experience when reaching milestones</strong>.
+        </p>
+    </div>
+</section>
+<div class="divider"></div>
+<!-- Refine Phase -->
+<section class="mt" id="refine">
+    <div class="mt-more all-margin">
+        <h2>The Glow-Up</h2>
+        <p class="padding-b">Here are some <strong>key updates</strong> I made to create a more engaging experience in XpensePal:</p>
+
+        <!-- Carousel for Refine Phase -->
+<div id="glowUpCarouselContainer" class="moveup-personas">
+    <input hidden type="radio" name="glowUpControl" id="button_NewUserFlow" checked/>
+    <input hidden type="radio" name="glowUpControl" id="button_UpdatedScreens"/>
+
+    <div id="glowUpCarousel">
+        <div class="glowUpWrapper">
+            <div class="glowUp_NewUserFlow">
+                <img src="images/final-dsgn-user-flow.png" loading="lazy" alt="Final Design User Flow" />
+            </div>
+
+            <div class="glowUp_UpdatedScreens">
+                <img src="images/final-hi-fi-mockup-annotation.png" loading="lazy" alt="Final Hi-Fi Mockup Annotation" />
+            </div>
+        </div> <!-- // .glowUpWrapper -->
+    </div> <!-- // #glowUpCarousel -->
+
+    <div id="glowUpNavigation">
+        <label class="label_NewUserFlow" for="button_NewUserFlow">New User Flow</label>
+        <label class="label_UpdatedScreens" for="button_UpdatedScreens">Updated Screens</label>
+    </div> <!-- // #glowUpNavigation -->
+</div> <!-- // #glowUpCarouselContainer -->
+
+        <ul class="user-insights-list mt padding-b">
+            <li><Strong>Real Rewards:</Strong> I introduced a rewards system for completed milestones to celebrate users’ achievements and keep them motivated.
+            </li>
+            <li><strong>Progress Sharing:</strong> I added a share button on milestone screens for users to share their journey with family and friends, which reinforces their motivation and commitment.</li>
+            <li><strong>Positive Alerts:</strong> I redesigned alerts to have a positive tone that encourages users with actionable messages. This makes XpensePal feel like a true pal.</li>
+    </ul>
+</div>
+        <!-- <-- Accessibility Concerns --> 
+    <div class="mt padding-b">
+        <h2>Equity-Focused by Design</h2>
+<p class="all-margin">My approach goes beyond inclusivity. I designed XpensePal with an <strong>equity focus</strong>, using <strong>WCAG-compliant colors</strong> for <strong>visibility</strong> and <strong>text contrast</strong>. Dela Gothic One is consistently used for bold headings, and Lexend Mega for body text to <strong>enhance legibility</strong> and reading speed.</p> 
+<p class="all-margin padding-b">The app also includes an <strong>accessibility screen</strong>, allowing users with diverse abilities and challenges to easily adjust visual, audio, and mobility settings.</p>
+</div>
+    <div>
+        <img src="images/accessibility_annotation.png" loading="lazy" alt="High-fidelity wireframe of XpensePal" class="single-image-sketch" />
+    </div> 
+
+        <!-- Hi-fi Prototype REFINED -->
+        <div class="lrg-mt"> 
+            <h2>XpensePal in Motion 2.0</h2>
+            <p class="all-margin padding-b">Now, let’s take a look at the <strong>updated prototype</strong> that showcases the improvements.</p>
+        </div>
+        <div class="video-container">
+            <video width=840px height=460px autoplay muted loop class="cropped-video-1stdraft">
+            <source src="video/final-draft-proto.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="center mb">
+            <p>View<a href="https://www.figma.com/proto/3Hl1I3kddslSwYClUudgNI/XpensePal?node-id=1697-9180&node-type=frame&t=lM5vCFSElwItLE96-1&scaling=scale-down&content-scaling=fixed&page-id=1679%3A26329&starting-point-node-id=1697%3A9180" target="_blank" class="link">Updated High-Fidelity Prototype</a></p>
+        </div>
+
+        <!-- Style Guide -->
+        <div>
+            <h2>The Design Playbook</h2>
+            <p class="all-margin padding-b">This is the <strong>style guide</strong> I designed to establish XpensePal’s visual identity.
+            </p>
+            <div>
+                <img src="images/style-guide-xpensepal.png" loading="lazy" alt="Full version of XpensePal’s style guide in pdf format" class="single-image-style-guide"/>
+            </div>
+        </div>
+       <!-- Takeaways -->
+       <div class="lrg-mt2">
+        <h2>Takeaways</h2>
+        <ul class="user-insights-list padding-b">
+            <li><strong>Boost User Confidence:</strong> Using positive reinforcement throughout the app, like milestone celebrations and encouraging alerts, makes users feel a sense of accomplishment and motivated to engage with the app regularly.</li>
+            <li><strong>Design for Everyone:</strong> Ensuring that everyone, regardless of their abilities, can navigate and benefit from XpensePal, empowers users to take charge of their financial goals.</li>
+            <li><strong>Iterate Based on Feedback:</strong> Embracing an iterative design process allowed me to continuously refine the user experience and ensure the app evolved with its users’ needs.</li>
+            <li><strong>Create a Friendly Environment:</strong> Aiming for a conversational tone in the app’s messaging helped me create a welcoming atmosphere. Users feel supported and understood, which reinforces the idea that XpensePal is more than just an app—it’s a reliable companion on their financial journey.</li>
+    </ul>
+    </div>
+    </section> 
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div id="footer-content">
+           <div class="copyright">
+                <small>Copyright &copy;<span id="current-year"></span>Designed &amp; Developed by Tahaylia Higgins. All Rights Reserved. </small>
+            </div>
+            <div class="contact-icons">
+            <!-- Font Awesome Icons -->
+             <a href="https://www.linkedin.com/in/tahayliahiggins/" target="_blank"><i class="fab fa-linkedin"></i></a>
+             <a href="mailto:tayhiggins14@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="document/Tahaylia_Higgins_UX_Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+              </div>
+        </div>
+        </footer>
+</body>
+</html>
+
+  
+        
+        
+           

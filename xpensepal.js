@@ -125,10 +125,10 @@ window.onscroll = function() {
 };
 
 
-   // Get the current year to automatically update copyright year
-//   document.addEventListener('DOMContentLoaded', function() {
-//     const currentYear = new Date().getFullYear();
-//     document.getElementById('current-year').textContent = currentYear;
-//  }) 
+//    Get the current year to automatically update copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+ }) 
 
 
