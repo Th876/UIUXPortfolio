@@ -13,18 +13,14 @@
  :root {
     --amethyst: #C490CE;
      /* XpensePal colors */
-     --primary-100: #F5FFF2;
-     --primary-200: #CFF2C2;
-     --primary-700: #23660A;
-     --primary-600: #3A8C1C;
-     --primary-800: #114000;
-     --secondary-700: #380A66;
-     --secondary-600: #541C8C;
-     --secondary-200: #DAC2F2;
+     --primary-100: #800080;
+     --accent: #FFE9FF;
      --neutral-100: #ffffff;
      --neutral-200: #F2EDED;
+     --neutral-700: #262626;
      --neutral--800: #1F1D1D;
      --card-color: rgba(230, 230, 230, 0.25);
+     --section-color: #fafafa;
 }
 
  * {
@@ -39,8 +35,8 @@ body {
     background-position: center center;
     margin: 0 auto;
     font-size: 1.12rem;
-    color: var(--neurtral--800);
-}
+    color: var(--neutral--800);
+} 
 
 p, li {
     line-height: 2;
@@ -53,7 +49,6 @@ main {
     border-left: 1px solid rgba(210, 209, 209, 0.5); 
     border-right: 1px solid rgba(210, 209, 209, 0.5);
 }
-
 .banner {
     box-sizing: border-box;
     border-left: 1px solid rgba(210, 209, 209, 0.5); 
@@ -63,9 +58,10 @@ main {
 }
 /* Header image */
 .banner-img {
-    display: block;
-    margin: 0 0 3em 0;
-    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
 }
 
 .banner-img{
@@ -92,274 +88,80 @@ strong {
     margin: 0;
 }
 
+
 h2 {
     font-family: 'TAN Pearl';
-    margin-top: 50px;
     padding-bottom: 30px;
-    color: var(--primary-700);
+    color: var(--primary-100);
     line-height: 1.7;
-    text-align: center;
 }
 
 h3 {
-    text-align: center;
     margin-left: 0px;
     margin-bottom: 10px;
-    color: var(--primary-700);
+    color: var(--primary-100);
     font-family: 'Tan Pearl';
 }
         
-  .all-margin {
-    margin: 0 30px;
-  }
+  
+#backToHome {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: 50px; 
+    z-index: 2; 
+}
 
-  .mt {
+
+.old-cl {
+    margin-top: -60px;
+    width: 100%;
+    margin-bottom: -130px;
+}
+
+small {
+    margin-left: 110px;
+}
+
+.grid-container-left {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px; 
+    padding: 20px; 
+    margin-top: 90px;
+}
+
+.right-column-space {
+    padding: 20px; 
+}
+
+
+.grid-container-right {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* right column is bigger than the left */
+    gap: 20px; 
+    padding: 20px; 
+    margin-top: 90px;
+}
+
+.section-color {
+    background-color: var(--section-color);
+}
+
+.right-column-text {
+    padding: 20px; 
+    text-align: right;
+}
+
+.full-width-image {
+    width: 100%; 
+    margin: 20px 0; 
+    display: block;
+}
+
+.padding-t {
     padding-top: 20px;
-  }
-
-  .mt1 {
-    margin-top: 15px;
-  }
-
-  .mb {
-    padding-bottom: 80px;
-  }
-  .lrg-mt {
-    padding-top: 65px;
-  }
-  .lrg-mt2 {
-    padding-top: 95px;
-  }
-
-  .lrg-mt3 {
-    padding-top: 135px;
-  }
-
-  .md-mt {
-    margin-top: 30px;
-  }
-
-  .mt-more {
-    padding-top: 45px;
-  }
-
-  .mt-more1 {
-    padding-top: 100px;
-  }
-
-/* Carousel Secondary Research*/
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0px;
 }
-
-#carousel, #navigation {
-    display: block;
-}
-
-#carousel {
-    overflow: hidden;
-    width: 500px;
-    height: 400px;
-    border-radius: 4px;
-    background-color: var(--neutral-100);
-}
-
-.p-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-}
-
-#button_a:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); 
-}
-
-#button_b:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%); 
-}
-
-#button_c:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-200%);
-    transform: translateY(-200%); 
-}
-
-#button_d:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-300%);
-    transform: translateY(-300%); 
-}
-
-[class^="panel_"] {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-[class^="panel_"] img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-#navigation {
-    display: flex;
-    flex-direction: column;
-    margin-left: 24px;
-}
-
-/* Buttons */
-[class^="label_"] {
-    cursor: pointer;
-    margin: 8px 0;
-    width: 200px;
-    text-align: center;
-    border-radius: 4px;
-    color: #aaa;
-    background-color: var(--neutral-100);
-    transition: all 0.3s ease;
-    padding: 10px;
-    border: 1px solid var(--neutral--800);
-}
-
-[class^="label_"]:hover {
-    color: #444;
-    background-color: #f1f1f1;
-}
-
-#button_a:checked ~ #navigation .label_a,
-#button_b:checked ~ #navigation .label_b,
-#button_c:checked ~ #navigation .label_c,
-#button_d:checked ~ #navigation .label_d {
-     cursor: default;
-     color: #fff;
-     background-color: var(--primary-800);
-}
-/* Carousel ends */
-
-
-/* User Persona Carousel */
-#userPersonaCarouselContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0px;
-}
-
-#userPersonaCarousel, #userPersonaNavigation {
-    display: block;
-}
-
-#userPersonaCarousel {
-    overflow: hidden;
-    width: 100vw;
-    height: 500px;
-    border-radius: 4px;
-    background-color: var(--neutral-100);
-    margin-left: -30px;
-}
-
-.userPersonaWrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-}
-
-#button_Bridget:checked ~ #userPersonaCarousel .userPersonaWrapper {
-    transform: translateY(0); 
-}
-
-#button_Freddie:checked ~ #userPersonaCarousel .userPersonaWrapper {
-    transform: translateY(-100%); 
-}
-
-#button_Michael:checked ~ #userPersonaCarousel .userPersonaWrapper {
-    transform: translateY(-200%); 
-}
-
-[class^="userPersona_"] {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-[class^="userPersona_"] img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-#userPersonaNavigation {
-    display: flex;
-    flex-direction: column;
-    margin-left: 24px;
-}
-
-/* Buttons */
-[class^="label_"] {
-    cursor: pointer;
-    margin: 8px 0;
-    width: 200px;
-    text-align: center;
-    border-radius: 4px;
-    color: #aaa;
-    background-color: var(--neutral-100);
-    transition: all 0.3s ease;
-    padding: 10px;
-    border: 1px solid var(--neutral--800);
-}
-
-[class^="label_"]:hover {
-    color: #444;
-    background-color: #f1f1f1;
-}
-
-#button_Bridget:checked ~ #userPersonaNavigation .label_Bridget,
-#button_Freddie:checked ~ #userPersonaNavigation .label_Freddie,
-#button_Michael:checked ~ #userPersonaNavigation .label_Michael {
-     cursor: default;
-     color: #fff;
-     background-color: var(--primary-800);
-}
-.moveup-personas {
-    margin-top: -20px;
-}
-
-/* Meet XpensePal image */
-.single-image-float {
-    display: block; 
-    max-width: 90%;
-    height: auto; 
-    margin: 0 auto; 
-    animation: float 3s ease-in-out infinite; /* floating animation */
-}
-
-/* Keyframes for floating effect */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0); /* Start and end at the original position */
-    }
-    50% {
-        transform: translateY(-30px); /* Move up slightly */
-    }
-}
-
-.comp-analysis {
-    display: block; 
-    max-width: 40%;
-    height: auto; 
-    margin: 0 auto;
-}
-
 
 /* Scrollspy Navigation */
 .spy-nav {
@@ -399,7 +201,7 @@ h3 {
     font-size: 0.75rem;
     /* The text height inside the circle */
     line-height: 70px;
-    background-color: var(--primary-200);
+    background-color: var(--accent);
     color: var(--neutral-700);
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -408,12 +210,12 @@ h3 {
 }
 
 .spy-nav ul li a.active {
-    background-color: var(--neutral--800);
+    background-color: var(--primary-100);
     color: var(--neutral-100);
 }
 
 .spy-nav ul li a:hover {
-    background-color: var(--neutral--800);
+    background-color: var(--primary-100);
     color: var(--neutral-100);
 }
 
@@ -437,330 +239,12 @@ h3 {
 }
 
 
-#backToHomeBtn {
-    position: fixed;
-    top: 25px;
-    left: 25px;
-    width: 50px; 
-    z-index: 2; 
-}
-
-.video-container p {
-    text-align: center;
-}
-
 .center {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.link:link {
-    color: var(--primary-600);
-    margin: 7px;
-}
-
-.link:visited {
-    color:var(--secondary-600);
-}
-
-/* Videos */
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* User interview demographics */
-.research-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Space between columns */
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.demographics, .research-goals {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.research-goals ul , .demographics ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Spacing between bullet points */
-.research-goals li {
-    margin-bottom: 10px; 
-}
-
-@media (max-width: 768px) {
-    .research-info {
-        grid-template-columns: 1fr; /* Stack columns on smaller screens */
-    }
-}
-
-/* Chart Img */
-.interview-charts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 20px;
-    max-width: 1200px;
-    margin-top: 0px;
+    width: 70%; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-}
-
-.chart-item {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid var(--neutral--800);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.chart-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.chart-item:hover img {
-    transform: scale(1.05);
-}
-
-/* styling for last two items */
-.interview-charts-grid .chart-item:nth-child(4),
-.interview-charts-grid .chart-item:nth-child(5) {
-    grid-column: span 1; /* Span only one column */
-    justify-self: center; /* Center align */
-}
-
-/* last two images on a new row */
-.interview-charts-grid .chart-item:nth-child(4) {
-    grid-column-start: 2; /* Start at the second column */
-}
-
-.middle {
-   position: relative;
-   top: 10%;
-   left: -50%;
-}
-
-/* Insights bullet points */
-.user-insights-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 30px;
-}
-
-.user-insights-list li {
-    margin-bottom: 15px; /* Space between bullet points */
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-}
-
-
-/* Single images */
-.single-image {
-    display: block; 
-    max-width: 80%;
-    height: auto; 
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid var(--neutral--800);
-}
-
-/* Storyboard */
-/* Center the gallery on page */
-#image-gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin-top: -30px;
-}
-
-/* Top row with two images */
-.row {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid var(--neutral--800);
-    border-radius: 4px;
-}
-
-.gallery-img {
-    width: 100%;
-    height: auto;
-    max-width: 640px; 
-}
-
-/* Bottom row spans across both columns */
-.row-span {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-.row-span img {
-    width: 50%;
-    max-width: 640px;
-    height: auto;
-    border: 1px solid var(--neutral--800);
-    border-radius: 4px;
-    margin-top: 20px;
-}
-
-/* Card sorting */
-.card-sorting {
-    display: block; 
-    max-width: 100%;
-    height: auto; 
-    margin: 0 auto; 
-}
-
-.padding-b {
-    padding-bottom: 30px;
-}
-
-#card-sorting-insights {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* This centers it vertically */
-    margin-top: 10px;
-}
-
-.column-card-sorting {
-    width: 50%; /* Equal width for two columns */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Centering the entire container */
-#card-sorting-insights {
-    text-align: left;
-}
-
-.single-image-sketch {
-    display: block; 
-    max-width: 70%;
-    height: auto; 
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid var(--neutral--800);
-}
-
-.single-image-style-guide {
-    display: block; 
-    max-width: 50%;
-    height: auto; 
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid var(--neutral--800);
-}
-
-/* Carousel for Refine Phase: Mockup and User flow */
-#glowUpCarouselContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-}
-
-#glowUpCarousel, #glowUpNavigation {
-    display: block;
-}
-
-#glowUpCarousel {
-    overflow: hidden;
-    width: 100vw; /* Adjust width as needed */
-    height: 500px; /* Adjust height as needed */
-    border-radius: 4px;
-    background-color: var(--neutral-100);
-    margin-left: -30px;
-}
-
-.glowUpWrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-}
-
-#button_NewUserFlow:checked ~ #glowUpCarousel .glowUpWrapper {
-    transform: translateY(0); 
-}
-
-#button_UpdatedScreens:checked ~ #glowUpCarousel .glowUpWrapper {
-    transform: translateY(-100%); 
-}
-
-[class^="glowUp_"] {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-[class^="glowUp_"] img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-#glowUpNavigation {
-    display: flex;
-    flex-direction: column;
-    margin-left: 24px;
-}
-
-/* Buttons */
-[class^="label_"] {
-    cursor: pointer;
-    margin: 8px 0;
-    width: 200px; /* Adjust width as needed */
-    text-align: center;
-    border-radius: 4px;
-    color: #aaa;
-    background-color: var(--neutral-100);
-    transition: all 0.3s ease;
-    padding: 10px;
-    border: 1px solid var(--neutral--800);
-}
-
-[class^="label_"]:hover {
-    color: #444;
-    background-color: #f1f1f1;
-}
-
-#button_NewUserFlow:checked ~ #glowUpNavigation .label_NewUserFlow,
-#button_UpdatedScreens:checked ~ #glowUpNavigation .label_UpdatedScreens {
-    cursor: default;
-    color: #fff;
-    background-color: var(--primary-800);
+    margin-top: 30px;
 }
 
 
