@@ -7,6 +7,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 let sticky = spyNav.offsetTop; // Get the initial position of the navbar
 
+
 // Function to make the navbar sticky
 function stickyNav() {
     if (window.scrollY >= sticky) {

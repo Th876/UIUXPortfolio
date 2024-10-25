@@ -21,6 +21,9 @@
      --neutral--800: #1F1D1D;
      --card-color: rgba(230, 230, 230, 0.25);
      --section-color: #fafafa;
+     --border-color: #D3D3D3;
+     --link-novisit: #19559A;
+     --link-visited: #6F4285;
 }
 
  * {
@@ -84,6 +87,15 @@ main {
     top: 40px;
 }
 
+.divider1 {
+    height: 1px; 
+    background-color: var(--neutral-200);
+    width: 95%; 
+    margin: 0 auto; 
+    position: relative;
+    top: 45px;
+}
+
 strong {
     margin: 0;
 }
@@ -114,55 +126,73 @@ h3 {
 
 
 .old-cl {
-    margin-top: -60px;
+    margin-top: -100px;
     width: 100%;
-    margin-bottom: -130px;
+    margin-bottom: -180px;
 }
 
-small {
-    margin-left: 110px;
+.caption {
+    font-size: 0.85rem;
+    margin-left: 150px;
 }
 
-.grid-container-left {
-    display: grid;
-    grid-template-columns: 3fr 1fr; 
-    gap: 20px; 
-    padding: 20px; 
-    margin-top: 90px;
-}
-
-.right-column-space {
-    padding: 20px; 
-}
-
-
-.grid-container-right {
-    display: grid;
-    grid-template-columns: 1fr 3fr; /* right column is bigger than the left */
-    gap: 20px; 
+.cl-container-txt {
     padding: 20px; 
     margin-top: 90px;
 }
 
 .section-color {
     background-color: var(--section-color);
-}
-
-.right-column-text {
-    padding: 20px; 
-    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .full-width-image {
-    width: 100%; 
-    margin: 20px 0; 
+    width: 80%; 
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.cl-comp-analysis {
+    width: 60%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.user-persona {
+    width: 60%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
 }
 
 .padding-t {
     padding-top: 20px;
 }
 
+.padding-t1 {
+    padding-top: 60px;
+}
+
+.mt {
+    padding-top: 40px;
+}
+
+.border {
+    border-left: 1px solid rgba(211, 211, 211, 0.5);
+    border-right: 1px solid rgba(211, 211, 211, 0.5);
+    /* background-color: green; */
+    height: auto;
+    margin-bottom: -100px;
+    padding-bottom: 70px;
+}
 /* Scrollspy Navigation */
 .spy-nav {
     display: flex;
@@ -233,7 +263,7 @@ small {
     bottom: 0; /* Align it to the bottom of the container */
     left: -10px;
     height: 6px;
-    background-color: var(--primary-700);
+    background-color: var(--primary-100);
     width: 0;
     transition: width 0.25s ease-out;
 }
@@ -247,7 +277,83 @@ small {
     margin-top: 30px;
 }
 
+.center-video {
+    width: 90%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
 
+/* Divider */
+.divider {
+    height: 1px; 
+    background-color: var(--neutral-200);
+    width: 95%; 
+    margin: 0 auto; 
+    position: relative;
+    top: 70px;
+}
+
+.user-flow {
+    width: 58%;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.wireframe {
+    width: 80%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.cl-usability-test {
+    width: 60%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.link:link {
+    color: var(--link-novisit);
+    margin: 7px;
+}
+
+.link:visited {
+    color:var(--link-visited);
+}
+
+/* Key learnings */
+.key-section-color {
+    background-color: var(--section-color);
+    padding: 40px 0; 
+    margin-bottom: 0; 
+}
+
+.learnings-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.learnings-list li {
+    margin-bottom: 15px; /* Space between bullet points */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.cl-spacing {
+    height: 80px;
+}
 /* Footer */
 #footer-content {
     display: flex;
@@ -255,13 +361,16 @@ small {
     justify-content: space-around;
     width: 100%; 
     max-width: 1280px; 
-    margin: -30px auto; 
+    margin: 0 auto; /* Changed from -30px to 0 to avoid overlap */
     box-sizing: border-box;
     border-top: 1px solid rgba(210, 209, 209, 0.5);
     border-left: 1px solid rgba(210, 209, 209, 0.5); 
     border-right: 1px solid rgba(210, 209, 209, 0.5);
-    padding: 20px 20px; 
+    padding: 20px; 
+    padding-top: 20px; /* Optional: Adjust this as needed */
+    padding-bottom: 20px; /* Optional: Adjust this as needed */
 }
+
 
 small {
     font-size: 0.76rem;
