@@ -233,21 +233,20 @@ h2 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 10px;
     margin-top: 20px;
+
 }
 
 .project-item {
     position: relative;
     overflow: hidden;
+    height: 500px;
 }
 
 .project-item p {
-    width: 100%;
-    font-size: 12px;
-    /* background: green; */
-    line-height: 1.25;
+    font-size: 1rem;
 }
 
 .project-item img {
@@ -298,7 +297,7 @@ h2 {
 
 .overlay h3 {
     color: var(--snow);
-    font-size: 1.33rem;
+    font-size: 1.7rem;
     margin-bottom: 5px;
 }
 
@@ -311,7 +310,7 @@ h2 {
 
 .overlay p {
     color: var(--snow);
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-style: italic;
 }
 
