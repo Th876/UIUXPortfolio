@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tahaylia Higgins">
-    <meta name="description" content="Explore Craigslist redesigned, an online marketplace developed to connect buyers and sellers in local communities. This project showcases my UI/UX design capabilities. Note: This is a self-initiated project." />
+    <meta name="description" content="Explore Craigslist redesigned, an online marketplace developed to connect buyers and sellers in local communities. This project showcases my UI/UX design capabilities. Note: This is a self-initiated project." >
 
     <meta name="keywords" content="UI/UX, user interface design, user experience, user research, portfolio, ux case studies, website redesign, website design, Craigslist">
          <!--favicon-->
@@ -14,7 +14,7 @@
     <!--CSS stylesheet-->
     <link rel="stylesheet" href="craigslist.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- JS -->
     <script defer src="craigslist.js"></script>
@@ -34,36 +34,33 @@
             <img src="images/old-cl-screens.png" loading="lazy" alt="Old Craigslist UI design" class="old-cl">
             <p class="caption">Old Craigslist UI design</p> 
         </div>
-    
-        <!-- Solution -->
-        <div class="cl-container-txt section-color">
+    </header>   
+
+    <main>
+<!--Hypothesis-->   
+        <section id="think" class="cl-container-txt section-color">
                 <h2>Reinventing the Wheel</h2>
-                <p>I <strong>transformed</strong> the sign-in experience into a <strong>user-friendly platform</strong> by <strong>adding personalized onboarding</strong> and <strong>tailored recommendations</strong> to make it easier for users to find what they need.</p>
-        </div>
+                <p class="padding-b">If I add <strong>personalized onboarding</strong> to the <strong>sign-in process</strong>, then users will navigate the platform more easily and complete tasks more efficiently during usability testing.</p>
+                <p>To test this hypothesis, I applied <strong>Lean UX principles</strong> because of its focus on rapid prototyping and user feedback. I also incorporated some <strong>Design Thinking</strong> methods to ensure empathy throughout the process.</p>
+                
          <!-- New Craigslist Mockup -->
          <img src="images/login.png" loading="lazy" alt="Craigslist redesign mockup of sign up / login screen" class="full-width-image">
-        </header>   
+    
     <!-- Nav scroll spy -->
     <nav class="spy-nav" id="spyNav">
         <ul>
-            <li><a href="#empathize" class="nav-link">Empathize</a></li>
-            <li><a href="#define" class="nav-link">Define</a></li>
-            <li><a href="#ideate" class="nav-link">Ideate</a></li>
-            <li><a href="#prototype" class="nav-link">Prototype</a></li>
-            <li><a href="#test" class="nav-link">Test</a></li>
-            <li><a href="#refine" class="nav-link">Refine</a></li>
+            <li><a href="#think" class="nav-link">Think</a></li>
+            <li><a href="#make" class="nav-link">Make</a></li>
+            <li><a href="#check" class="nav-link">Check</a></li>
         </ul>
         <div id="progress-indicator"></div>
     </nav>
-    <div class="border">
-    </div>
+    <div class="border"></div>
 
-    <main>
-        <!-- EMPATHIZE PHASE -->
-        <section id="empathize">
-            <div class="cl-container-txt">
+        <!-- THINK PHASE -->
+        <div class="cl-container-txt">
                 <h2>Scoping Out the Competition</h2>
-                <p>I started this process with a <strong>competitor analysis</strong> to help me identify <strong>valuable features</strong> from similar platforms to create a more <strong>intuitive</strong> and <strong>engaging redesign</strong>.</p>
+                <p>I started this process with a <strong>competitor analysis</strong> to help me identify valuable features from similar platforms to create a more <strong>intuitive</strong> and <strong>engaging redesign</strong>.</p>
     
                 <!-- Competitor Analysis for Marketplaces similar to Craigslist-->
                 <img src="images/craigslist-competitor-analysis.png" loading="lazy" alt="Competitor analysis conducted on platforms OfferUp, Facebook Marketplace and Poshmark. All are platforms similar to Craigslist." class="cl-comp-analysis">
@@ -72,7 +69,7 @@
             <!-- User Insights -->
             <div class="cl-container-txt section-color">
                 <h2>Chatter in the Marketplace</h2>
-                <p>To understand the users’ experience better, I conducted <strong>remote interviews</strong> with <strong>three participants</strong> from <strong>various parts of the USA</strong>. Participants were <strong>selected through a screener survey</strong> based on their <strong>familiarity with Craigslist</strong> and their <strong>interest in second-hand items</strong> to ensure relevant feedback on the sign-in process.
+                <p>To understand the users’ experience better, I conducted <strong>remote interviews</strong> with <strong>three participants</strong> from <strong>various parts of the USA</strong>. Participants were <strong>selected through a screener survey</strong> based on their familiarity with Craigslist and their interest in second-hand items to ensure relevant feedback on the sign-in process.
                 </p>
                 <p class="padding-t">Here’s what the <strong>user interviews revealed</strong>:</p>
             </div>
@@ -80,7 +77,6 @@
          <div>
             <img src="images/cl-user-insights.png" loading="lazy" alt="Image showing insights derived from user interviews" class="center">
          </div>
-        </section>
 
         <div class="divider1"></div>
          <!-- Back to home button -->
@@ -88,7 +84,7 @@
             <img src="images/purple-house.png" alt="Back to Home button" id="backToHome">
         </a>
         <!-- DEFINE PHASE-->
-        <section id="define">
+        <div>
             <div class="cl-container-txt">
                 <h2>Who's Buying and Selling?</h2>
                 <p>Based on the insights gathered from the user interviews, I created a <strong>user persona</strong> that reflects the shared experiences of Craigslist users.</p>
@@ -96,12 +92,13 @@
                 <!-- Competitor Analysis for Marketplaces similar to Craigslist-->
                 <img src="images/Craigslist-User-Persona-1.png" loading="lazy" alt="User Persona developed for Craigslist redesign" class="user-persona">
             </div>
+        </div>
         </section>
 
         <div class="divider1"></div>
 
         <!-- IDEATE -->
-        <section id="ideate">
+        <section id="make">
             <div class="cl-container-txt section-color" >
                 <div class="padding-t">
                     <h2>Connecting the Dots</h2>
@@ -110,12 +107,12 @@
             </div>
         <!-- Image that spans both sections -->
             <img src="images/craigslist-user-flow.png" loading="lazy" alt="Image showing user flow chart for Craigslist redesign" class="user-flow">
-        </section>           
+        <!-- </div>            -->
 
         <div class="divider"></div>
 
         <!-- PROTOTYPE Lo-Fi-->
-        <section id="prototype">
+        <div>
             <div class="cl-container-txt">
                 <h2>Building the Framework</h2>
                 <p>With the user flow mapped out, I moved on to design the <strong>low-fidelity wireframe</strong> that outlines the website's structure and layout.</p>
@@ -154,32 +151,34 @@
         </div>
         <!-- Video that spans both sections -->
         <div class="center">
-            <video loading="lazy" width=840px height=560px autoplay muted loop class="center-video">
+            <video width="840" height="560" autoplay muted loop class="center-video">
                 <source src="video/cl-hi-fi-prototype1st-draft.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
         </div>
-        </section>
+    </div>
+    </section>
 
         <div class="divider1"></div>
 
         <!-- TEST -->
-        <section id="test">
+        <section id="check">
             <div class="cl-container-txt">
                 <h2>What Do Users Say?</h2>
                 <p>I conducted <strong>remote usability testing</strong> with the <strong>three participants from my initial research</strong>. However, due to scheduling conflicts, one participant was unavailable. I then selected another candidate from the original pool identified through my screener survey to ensure alignment with the user persona criteria.
                 </p>
                 <img src="images/craigslist-usability-test-ques.png" loading="lazy" alt="Image displaying usability test questions provided to participants for evaluating the first draft of the Craigslist redesign." class="cl-usability-test">
 
-                <p class="padding-t1">The usability test <strong>results</strong> showed no significant issues with the onboarding or sign-in process but revealed a strong need for <strong>faster support</strong> when seeking <strong>help</strong>.</p>
+                <p class="padding-t1">The usability testing<strong> validated my hypothesis</strong> by showing that users found the <strong>streamlined sign-in process</strong> with personalized onboarding <strong>more intuitive</strong> and <strong>less frustrating</strong>.</p>
+                <p class="padding-t">Additionally, it revealed a strong need for <strong>faster support</strong> when seeking <strong>help</strong>.</p>
                 </div>
-            </div>
-            </section>
+            <!-- </div> -->
+        <!-- </div> -->
 
             <div class="divider1"></div>
 
-              <!-- REFINE PHASE -->
-        <section id="refine">
+
+        <div>
              <!-- Hi-Fi Prototype -->
          <div class="cl-container-txt section-color" >
             <div class="padding-t">
@@ -191,7 +190,7 @@
         </div>
         <!-- Video that spans both sections -->
         <div class="center">
-            <video loading="lazy" width=840px height=560px autoplay muted loop class="center-video">
+            <video width="840" height="560" autoplay muted loop class="center-video">
                 <source src="video/hi-fi-prototype-final.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -216,7 +215,8 @@
                 <li><strong>Visual Appeal Matters:</strong> A polished design not only makes a positive first impression but also builds user trust.</li>
             </ul>
         </div>
-        </section>
+    </div>
+    </section>
         <div class="cl-spacing"></div>
     </main>
 

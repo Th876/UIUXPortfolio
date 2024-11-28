@@ -207,6 +207,7 @@ h3 {
     width: 100%;
     z-index: 3;
     transition: top 0.3s;
+    left: 115px;
 }
 
 .spy-nav ul {
@@ -268,7 +269,9 @@ h3 {
     transition: width 0.25s ease-out;
 }
 
-
+.padding-b {
+    margin-bottom: 20px;
+}
 .center {
     width: 70%; 
     display: block;
