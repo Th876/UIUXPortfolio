@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tahaylia Higgins">
-    <meta name="description" content="Explore my redesign of Cake Wrecks. My team and I conducted research and I ideated and designed solutions to improve navigation and visual appeal for Cake Wreck fans!" />
+    <meta name="description" content="Explore my redesign of Cake Wrecks. My team and I conducted research and I ideated and designed solutions to improve navigation and visual appeal for Cake Wreck fans!">
 
     <meta name="keywords" content="UI/UX, user interface design, user experience, user research, portfolio, ux case studies, Cake Wrecks, website redesign, websites, web application redesign">
          <!--favicon-->
@@ -14,7 +14,7 @@
     <!--CSS stylesheet-->
     <link rel="stylesheet" href="cakewrecks.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- JS -->
@@ -54,7 +54,7 @@
                 </div>
                 <div class="text-content">
                     <h2>Context</h2>
-                    <p>This was a collaborative project at Arizona State University. </p>
+                    <p>This was a <strong>collaborative</strong> project at Arizona State University. We followed a <strong>blended design process</strong>—<strong>Double Diamond</strong> for problem-solving and <strong>Design Thinking</strong> elements to ensure user empathy and identify pain points.</p>
                     <p class="mt"><strong>My team</strong> was tasked with:</p>
                     <ul class="task-list">
                         <li>Heuristic Evaluation</li>
@@ -84,18 +84,16 @@
     <!-- Nav scroll spy -->
     <nav class="scrollspy-nav" id="scrollspyNav">
         <ul>
-            <li><a href="#empathize" class="nav-link">Empathize</a></li>
+            <li><a href="#discover" class="nav-link">Discover</a></li>
             <li><a href="#define" class="nav-link">Define</a></li>
-            <li><a href="#ideate" class="nav-link">Ideate</a></li>
-            <li><a href="#prototype" class="nav-link">Prototype</a></li>
-            <li><a href="#test" class="nav-link">Test</a></li>
-            <li><a href="#refine" class="nav-link">Refine</a></li>
+            <li><a href="#develop" class="nav-link">Develop</a></li>
+            <li><a href="#deliver" class="nav-link">Deliver</a></li>
         </ul>
         <div id="progress-bar"></div>
     </nav>
 
     <main>
-        <section class="one-column lrg-mt" id="empathize">
+        <section class="one-column lrg-mt" id="discover">
             <div class="text-content">
             <h2 class="all-margin">Slicing through the Wreck</h2>
             <p class="all-margin">To understand <strong> user frustration</strong>, we conducted a<strong> heuristic evaluation </strong> on the old Cake Wrecks website. This exploration revealed how users found and interacted with blog posts and guided our individual efforts to <strong> redesign</strong> the <strong> user interface</strong> and <strong> address the issues</strong>.
@@ -137,23 +135,24 @@
         <a href="/index.html">
             <img src="images/blue-house.png" alt="Back to Home button" id="backToHomeBtn">
         </a>
-        <!-- DEFINE PHASE -->
 
+        <!-- DEFINE PHASE -->
         <!-- User personas -->
         <section id="define">
             <div class="grid-container users">
               <div class="text-content users">
-                <h2>Meet The Users</h2>    
+                <h2>Meet The Users</h2>  
+                <div class="flex-container">
+                    <div class="column flex">
+                        <img src="images/persona-1.png" loading="lazy" alt="Image detailing information about user persona 1 Jane Smith">
+                    </div>  
+                    <div class="column">
+                        <img src="images/persona-2.png" loading="lazy" alt="Image detailing information about user persona 2 Emily Walker">
+                    </div>
+                 </div>
+                
             </div>
-        </section>
-        <div class="img-container">
-            <div class="column">
-                <img src="images/persona-1.png" loading="lazy" alt="Image detailing information about user persona 1 Jane Smith">
             </div>
-            <div class="column">
-                <img src="images/persona-2.png" loading="lazy" alt="Image detailing information about user persona 2 Emily Walker">
-            </div>
-        </div>
 
         <!-- User Journey Maps -->
         <div class="one-column lrg-mt all-margin">
@@ -175,9 +174,14 @@
                 </p>
             </div>
         </div>
-            <div class="divider"></div>
-            <!-- Sitemap 1st Version -->
-        <section class="lrg-mt" id="ideate">
+        </section>
+        
+
+        <!-- DEVELOP PHASE -->
+        <div class="divider"></div>
+        
+        <!-- Sitemap 1st Version -->
+        <section class="lrg-mt" id="develop"> 
                 <div class="grid-container">
                   <div>
                     <h2 class="indent">Baking the Blueprint 1.0</h2>
@@ -190,7 +194,7 @@
                 <div class="mt">
                     <img src="images/1st-draft-sitemap.png" loading="lazy" alt="The first draft of Cake Wrecks redesigned website sitemap" class="col-images">
                 </div>
-        </section>
+                </div>
 
             <!-- Lo-fi Wireframes-->
         <div class="lrg-mt">
@@ -211,14 +215,16 @@
         <div class="lrg-mt3">
                 <div class="grid-container">
                   <div class="text-content">
-                    <h2 class="indent">Filling Layer: Screen Variations</h2>
-                    <p class="indent moveup-paragraph">I also created wireframes for different <strong>screen sizes</strong> to ensure the site remained <strong>responsive</strong> and <strong>user-friendly</strong> on all devices.
-                    </p>
-                </div>     
+                        <h2 class="indent">Filling Layer: Screen Variations</h2>
+                        <p class="indent moveup-paragraph">I also created wireframes for different <strong>screen sizes</strong> to ensure the site remained <strong>responsive</strong> and <strong>user-friendly</strong> on all devices.
+                        </p>
+                    </div>   
+            
                  <!-- Lo-fi variation images  -->
                 <div>
                     <img src="images/tablet-mobile-lo-fi.png" loading="lazy" alt="Lo-fi wireframes of Cake Wrecks redesigned for tablet and mobile view" class="col-images lo-fi1">
                 </div>
+            </div>
         </div>
 
             <!-- Mid-fidelity wireframes -->
@@ -250,16 +256,17 @@
                         <img src="images/mid-fi-wireframe.png" loading="lazy" alt="Mid-fi wireframes for Cake Wrecks redesigned for tablet and mobile view" class="col-images padding-b">
                     </div>
                 </div>
+            </div>
 
-            <!-- PROTOTYPE PHASE -->
             
             <!-- Hi-Fi mockups-->
             <div class="divider"></div>
-            <section class="text-content" id="prototype">
+            
+            <div class="text-content">
                 <h2 class="ml">Top Layer: High-Fi Mockup</h2>
                 <p class="ml">Now, this is where the design started to look like the final product. I refined the <strong>wireframes</strong> into a <strong>high-fidelity mockup</strong> by adding <strong>color</strong> and <strong>high-quality images</strong>. I also introduced an <strong>intuitive navigation</strong>, a <strong>carousel</strong>, and new features like <strong>login, sign-up options,</strong> a <strong>newsletter form</strong>, and an <strong>interactive map</strong>.
                 </p>
-            </section>
+            </div>
             <div class="mt-more">
                 <img src="images/after.png" loading="lazy" alt="Hi-Fi mockup for Cake Wrecks redesigned website desktop view" class="col-images">
             </div>
@@ -269,17 +276,18 @@
                     <div class="text-content lrg-mt3">
                         <h2 class="indent">Frosting Layers: Screen Variations</h2>
                         <p class=" indent moveup-paragraph">Since <strong>tablets</strong> have <strong>limited screen space</strong>, I opted for an <strong>embedded interactive map</strong> instead of a <strong>modal pop-up</strong> to enhance the user experience.</p>                        
-                </div>  
+                    </div>  
                     <div class="mt">
                         <img src="images/tablet-1stdraft-hi-fi.png" loading="lazy" class="tablet-hi-fi" alt="High-Fidelity wireframe for the first draft of Cake Wrecks redesigned tablet view">
                     </div>  
+                </div>
             </div>
-            <div>
+       
                 <div class="grid-container">
                     <div class="mt">
                         <img src="images/mobile-1stdraft-hi-fi.png" loading="lazy" class="phone-hi-fi" alt="High-Fidelity wireframe for the first draft of Cake Wrecks redesigned mobile view">
                     </div>  
-                    <div class="text-content lrg-mt">
+                <div class="text-content lrg-mt">
                         <p class="indent">For the <strong>mobile view</strong>, I chose a <strong>list format</strong> over the map so users can quickly scan through bakery options without the hassle of zooming and scrolling.</p>                        
                 </div>   
             </div>
@@ -294,31 +302,33 @@
                         </p>                  
                     </div>  
                     <div>
-                        <video loading="lazy" width=640px height=360px autoplay muted loop class="cropped-video-1stdraft">
+                        <video width="640" height="360" autoplay muted loop class="cropped-video-1stdraft">
                         <source src="video/CW-1stDraft-WebTour1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video>
                         <small class="right-small">*Overlay extends to full screen in the actual prototype</small>
-                    </div>
+                </div>
                 </div>
             </div>
             <div class="divider"></div>
-            <!-- TEST PHASE -->
+        
 
             <!-- Observation Test: Round Two -->
-            <section class="text-content" id="test">
+            <div class="text-content">
                 <h2 class="ml">Wreck-ognizing Patterns Round 2</h2>
                 <p class="ml">I conducted a <strong>second observation test</strong> with the <strong>same six participants</strong>. Results showed that while users generally <strong>loved</strong> the <strong>redesign</strong>, opinions on the <strong>new interactive map</strong> feature were <strong>mixed</strong>.
                 </p>
-            </section>
+            </div>
             <!-- Participants feedback on observation test round 2 -->
             <div class="lrg-mt">
                 <div class="text-content">
-                    <h3 class="ml-1">Participants’ Feedback on the Interactive Map</h3>
+                    <h3 class="ml-1">Participants’ Feedback on the Interactive Map
+                    </h3>
                 </div>
+            </div> 
                 <div class="list-container">
                     <div class="image-content">
-                        <video loading="lazy" autoplay loop muted width="420" height="300">
+                        <video autoplay loop muted width="420" height="300">
                             <source src="video/friends-convo.mp4"
                             type="video/mp4">
                             Your browser does not support the video tag.
@@ -344,7 +354,7 @@
                         </ul>
                     </div>
                     <div class="image-content">
-                        <video loading="lazy" autoplay loop muted width="450" height="300">
+                        <video autoplay loop muted width="450" height="300">
                             <source src="video/friend-confused.mp4"
                             type="video/mp4">
                             Your browser does not support the video tag.
@@ -359,8 +369,8 @@
             </div>
             <div class="divider"></div>
             
-            <!-- REFINE PHASE -->
-            <section class="one-column" id="refine">
+            <!-- DEVELOP PHASE 2 -->
+            <div class="one-column">
     
                 <h2 class="ml">Refining the Recipe</h2>
                 
@@ -373,10 +383,10 @@
                     <p>Next, I conducted <strong>A/B testing</strong> with <strong>six new participants from the screener survey pool</strong> who were interested in <strong>cake fails</strong>. Their task was to find a <strong>bakery</strong> in <strong>Atlanta, Georgia</strong>, and share their thoughts on the design.
                     </p>
                 </div>
-                </div>
                 <div class="lrg-mt">
                     <img src="images/a-b-testing.png" loading="lazy" alt="A/B testing results on Cake Wrecks redesigned bakery pages version A, an interactive pop-up map and version B, an accordion list" class="a-b-test">
                 </div>
+            </div>
            
         <div class="text-content mt-more padding-b">
             <p class="ml">Interestingly, <strong>results</strong> showed an <strong>even split</strong> between the <strong>interactive map</strong> and the <strong>list</strong>. This insight led to <strong>my final redesign</strong><br>decision—a <strong>toggle feature</strong> that lets users <strong>switch between</strong> the <strong>embedded map view</strong> and the <strong>list view</strong>.
@@ -386,7 +396,7 @@
         <div class="move-up padding-b">
             <div class="list-container">
                 <div class="image-content">
-                    <video loading="lazy" width=640px height=360px autoplay muted loop class="cropped-video-bakery">
+                    <video width="640" height="360" autoplay muted loop class="cropped-video-bakery">
                         <source src="video/toggle-bakery1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
@@ -400,22 +410,27 @@
                 </div>
             </div>
         </div>
-        <div class="divider"></div>
+        </section>
 
+        <div class="divider"></div>
+        
+        <!--DELIVER PHASE -->
+       
         <!-- Final Sitemap -->
-        <div class="lrg-mt">
+        <section class="lrg-mt" id="deliver">
             <div class="grid-container">
-              <div class="text-content">
+              <div class="text-content" >
                 <h2 class="unindent mb indent">Baking the Blueprint 2.0</h2>
                 <p class="indent moveup-paragraph">I also redesigned the <strong>sitemap</strong> to fit the <strong>new changes</strong>!</p>
-            <br>
+                <br>
                 <p class="mt indent move-up-serve">View<a href="https://www.figma.com/proto/hS8j7ztnKVAxnoiaPKjwuJ/CakeWrecks-Re-Design?node-id=185-5606&node-type=CANVAS&t=GwLiw2OuwxkNi2To-1&scaling=scale-down&content-scaling=fixed&page-id=199%3A14143" target="_blank" class="link">larger final sitemap</a>
-            </p> 
-            </div>     
+                </p> 
+                </div>     
             <div class="mt">
                 <img src="images/final-sitemap.png" loading="lazy" alt="Final version of Cake Wrecks redesigned sitemap" class="col-images">
             </div>
-        </div>
+            </div>
+        </section>
 
         <div class="text-content">
             <h2 class="ml">The Finishing Touches</h2>
@@ -440,6 +455,7 @@
             <div class="mt">
                 <img src="images/final-dsgn-tablet.png" loading="lazy" class="tablet-final" alt="Final design for the High-Fidelity mockup bakery page tablet view">
             </div>
+            </div>
         </div>
 
         <!-- Lo-fi Wireframes-->
@@ -447,7 +463,7 @@
             <div class="grid-container">
                 <!-- Lo-fi image  -->
                 <div class="mt">
-                    <video loading="lazy" width=640px height=360px autoplay muted loop class="cropped-video-final">
+                    <video width="640" height="360" autoplay muted loop class="cropped-video-final">
                         <source src="video/final-dsgn.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
@@ -474,11 +490,12 @@
                 <p class="indent moveup-paragraph">Here's the <strong>style guide</strong> that brought everything together.</p>
             <br>
                 <p class="indent moveup-paragraph">View<a href="https://uiux-portfolio-kappa.vercel.app/document/style-guide.pdf" target="_blank" class="link">full version of style guide</a>
-            </p> 
-            </div>     
+                </p> 
+                </div>     
             <div class="mt">
                 <img src="images/style-guide.png" loading="lazy" alt="Image showing Cake Wrecks redesigned style guide" class="col-images">
             </div>
+        </div>
         </div>
         <!-- Takeaways -->
         <div class="text-content lrg-mt padding-b">
