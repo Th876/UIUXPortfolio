@@ -24,6 +24,8 @@
      --border-color: #D3D3D3;
      --link-novisit: #19559A;
      --link-visited: #6F4285;
+     --inactive-nav: #F6F6F6;
+     --hover: #F9F2FF;
 }
 
  * {
@@ -51,6 +53,11 @@ main {
     box-sizing: border-box;
     border-left: 1px solid rgba(210, 209, 209, 0.5); 
     border-right: 1px solid rgba(210, 209, 209, 0.5);
+    margin-top: -90px;
+}
+
+.old-cl-image {
+    padding-bottom: 30px;
 }
 .banner {
     box-sizing: border-box;
@@ -193,11 +200,13 @@ h3 {
     margin-bottom: -100px;
     padding-bottom: 70px;
 }
+
 /* Scrollspy Navigation */
-.spy-nav {
+.scrollspy-nav {
     display: flex;
     position: relative;
     box-sizing: border-box;
+    /* border-top: 1px solid rgba(210, 209, 209, 0.5); */
     border-left: 1px solid rgba(210, 209, 209, 0.5); 
     border-right: 1px solid rgba(210, 209, 209, 0.5);
     border-bottom: 1px solid rgba(210, 209, 209, 0.5);
@@ -207,10 +216,9 @@ h3 {
     width: 100%;
     z-index: 3;
     transition: top 0.3s;
-    left: 115px;
 }
 
-.spy-nav ul {
+.scrollspy-nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -219,11 +227,11 @@ h3 {
     padding: 0;
 }
 
-.spy-nav ul li {
+.scrollspy-nav ul li {
     display: inline-block;
 }
 
-.spy-nav ul li a {
+.scrollspy-nav ul li a {
     display: inline-block;
     width: 70px;
     height: 70px;
@@ -232,7 +240,8 @@ h3 {
     font-size: 0.75rem;
     /* The text height inside the circle */
     line-height: 70px;
-    background-color: var(--accent);
+    background-color: var(--inactive-nav);
+    /* background-color: var(--blue-100); */
     color: var(--neutral-700);
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -240,18 +249,18 @@ h3 {
     margin: 0 30px;
 }
 
-.spy-nav ul li a.active {
+.scrollspy-nav ul li a.active {
     background-color: var(--primary-100);
     color: var(--neutral-100);
 }
 
-.spy-nav ul li a:hover {
-    background-color: var(--primary-100);
-    color: var(--neutral-100);
+.scrollspy-nav ul li a:hover {
+    background-color: var(--hover);
+    color: var(--neutral-800);
 }
 
 /* Sticky Navigation */
-.spy-nav.sticky {
+.scrollspy-nav.sticky {
     position: fixed;
     top: 0;
     /* Make sticky nav center page */
@@ -259,7 +268,7 @@ h3 {
     max-width: 1260px; 
 }
 
-#progress-indicator {
+#progress-bar {
     position: absolute; /* Position the bar absolutely */
     bottom: 0; /* Align it to the bottom of the container */
     left: -10px;
@@ -268,6 +277,7 @@ h3 {
     width: 0;
     transition: width 0.25s ease-out;
 }
+
 
 .padding-b {
     margin-bottom: 20px;

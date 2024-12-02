@@ -1,11 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Tahaylia Higgins">
+    <meta name="description" content="Fund Flow is a loan marketplace platform designed for small businesses to apply, manage, and track business loans. This project showcases my UI/UX design capabilities. Note: This is a self-initiated project." >
+
+    <meta name="keywords" content="UI/UX, B2B apps, B2B, Fintech, SaaS,user interface design, user experience, user research, portfolio, ux case studies, website design, Fund Flow">
+         <!--favicon-->
+    <link rel="icon" href="images/logo-black.svg" type="image/x-icon">
+    <title>How Fund Flow Redefines Loan Access for Small Businesses
+    </title>
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="fundflow.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- JS -->
+    <script defer src="fundflow.js"></script>
 </head>
+
 <body>
-  
+    <header class="banner">
+        <img src="images/ff-banner-img2.png" alt="Fund Flow case study banner displaying details such as the name of the product, Fund Flow, How Fund Flow Redefines Loan Access for Small Businesses, my role as a UX Researcher and UI designer, and the duration of this solo-project, Fall 2024" class="banner-img">
+
+        <!-- The problem -->
+        <div class="cl-container-txt">
+            <h2>Confronting Financing Challenges</h2>
+            <p>Many <strong>small businesses struggle</strong> to <strong>secure loans</strong> which results in cash flow challenges that <strong>hinder growth</strong> and <strong>sustainability</strong>.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="cl-container-txt">
+            <h2>Introducing Fund Flow</h2>
+            <!--INSERT VIDEO OF FUND FLOW-->
+            <!-- Video that spans both sections -->
+        <div class="center promo-video">
+            <video controls loop class="center-video">
+                <source src="video/ff-promo-vid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+        </div>
+    </header>   
+
+     <!-- Nav scroll spy -->
+     <nav class="scrollspy-nav" id="scrollspyNav">
+        <ul>
+            <li><a href="#empathize" class="nav-link">Empathize</a></li>
+            <li><a href="#define" class="nav-link">Define</a></li>
+            <li><a href="#ideate" class="nav-link">Ideate</a></li>
+            <li><a href="#prototype" class="nav-link">Prototype</a></li>
+            <li><a href="#test" class="nav-link">Test</a></li>
+            <li><a href="#implement" class="nav-link">Implement</a></li>
+        </ul>
+        <div id="progress-bar"></div>
+    </nav>
+    
+    <main>
+<!--Empathize-->   
+        <section id="empathize">
+            <div class="cl-container-txt">
+                <h2>Sizing Up the Competition</h2>
+                <p class="padding-b">I conducted a <strong>competitive analysis</strong> to uncover industry standards, effective features, and gaps where Fund Flow could better support small businesses in securing financial aid.</p>
+                
+         <!-- Fund Flow Competitor Analysis -->
+         <p class="caption padding-b padding-t">
+            <i class="fas fa-eye" style="color: #336748;"></i>
+            Scroll inside the container to explore competitive analysis.
+          </p>
+          <div class="lo-fi-image-container-analysis">
+            <!-- Fixed header image -->
+            <img src="images/ff-analysis-header.png" alt="Table Header for Fund Flow competitor analysis" class="table-header">
+            
+            <!-- Lo-fi image (table content) -->
+            <img src="images/Fund-Flow-Competitor-Analysis-1.png" alt="Fund Flow competitor analysis table with Lendio, Fundera and Quickbooks Capital as competitors" class="lo-fi-image-analysis">
+          </div>
+          </div>
+          
+               
+
+    <div class="divider"></div>
+            
+            <!-- Secondary Research -->
+            <div class="cl-container-txt">
+                <h2>Biases in Borrowing</h2>
+                <p>I also reviewed <strong>reports</strong> on <strong>small business loan experiences</strong>, focusing on the challenges <strong>marginalized owners</strong> face, scam tactics complicating loan access, and prevalent online lender practices that often increase costs and barriers for small businesses.</p>
+                <p class="padding-t">Here are the <strong>key findings</strong>:</p>
+            </div>
+         <!-- Secondary research insights-->
+         <div>
+            <img src="images/Fund-Flow-Secondary-Research.png" loading="lazy" alt="Image showing insights derived from financial reports on small business owners" class="secondary-research">
+         </div>
+
+        <div class="divider"></div>
+         <!-- Back to home button -->
+         <a href="/index.html">
+            <img src="images/dark-green-house.png" alt="Back to Home button" id="backToHome">
+        </a>
+            <div class="cl-container-txt">
+                <h2>Beyond the Numbers</h2>
+                <p>I carried out <strong>user interviews</strong> with five small business owners to understand their financing challenges. Here’s what the <strong>data revealed</strong>:</p>
+                <div class="research-list">
+
+                    <div class="column">
+                      <ul>
+                        <li><strong>Complex & Frustrating Applications:</strong> Participants felt the loan application process, whether online or with banks, was overly complicated. They wanted something simple and straightforward.</li>
+                        <li><strong>Lost in Loan Tracking:</strong> Keeping track of repayments and due dates was a common pain point. A clear, organized dashboard with reminders would make their lives easier.</li>
+                      </ul>
+                    </div>
+
+                    <div class="column">
+                      <ul>
+                        <li><strong>Inaccurate Calculators:</strong> Users found existing loan calculators unreliable. They needed a tool that gives them accurate numbers tailored to their business.</li>
+                        <li><strong>Help Me See the Future:</strong> Some participants wanted better ways to forecast their financial health and manage repayments, especially when business is unpredictable. An integrated financial tool could solve this.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+            </div>
+        </section>
+
+        <div class="divider1"></div>
+
+        <!-- DEFINE PHASE-->
+        <section id="define">
+            <div class="cl-container-txt padding-t" >
+           
+                    <h2>Meet the Small Business Owners </h2>
+                    <p>I then created <strong>user personas</strong> to deepen my understanding of small business owners’ pain points and needs.</p>
+          
+                <!-- User personas-->
+                <!-- Carousel -->
+            <div id="userPersonaCarouselContainer" class="moveup-personas">
+                <input hidden type="radio" name="userPersonaControl" id="button_Sam" checked>
+                <input hidden type="radio" name="userPersonaControl" id="button_Ava">
+                <input hidden type="radio" name="userPersonaControl" id="button_Fiona">            
+
+            <div id="userPersonaCarousel">
+                <div class="userPersonaWrapper">
+                    <div class="userPersona_Sam">
+                        <img src="images/user-persona1.png" loading="lazy" alt="Seasonal Sam" >
+                    </div>
+
+                    <div class="userPersona_Ava">
+                        <img src="images/user-persona2.png" loading="lazy" alt="Ambitious Ava">
+                    </div>
+
+                    <div class="userPersona_Fiona">
+                        <img src="images/user-persona3.png" loading="lazy" alt="Frugal Fiona">
+                    </div>
+                </div> <!-- // .userPersonaWrapper -->
+            </div> <!-- // #userPersonaCarousel -->
+
+            <div id="userPersonaNavigation">
+                <label class="label_Sam" for="button_Sam">Sam</label>
+                <label class="label_Ava" for="button_Ava">Ava</label>
+                <label class="label_Fiona" for="button_Fiona">Fiona</label>
+            </div> <!-- // #userPersonaNavigation -->
+            </div> <!-- // #userPersonaCarouselContainer -->
+
+ 
+        <div class="divider1"></div>
+
+        <!-- PROTOTYPE Lo-Fi-->
+ 
+
+        <h2 class="padding-t1 mt">Unpacking the Loan Labyrinth</h2>
+        <p>Building on these insights, I created <strong> 3 user journey maps</strong> to highlight the emotional ups and downs small business owners experience during the loan process.</p>
+      
+        <p class="caption padding-b">
+            <i class="fas fa-eye" style="color: #336748;"></i> Scroll inside the container to explore the user journey maps.
+        </p>
+
+            <div class="lo-fi-image-container">
+               <img src="images/ff-user-journey.png" alt="Lo-Fi Wireframe for Fund Flow desktop version" class="lo-fi-image">
+             </div>
+        </div>
+    </section>
+
+
+    <div class="divider"></div>
+
+        <section id="ideate">
+            <div class="cl-container-txt padding-t">
+                <h2>User Flow</h2>
+                <p>I created a <strong>user flow chart</strong> in <strong>FigJam</strong> to outline how users interact with Fund Flow.</p>
+            </div>
+                <!-- Image that spans both sections -->
+                <img src="images/ff-user-flow.png" loading="lazy" alt="Image depicting Fund Flow user flow chart" class="userflow mt">
+
+                <div class="divider"></div>
+                <!-- Lo-fi -->
+                <div class="cl-container-txt padding-t">
+                   
+                        <h2>Blueprints for Better Borrowing</h2>
+                        <p>With a clear understanding of the user journey, I proceeded to create <strong>low-fidelity wireframes</strong> in <strong>Figma</strong> for both <strong>desktop</strong> and <strong>mobile versions</strong>. This allowed me to quickly visualize the site’s structure and focus on key functionality without getting into the design details just yet.</p>
+                   
+
+                    <!-- Lo-fi Images -->
+                     <p class="caption padding-b"><i class="fas fa-eye" style="color: #336748;"></i><strong>Desktop version</strong>: Scroll inside the container to explore the wireframe.</p> 
+                     <div class="lo-fi-image-container">
+                        <img src="images/ff-lo-fi-Images.png" alt="Lo-Fi Wireframe for Fund Flow desktop version" class="lo-fi-image">
+                      </div>
+                     
+                      <p class="caption padding-b padding-t"><i class="fas fa-eye" style="color: #336748;"></i><strong>Mobile version</strong>: Scroll inside the container to explore the wireframe.</p> 
+                     <div class="lo-fi-image-container">
+                        <img src="images/ff-lo-fi-mobile.png" alt="Lo-Fi Wireframe for Fund Flow mobile version" class="lo-fi-image">
+                      </div>
+                    
+                      <!-- Mid-fi -->
+                     
+                        
+                    <p class="padding-t1">Next, I created <strong>mid-fidelity wireframes</strong> to prioritize usability and provide a clearer picture of the user experience while laying the groundwork for design refinement.</p>
+                    <p class="padding-t"><strong>Note:</strong> This mockup shows the general layout of the web app. In the interactive prototype, real-time validation will be implemented. That means users cannot proceed to the next step without completing all required fields.</p>
+                    </div>
+                    <!-- Mid-fi images -->
+                    <p class="caption padding-b"><i class="fas fa-eye" style="color: #336748;"></i><strong>Desktop version</strong>: Scroll inside the container to explore the wireframe.</p> 
+
+                     <div class="lo-fi-image-container">
+                        <img src="images/ff-mid-fi-desktop1.png"  alt="Mid-Fi Wireframe for Fund Flow desktop version" class="lo-fi-image">
+                      </div>
+                     
+                      <p class="caption padding-b padding-t"><i class="fas fa-eye" style="color: #336748;"></i><strong>Mobile version</strong>: Scroll inside the container to explore the wireframe.</p> 
+                      
+                     <div class="lo-fi-image-container">
+                        <img src="images/ff-mid-fi-mobile.png" alt="Mid-Fi Wireframe for Fund Flow mobile version" class="lo-fi-image">
+                      </div>
+            
+         <!-- Hi-Fi Mockup-->
+            <div class="cl-container-txt">
+                <p class="padding-b">Then, I refined the visual elements into <strong>high-fidelity mockups</strong> to create a realistic representation of the app's features and layout.</p>
+            </div>
+              <!-- Hi-Fi Desktop Mockup -->
+              <img src="images/ff-hi-fi-mockup1.png" loading="lazy" alt="Image depicting high-fidelity mockup for Fund Flow mobile version" class="wireframe-mockup-d">
+
+              <!-- Hi-Fi Mobile Mockup -->
+              <img src="images/2-phones.png" loading="lazy" alt="Image depicting high-fidelity mockup for Fund Flow mobile version" class="wireframe-mockup-m">
+
+
+            <!-- hi-fi-mockup-annotations.png -->
+            <div class="cl-container-txt" >
+                    <h2>Feature Implementation</h2>
+                    <!--Image of Logos-->
+                    <img src="images/hi-fi-mockup-annotations.png" loading="lazy" alt="Image depicting high-fidelity mockup for Fund Flow desktop version" class="wireframe-hi-fi-mockup-d padding-t">
+            </div>          
+        </section>
+
+        <div class="divider1"></div>
+
+        <section id="prototype">
+         <!-- Hi-Fi Prototype -->
+         <div class="cl-container-txt padding-t">
+                <h2>Flow in Motion</h2>
+                <p>It was now time to showcase Fund Flow in a more detailed and <strong>interactive</strong> manner via a <strong>high-fidelity prototype</strong>.</p>
+                <!-- GIF Prototype for 1st Draft -->
+
+                <div class="center">
+                    <video width="840" height="560" autoplay muted loop class="ff-prototype">
+                        <source src="video/ff-video-prototype2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+
+                <p class="text-center padding-b">Explore<a href="https://www.figma.com/proto/z4VbgnVqB1pkS79uSWuNXm/Fund-Flow%3A-A-B2B-Loan-Management-Web-App?node-id=704-17558&node-type=canvas&t=YZCMCnzvWw2LysoV-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=704%3A17558" target="_blank" class="link">high-fidelity prototype</a>
+                </p> 
+                <p class="padding-t ff-small-text">Note: Although the input fields in the Help & Feedback page were initially blank, I added real user feedback to show where feedback would be incorporated in a real scenario, and demonstrate how I’d iterate on the design based on user input to enhance user satisfaction.</p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+         <!-- TEST -->
+         <section id="test">
+            <div class="cl-container-txt padding-t">
+                    <h2>A Test Run</h2>
+                    <p>With the interactive high-fidelity prototype ready, I conducted <strong>usability tests</strong> with <strong>four</strong> of the five <strong>small business owners</strong> I interviewed. The test focused on evaluating pages: 
+                    </p>
+
+                    <ul class="padding-t">
+                        <li><strong>Home:</strong> navigation and initial impressions </li>
+                        <li><strong>Lender Lookup:</strong> comparison tools</li>
+                        <li class="padding-b"><strong>Loan Application:</strong> clarity and ease of completion</li>
+                    </ul>
+                    <p>The test revealed several <strong>praises</strong> and also identified key <strong>areas for improvement.</strong></p>
+
+                    <!--Image showing feedback-->
+                    <img src="images/ff-feedback.png" loading="lazy" alt="Image showing the process of creating Fund Flow logo." class="ff-feedback">
+    
+                <h3 class="padding-t">Insights</h3>
+                <p>A few participants highlighted a limitation in the <strong>application form</strong>—it only <strong>allowed selecting existing documents</strong> from the document management system with <strong>no option to upload new ones</strong>.</p>
+                <p class="padding-t padding-b">Participants also expressed the need for <strong>clear guidance</strong> on the <strong>maximum number of cards</strong> they can select in the <strong>comparison tool</strong> on the Lender Lookup page to avoid being trapped in a trial-and-error cycle.</p>
+                </div>
+
+                    <div class="divider1"></div>
+   
+                    <div class="cl-container-txt">
+                            <h2 class="padding-t1">Designing for All</h2>
+                            <!--Image of accessbility considerations-->
+                            <img src="images/ff-accessibility.png" loading="lazy" alt="Image showing the process of creating Fund Flow logo." class="ff-accessibility">
+                    </div>
+            </section>
+
+                <!--Style Guide-->
+                <section id="implement">
+                <div class="cl-container-txt padding-t">
+                        <h2>The Style Contract</h2>
+                        <h3 class="padding-t">Logo</h3>
+                        <p>I sketched several <strong>logo </strong> concepts in <strong>Excalidraw</strong> and refined the design in <strong>Adobe Illustrator</strong>. I chose the style that unifies “Fund” and “Flow” with an “F” and ends with a period. The period symbolizes completion and confidence as it positions Fund Flow as the definitive solution to loan challenges for small businesses.</p>
+                        <!--Image of Logos-->
+                        <img src="images/ff-logo-concepts.png" loading="lazy" alt="Image showing the process of creating Fund Flow logo." class="cl-usability-test">
+                </div>
+
+                <!-- Fix two columns here -->
+                <div class="padding-t cl-container-txt">
+                    <h3>Typography</h3>
+                      <p>I chose <strong>Merriweather</strong> for <strong>headings</strong> to give Fund Flow a polished, trustworthy look which is ideal for a financial platform. For <strong>body text</strong>, I opted for <strong>Lato</strong> for its readability which helps to make finance-heavy content feel more approachable and less overwhelming for users.
+                    </p>
+                    
+                    <h3 class="padding-t1">Color</h3>
+                     <p>I picked a <strong>dark shade</strong> of <strong>green</strong>(#00411A) for the <strong>primary color</strong> because it symbolizes growth, stability, and reliability qualities that resonate with small businesses looking for financial support.
+                    </p>
+                  </div>
+                  <!--Style guide image-->
+                <p class="caption padding-b padding-t">
+                    <i class="fas fa-eye" style="color: #336748;"></i>
+                    Scroll inside the container to explore style guide.
+                </p>
+                <div class="lo-fi-image-container">
+                    <img src="images/FF-style-guide.png" alt="Mid-Fi Wireframe for Fund Flow mobile version" class="lo-fi-image">
+                  </div>
+                
+                
+            
+
+   
+        <div class="divider1"></div>
+
+        <!-- Final design -->
+     
+            <div class="cl-container-txt">
+                <h2>Sealing the Deal</h2>
+                <p>Armed with user feedback, I revisited the ideation phase to <strong>refine the design</strong>. I created a button and a hyperlink that allow users to upload existing and new documents, respectively. I also added a limitation notice to clarify the comparison tool feature on the Lender Lookup page.</p>
+
+                <img src="images/ff-final-hi-fi-fixes.png" loading="lazy" alt="Image depicting the newly redesigned features for Fund Flow—a button and a hyperlink that allow users to upload existing and new documents and a limitation notice to clarify the comparison tool feature on the Lender Lookup page." class="center">
+                <p class="text-center padding-t">Explore the<a href="https://www.figma.com/proto/z4VbgnVqB1pkS79uSWuNXm/Fund-Flow%3A-A-B2B-Loan-Management-Web-App?node-id=1011-94062&node-type=frame&t=hHk0mFf8WAjiEu4s-1&scaling=scale-down&content-scaling=fixed&page-id=965%3A82934&starting-point-node-id=1011%3A94062" target="_blank" class="link">final design prototype</a>
+            </div>
+
+            <div class="divider1"></div>
+
+            <div class="cl-container-txt">
+                <h2>Reflection</h2>
+                <p>I am proud of how Fund Flow evolved into a solution that truly addresses the pain points small business owners face when applying for loans. I was able to design a <strong>product fueled by user feedback</strong> that not only <strong>simplifies loan management</strong>, but also <strong>motivates users to make informed financial decisions</strong>.</p>
+
+                <div class="padding-t1"></div>
+                <h2>What's next?</h2>
+                <p>Moving forward, I see an opportunity to enhance Fund Flow with <strong>tailored loan recommendations</strong> to further address diverse financial needs and motivate small business owners to make confident decisions. I also believe gathering <strong>insights from a larger pool of users</strong> could <strong>maximize Fund Flow's impact</strong> as a vital tool for small businesses.</p>
+            </div>
+
+
+    </section>
+        <div class="cl-spacing"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer-content">
+           <div class="copyright">
+                <small>Copyright &copy;<span id="current-year"></span>Designed &amp; Developed by Tahaylia Higgins. All Rights Reserved. </small>
+            </div>
+            <div class="contact-icons">
+            <!-- Font Awesome Icons -->
+             <a href="https://www.linkedin.com/in/tahayliahiggins/" target="_blank"><i class="fab fa-linkedin"></i></a>
+             <a href="mailto:tayhiggins14@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="document/Tahaylia_Higgins_UX_Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+              </div>
+        </div>
+        </footer>
 </body>
 </html>
+
+  
+        
+        
+           

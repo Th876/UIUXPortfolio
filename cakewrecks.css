@@ -44,6 +44,7 @@
      --neutral-700: #262626;
      --amethyst: #C490CE;
      --midnight: #2B2C30;
+     --inactive-nav: #F6F6F6;
      --card-color: rgba(230, 230, 230, 0.25);
 }
 
@@ -265,7 +266,8 @@ h3 {
     font-size: 0.75rem;
     /* The text height inside the circle */
     line-height: 70px;
-    background-color: var(--blue-100);
+    background-color: var(--inactive-nav);
+    /* background-color: var(--blue-100); */
     color: var(--neutral-700);
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -274,13 +276,13 @@ h3 {
 }
 
 .scrollspy-nav ul li a.active {
-    background-color: var(--orange-600-brand);
+    background-color: var(--blue-600-brand);
     color: var(--neutral-100);
 }
 
 .scrollspy-nav ul li a:hover {
-    background-color: var(--orange-600-brand);
-    color: var(--neutral-100);
+    background-color: var(--blue-100);
+    color: var(--neutral-800);
 }
 
 /* Sticky Navigation */
